@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//LogMeIn//GoToWebinar//EN
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:America/New_York
+TZURL:http://tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200930T195134Z
+DTSTART;TZID=America/New_York:20201007T100000
+DTEND;TZID=America/New_York:20201007T123000
+SUMMARY:GoToWebinar - Allotrope Connect Virtual Workshop (Allotrope Commu
+ nity and Public Session) - DAY 3
+LOCATION:GoToWebinar - See conference call information below
+UID:677497597@logmein.com
+ORGANIZER:james.vergis@faegredrinker.com
+DESCRIPTION:1. Click and join at the specified time and date:\nhttps://gl
+ obal.gotowebinar.com/join/1721866404277935117/103994272\nNote: This link
+  should not be shared with others\; it is unique to you.\n\n2. Choose on
+ e of the following audio options:\n\nTO USE YOUR COMPUTER'S AUDIO:\nWhen
+  the Webinar begins\, you will be connected to audio using your computer
+ 's microphone and speakers (VoIP). A headset is recommended.\n\n-- OR --
+ \n\nTO USE YOUR TELEPHONE:\nIf you prefer to use your phone\, you must s
+ elect "Use Telephone" after joining the webinar and call in using the nu
+ mbers below.\n\nAustralia: +61 3 8488 8990\n	Access Code: 474-205-468\n	
+ Audio PIN: Shown after joining the webinar\n\nCalling from another count
+ ry?\nView additional phone numbers here:\nhttps://attendee.gotowebinar.c
+ om/audio/1721866404277935117\n\nJoin members of the Allotrope Foundation
+  community for the 3rd day of the Allotrope Connect Workshop.  \n\nRegis
+ tration is open to the public\n\nAgenda (All times US Eastern) - PENDING
+ \n++++++++++++++++++++++++\n\n
+X-ALT-DESC;FMTTYPE=text/html:<HTML><HEAD><TITLE></TITLE><BODY><FONT SIZE=
+ 2><b>1. Click and join at the specified time and date:</b></FONT><BR><FO
+ NT SIZE=2>https://global.gotowebinar.com/join/1721866404277935117/103994
+ 272</FONT><BR><FONT SIZE=2>Note: This link should not be shared with oth
+ ers\; it is unique to you.</FONT><BR><BR><FONT SIZE=2><FONT SIZE=2><b>2.
+  Choose one of the following audio options:</b></FONT><BR><BR><FONT SIZE
+ =2>TO USE YOUR COMPUTER'S AUDIO:</FONT><BR><FONT SIZE=2>When the Webinar
+  begins\, you will be connected to audio using your computer's microphon
+ e and speakers (VoIP). A headset is recommended.</FONT><BR><BR><FONT SIZ
+ E=2>-- OR --</FONT><BR><BR><FONT SIZE=2>TO USE YOUR TELEPHONE:</FONT><BR
+ ><FONT SIZE=2>If you prefer to use your phone\, you must select "Use Tel
+ ephone" after joining the webinar and call in using the numbers below.</
+ FONT><BR><BR><FONT SIZE=2>Australia: +61 3 8488 8990</FONT><BR><FONT SIZ
+ E=2>&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><FONT SIZE=2>Access Code: 474-205
+ -468</FONT><BR><FONT SIZE=2>&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><FONT SIZ
+ E=2>Audio PIN: Shown after joining the webinar</FONT><BR><BR><FONT SIZE=
+ 2>Calling from another country?</FONT><BR><FONT SIZE=2>View additional p
+ hone numbers here:</FONT><BR><FONT SIZE=2>https://attendee.gotowebinar.c
+ om/audio/1721866404277935117</FONT><BR></BODY></HTML></FONT><BR><FONT SI
+ ZE=2>Join members of the Allotrope Foundation community for the 3rd day 
+ of the Allotrope Connect Workshop.  \n\nRegistration is open to the publ
+ ic\n\nAgenda (All times US Eastern) - PENDING\n++++++++++++++++++++++++\
+ n</FONT><BR></BODY></HTML>
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
