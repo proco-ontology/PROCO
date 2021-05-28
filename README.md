@@ -15,10 +15,10 @@ PROCO OWL source: [opc.owl](https://raw.githubusercontent.com/OPC-ontology/OPC/m
 
 webprotege access (account needed): [OPC-webprotege](https://webprotege.stanford.edu/#projects/70017d4f-15ce-4f15-ab1f-0a8bf14dc074/edit/Classes?selection=Class(%3Chttp://purl.obolibrary.org/obo/OPC_0000079%3E))
 
-## License of OPC Sources
+## License of PROCO Sources
 CC BY-4: https://creativecommons.org/licenses/by/4.0/ 
 
-## OPC Developers
+## PROCO Developers
 - Wes Schafer, Merck Process Research & Development, Rahway, NJ, USA.  
 - Oliver He, University of Michigan Medical School, Ann Arbor, MI, USA.
 - Anna Dunn, Pharmaceutical Development, GlaxoSmithKline (GSK), Upper Providence, Pennsylvania, USA
