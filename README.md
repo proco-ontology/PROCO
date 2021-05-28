@@ -5,6 +5,8 @@ Previously named the Ontology of Process Chemistry (OPC), PROCO is aimed to be a
 
 PROCO was initiated as a collaborative project between Merck and Unversity of Michigan. Oliver He from Unversity of Michigan received a Merck fund and has been actively working with Wes Schafer at Merck on the OPC development. Later our OPC development team has been expanded to include more developers, including Anna Dunn and Zachary E. X. Dance. 
 
+Previously PROCO was named as OPC and available at the GitHub website: https://github.com/OPC-ontology/OPC. 
+
 The PROCO development has also got support and collaboration with the [Allotrope Foundation](https://www.allotrope.org/).  
 
 ## Citation
