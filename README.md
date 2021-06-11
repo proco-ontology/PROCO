@@ -7,7 +7,7 @@ PROCO was initiated as a collaborative project between Merck and Unversity of Mi
 
 The PROCO development has also got support and collaboration with the [Allotrope Foundation](https://www.allotrope.org/).  
 
-## Citation
+## Citations
 
 Wes Schafer, Oliver He, Anna Dunn, Zachary E. X. Dance. Ontology for Process Chemistry – Giving Context to Instrument Data Structured by the Allotrope Data Model. [Allotrope Connect Virtual Conference](https://www.allotrope.org/2021-spring-allotrope-connect), April 19-26, 2021, Virtual meeting. (YouTube: https://www.youtube.com/watch?v=HVv8TJc7p9c). 
 
