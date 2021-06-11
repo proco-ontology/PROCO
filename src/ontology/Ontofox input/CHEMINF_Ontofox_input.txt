@@ -1,0 +1,27 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/proco/CHEMINF_imports.owl
+
+[Source ontology]
+CHEMINF
+
+[Low level source term URIs]
+
+http://semanticscience.org/resource/CHEMINF_000496 # partition coefficient
+
+http://semanticscience.org/resource/CHEMINF_000322 # logD descriptor
+
+http://semanticscience.org/resource/CHEMINF_000195 # pKa
+
+http://semanticscience.org/resource/CHEMINF_000013 # chirality
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000027
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

@@ -1,0 +1,68 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix ro: <http://purl.obolibrary.org/obo/RO> 
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ref: <http://purl.org/vocab/relationship/>
+prefix qudt: <http://qudt.org/schema/qudt#> 
+prefix qudt-unit: <http://qudt.org/vocab/unit#>
+prefix af-p: <http://purl.allotrope.org/ontologies/process#> 
+prefix af-m: <http://purl.allotrope.org/ontologies/material#> 
+prefix af-r: <http://purl.allotrope.org/ontologies/result#>
+prefix af-rl: <http://purl.allotrope.org/ontologies/role#>
+prefix af-x: <http://purl.allotrope.org/ontologies/property#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix af-c:   <http://purl.allotrope.org/ontologies/common#> 
+prefix iao: <http://purl.obolibrary.org/obo/IAO> 
+prefix opc: <http://purl.obolibrary.org/obo/opc/> 
+prefix af-c: <http://purl.allotrope.org/ontologies/common#> 
+prefix af-e: <http://purl.allotrope.org/ontologies/equipment#> 
+prefix af-q: <http://purl.allotrope.org/ontologies/quality#> 
+prefix af-r: <http://purl.allotrope.org/ontologies/result#> 
+prefix af-rl: <http://purl.allotrope.org/ontologies/role#> 
+prefix af-x: <http://purl.allotrope.org/ontologies/property#> 
+prefix bfo:   <http://purl.obolibrary.org/obo/BFO> 
+prefix chebi: <http://purl.obolibrary.org/obo/CHEBI> 
+prefix iao: <http://purl.obolibrary.org/obo/IAO> 
+prefix mcidb: <http://purl.merck.com/mcidb> 
+prefix obi: <http://purl.obolibrary.org/obo/OBI> 
+prefix ro: <http://purl.obolibrary.org/obo/RO> 
+prefix pato: <http://purl.obolibrary.org/obo/PATO>
+prefix opc: <http://purl.obolibrary.org/obo/OPC> 
+prefix qudt: <http://qudt.org/schema/qudt#> 
+prefix qudt-unit: <http://qudt.org/vocab/unit#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+SELECT DISTINCT ?notebookReferenceLabel ?processClassName ?materialGrain ?descriptionValue ?materialRoleClassName  ?qualityClass ?analyteClass ?qualityResultValue ?qualityResultUnits # ?processClass ?processClassName ?descriptionValue # ?portionOfMaterial ?process ?predicate ?object # ?descriptionValue  ?process ?processClass
+FROM <http://localhost:3030/crystallization-01/data/instance-data-01>
+FROM <http://localhost:3030/crystallization-01/data/ontology>
+WHERE {
+  ?process rdf:type <http://semanticscience.org/resource/SIO_000994> .
+  ?process rdf:type ?processClass .
+  ?processClass iao:IAO_0000118|rdfs:label|skos:prefLabel ?processClassName .
+  ?process 	<http://purl.allotrope.org/ontologies/property#AFX_0002802> ?notebook .
+  ?notebook rdf:type <http://purl.obolibrary.org/obo/OPC_0000116> .
+  ?notebook af-x:AFX_0002716 ?notebookReference .
+  ?notebookReference af-x:AFX_0000690 ?notebookReferenceLabel .
+  ?process af-x:AFX_00000696|af-x:AFX_00000546 ?portionOfMaterial .
+  ?portionOfMaterial rdf:type af-m:AFM_0001060 .		
+   ?portionOfMaterial af-x:AFX_0002802 ?description .
+  	?description af-x:AFX_0000690 ?descriptionValue .
+  OPTIONAL {
+   			?quality <http://purl.obolibrary.org/obo/ro/RO_0002503> ?analytePortion .
+    		 ?analytePortion <http://purl.obolibrary.org/obo/obi/OBI_0000643> ?analyteClass .
+       ?portionOfMaterial <http://purl.obolibrary.org/obo/ro/RO_0000087> ?materialRole .
+   ?materialRole rdf:type ?materialRoleClass .
+  ?materialRoleClass iao:IAO_0000118|rdfs:label|skos:prefLabel ?materialRoleClassName .
+   ?portionOfMaterial <http://purl.obolibrary.org/obo/ro/RO_0000086>|ro:RO_0000086 ?quality .
+  ?quality rdf:type ?qualityClass . 
+  #?qualityClass iao:IAO_0000118|rdfs:label|skos:prefLabel ?qualityClassName .	
+  ?quality af-x:AFX_0002864 ?qualityResult .
+  ?qualityResult qudt:numericValue ?qualityResultValue .
+  ?qualityResult qudt:unit ?qualityResultUnits .
+      OPTIONAL {
+        ?portionOfMaterial obi:OBI_0000643 ?materialGrain .
+    }
+ #  			?qualityClass iao:IAO_0000118|rdfs:label|skos:prefLabel ?qualityClassName .		
+  }
+}

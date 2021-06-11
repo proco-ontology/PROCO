@@ -1,0 +1,141 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/proco/imports/CHMO2_imports.owl
+
+[Source ontology]
+CHMO
+
+[Low level source term URIs]
+ http://purl.obolibrary.org/obo/CHMO_0002917 
+ http://purl.obolibrary.org/obo/CHMO_0001464 
+ http://purl.obolibrary.org/obo/CHMO_0001577 
+ http://purl.obolibrary.org/obo/CHMO_0002524 
+ http://purl.obolibrary.org/obo/OBI_0302888 
+ http://purl.obolibrary.org/obo/CHMO_0001598 
+ http://purl.obolibrary.org/obo/CHMO_0001600 
+ http://purl.obolibrary.org/obo/CHMO_0001601 
+ http://purl.obolibrary.org/obo/CHMO_0001604 
+ http://purl.obolibrary.org/obo/CHMO_0001599 
+ http://purl.obolibrary.org/obo/CHMO_0001606 
+ http://purl.obolibrary.org/obo/CHMO_0001610 
+ http://purl.obolibrary.org/obo/CHMO_0001989 
+ http://purl.obolibrary.org/obo/CHMO_0001607 
+ http://purl.obolibrary.org/obo/CHMO_0002523 
+ http://purl.obolibrary.org/obo/CHMO_0001578 
+ http://purl.obolibrary.org/obo/CHMO_0001593 
+ http://purl.obolibrary.org/obo/CHMO_0001595 
+ http://purl.obolibrary.org/obo/CHMO_0001596 
+ http://purl.obolibrary.org/obo/CHMO_0001594 
+ http://purl.obolibrary.org/obo/CHMO_0001597 
+ http://purl.obolibrary.org/obo/CHMO_0001612 
+ http://purl.obolibrary.org/obo/CHMO_0001583 
+ http://purl.obolibrary.org/obo/CHMO_0002863 
+ http://purl.obolibrary.org/obo/CHMO_0001688 
+ http://purl.obolibrary.org/obo/CHMO_0001697 
+ http://purl.obolibrary.org/obo/CHMO_0002465 
+ http://purl.obolibrary.org/obo/CHMO_0001690 
+ http://purl.obolibrary.org/obo/CHMO_0001689 
+ http://purl.obolibrary.org/obo/CHMO_0002466 
+ http://purl.obolibrary.org/obo/CHMO_0001696 
+ http://purl.obolibrary.org/obo/CHMO_0001477 
+ http://purl.obolibrary.org/obo/CHMO_0001478 
+ http://purl.obolibrary.org/obo/CHMO_0001479 
+ http://purl.obolibrary.org/obo/CHMO_0002198 
+ http://purl.obolibrary.org/obo/CHMO_0001685 
+ http://purl.obolibrary.org/obo/CHMO_0002020 
+ http://purl.obolibrary.org/obo/CHMO_0002106 
+ http://purl.obolibrary.org/obo/CHMO_0002774 
+ http://purl.obolibrary.org/obo/CHMO_0002775 
+ http://purl.obolibrary.org/obo/CHMO_0002773 
+ http://purl.obolibrary.org/obo/CHMO_0001574 
+ http://purl.obolibrary.org/obo/CHMO_0002208 
+ http://purl.obolibrary.org/obo/CHMO_0001575 
+ http://purl.obolibrary.org/obo/CHMO_0001576 
+ http://purl.obolibrary.org/obo/OBI_0600014 
+ http://purl.obolibrary.org/obo/OBI_0302886 
+ http://purl.obolibrary.org/obo/CHMO_0002014 
+ http://purl.obolibrary.org/obo/CHMO_0002012 
+ http://purl.obolibrary.org/obo/CHMO_0002011 
+ http://purl.obolibrary.org/obo/CHMO_0002015 
+ http://purl.obolibrary.org/obo/CHMO_0001945 
+ http://purl.obolibrary.org/obo/CHMO_0001905 
+ http://purl.obolibrary.org/obo/CHMO_0001947 
+ http://purl.obolibrary.org/obo/CHMO_0002771 
+ http://purl.obolibrary.org/obo/CHMO_0001549 
+ http://purl.obolibrary.org/obo/CHMO_0001554 
+ http://purl.obolibrary.org/obo/CHMO_0002124 
+ http://purl.obolibrary.org/obo/CHMO_0001551 
+ http://purl.obolibrary.org/obo/CHMO_0001552 
+ http://purl.obolibrary.org/obo/CHMO_0001557 
+ http://purl.obolibrary.org/obo/CHMO_0001550 
+ http://purl.obolibrary.org/obo/CHMO_0001553 
+ http://purl.obolibrary.org/obo/CHMO_0001556 
+ http://purl.obolibrary.org/obo/CHMO_0001987 
+ http://purl.obolibrary.org/obo/CHMO_0001555 
+ http://purl.obolibrary.org/obo/CHMO_0001532 
+ http://purl.obolibrary.org/obo/CHMO_0001534 
+ http://purl.obolibrary.org/obo/CHMO_0001538 
+ http://purl.obolibrary.org/obo/CHMO_0001535 
+ http://purl.obolibrary.org/obo/CHMO_0001537 
+ http://purl.obolibrary.org/obo/CHMO_0001539 
+ http://purl.obolibrary.org/obo/CHMO_0001536 
+ http://purl.obolibrary.org/obo/CHMO_0001540 
+ http://purl.obolibrary.org/obo/CHMO_0001542 
+ http://purl.obolibrary.org/obo/CHMO_0001541 
+ http://purl.obolibrary.org/obo/CHMO_0001533 
+ http://purl.obolibrary.org/obo/CHMO_0002634 
+ http://purl.obolibrary.org/obo/CHMO_0002852 
+ http://purl.obolibrary.org/obo/CHMO_0001686 
+ http://purl.obolibrary.org/obo/CHMO_0001624 
+ http://purl.obolibrary.org/obo/CHMO_0001301 
+ http://purl.obolibrary.org/obo/CHMO_0001458 
+ http://purl.obolibrary.org/obo/CHMO_0001387 
+ http://purl.obolibrary.org/obo/CHMO_0002224 
+ http://purl.obolibrary.org/obo/CHMO_0002158 
+ http://purl.obolibrary.org/obo/CHMO_0002160 
+ http://purl.obolibrary.org/obo/CHMO_0002225 
+ http://purl.obolibrary.org/obo/CHMO_0002221 
+ http://purl.obolibrary.org/obo/CHMO_0002159 
+ http://purl.obolibrary.org/obo/CHMO_0002652 
+ http://purl.obolibrary.org/obo/CHMO_0002653 
+ http://purl.obolibrary.org/obo/CHMO_0002222 
+ http://purl.obolibrary.org/obo/CHMO_0002223 
+ http://purl.obolibrary.org/obo/CHMO_0001652 
+ http://purl.obolibrary.org/obo/CHMO_0001653 
+ http://purl.obolibrary.org/obo/CHMO_0001657 
+ http://purl.obolibrary.org/obo/CHMO_0001654 
+ http://purl.obolibrary.org/obo/CHMO_0001655 
+ http://purl.obolibrary.org/obo/CHMO_0001656 
+ http://purl.obolibrary.org/obo/CHMO_0002772 
+ http://purl.obolibrary.org/obo/CHMO_0001465 
+ http://purl.obolibrary.org/obo/CHMO_0000999 
+ http://purl.obolibrary.org/obo/CHMO_0001129 
+ http://purl.obolibrary.org/obo/CHMO_0001128 
+ http://purl.obolibrary.org/obo/CHMO_0001001 
+ http://purl.obolibrary.org/obo/CHMO_0001006 
+ http://purl.obolibrary.org/obo/CHMO_0002231 
+ http://purl.obolibrary.org/obo/CHMO_0002218 
+ http://purl.obolibrary.org/obo/CHMO_0002219 
+ http://purl.obolibrary.org/obo/CHMO_0002220 
+ http://purl.obolibrary.org/obo/CHMO_0002066 
+ http://purl.obolibrary.org/obo/CHMO_0001640 
+ http://purl.obolibrary.org/obo/CHMO_0001641 
+ http://purl.obolibrary.org/obo/CHMO_0001643 
+ http://purl.obolibrary.org/obo/CHMO_0001642 
+ http://purl.obolibrary.org/obo/CHMO_0001644 
+ http://purl.obolibrary.org/obo/CHMO_0001645 
+ http://purl.obolibrary.org/obo/CHMO_0002157 
+ http://purl.obolibrary.org/obo/CHMO_0001625 
+ http://purl.obolibrary.org/obo/CHMO_0001637 
+ http://purl.obolibrary.org/obo/CHMO_0001636 
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OPC_0000051
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

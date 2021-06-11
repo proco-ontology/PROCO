@@ -1,0 +1,3588 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rex.owl#"
+     xml:base="http://purl.obolibrary.org/obo/rex.owl"
+     xmlns:ro="http://purl.obolibrary.org/obo/RO"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:iao="http://purl.obolibrary.org/obo/IAO"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ref="http://purl.org/vocab/relationship/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:af-c="http://purl.allotrope.org/ontologies/common#"
+     xmlns:af-p="http://purl.allotrope.org/ontologies/process#"
+     xmlns:af-r="http://purl.allotrope.org/ontologies/result#"
+     xmlns:af-x="http://purl.allotrope.org/ontologies/property#"
+     xmlns:qudt="http://qudt.org/schema/qudt#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:af-rl="http://purl.allotrope.org/ontologies/role#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:qudt-unit="http://qudt.org/vocab/unit#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opc/imports/REX_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000002">
+        <obo:IAO_0000115>A process involving the interconversion of chemical species.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000002</oboInOwl:id>
+        <rdfs:label>chemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>An electron transfer resulting from an electronic state produced by the resonant interaction of electromagnetic radiation with matter.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000031</oboInOwl:id>
+        <rdfs:label>photoinduced electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A chemical reaction caused by absorption of ultraviolet, visible, or infrared radiation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>photoreaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000033</oboInOwl:id>
+        <rdfs:label>photochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>The cleavage of one or more covalent bonds in a molecular entity resulting from absorption of light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000034</oboInOwl:id>
+        <rdfs:label>photolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Ionization of any species by photons.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000035</oboInOwl:id>
+        <rdfs:label>photoionization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Catalytic reaction involving light absorption by a catalyst or by a substrate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000036</oboInOwl:id>
+        <rdfs:label>photocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000036"/>
+        <obo:IAO_0000115>Catalytic reaction involving production of a catalyst by absorption of light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000037</oboInOwl:id>
+        <rdfs:label>photoassisted catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Reduction reactions induced by light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000045</oboInOwl:id>
+        <rdfs:label>photoreduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Oxidation reactions induced by light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000047</oboInOwl:id>
+        <rdfs:label>photooxidation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000047"/>
+        <obo:IAO_0000115>The incorporation of molecular oxygen into a molecular entity induced by light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000050</oboInOwl:id>
+        <rdfs:label>photooxygenation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000056"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000051</oboInOwl:id>
+        <rdfs:label>catalytic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000051"/>
+        <obo:IAO_0000115>A chemical reaction in which a product (or a reaction intermediate) also functions as a catalyst.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000052</oboInOwl:id>
+        <rdfs:label>autocatalytic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000056"/>
+        <obo:IAO_0000115>A reaction in which one or more reactive reaction intermediates are continuously regenerated, usually through a repetitive cycle of elementary steps (the &apos;propagation step&apos;).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000053</oboInOwl:id>
+        <rdfs:label>chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000053"/>
+        <obo:IAO_0000115>A sequence of reactions such as shown in equations [1]-[3], leading from A to B: [1] A + e- --&gt; A.- ; [2] A.- --&gt; B.- ; [3] B.- + A --&gt; B + A.- ; an analogous sequence involving radical cations (A.+, B.+) is also observed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>electron-transfer catalysis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000054</oboInOwl:id>
+        <rdfs:label>electron-transfer induced chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A reaction for which no reaction intermediates have been detected or need to be postulated in order to describe the chemical reaction on a molecular scale.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000055</oboInOwl:id>
+        <rdfs:label>elementary reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000057"/>
+        <obo:IAO_0000115>A chemical reaction with at least one reaction intermediate and involving at least two consecutive elementary reactions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>consecutive reactions</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000056</oboInOwl:id>
+        <rdfs:label>stepwise reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A chemical reaction for which the expression for the rate of disappearance of a reactant (or rate of appearance of a product) involves rate constants of more than a single elementary reaction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000057</oboInOwl:id>
+        <rdfs:label>composite reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000055"/>
+        <obo:IAO_0000115>An elementary reaction, constituting one of the stages of a stepwise reaction in which a reaction intermediate (or, for the first step, the reactants) is converted into the next reaction intermediate (or, for the last step, the products) in the sequence of intermediates between reactants and products.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000058</oboInOwl:id>
+        <rdfs:label>reaction step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000058"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000059</oboInOwl:id>
+        <rdfs:label>chain reaction step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000059"/>
+        <obo:IAO_0000115>A reaction or process generating free radicals (or some other reactive reaction intermediates) which then induce a chain reaction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>initiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000060</oboInOwl:id>
+        <rdfs:label>chain initiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000059"/>
+        <obo:IAO_0000115>When in a chain reaction there is a net increase in the number of chain carriers there is said to be chain branching.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000061</oboInOwl:id>
+        <rdfs:label>chain branching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000061"/>
+        <obo:IAO_0000115>Sometimes chain branching is brought about by an intermediate which has a long lifetime compared with an ordinary free radical. If this intermediate can break down in different ways, only one of which leads to branching, there may be a relatively slow increase in the number of radicals, and there is said to be degenerate chain branching.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000062</oboInOwl:id>
+        <rdfs:label>degenerate chain branching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000059"/>
+        <obo:IAO_0000115>The steps in a chain reaction in which reactive intermediates are destroyed or rendered inactive, thus ending the chain.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>termination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000063</oboInOwl:id>
+        <rdfs:label>chain termination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000059"/>
+        <obo:IAO_0000115>An elementary step in a chain reaction in which one chain carrier is converted into another. The conversion can be a unimolecular reaction or a bimolecular reaction with a reactant molecule.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>chain-propagating reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>propagating reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000064</oboInOwl:id>
+        <rdfs:label>chain propagation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000053"/>
+        <obo:IAO_0000115>A chain reaction which includes a propagation step or steps in which there is an increase in the number of active intermediates.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000065</oboInOwl:id>
+        <rdfs:label>branching chain reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000058"/>
+        <obo:IAO_0000115>An elementary reaction the rate constant for which exerts a strong effect - stronger than that of any other rate constant - on the overall rate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>rate-determining step</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>rate-limiting</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000066</oboInOwl:id>
+        <rdfs:label>rate-controlling step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000058"/>
+        <obo:IAO_0000115>The step of a stepwise reaction, in which the product distribution is determined. The product-determining step may be identical to, or occur later than, the rate-controlling step on the reaction coordinate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000067</oboInOwl:id>
+        <rdfs:label>product-determining step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000057"/>
+        <obo:IAO_0000115>Composite reactions, in which processes like A --&gt; Y and B --&gt; Z occur in parallel.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>simultaneous reactions</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000069</oboInOwl:id>
+        <rdfs:label>parallel reactions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000057"/>
+        <obo:IAO_0000115>Composite reactions, occurring in forward and reverse directions: A + B &lt;=&gt; Z.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000070</oboInOwl:id>
+        <rdfs:label>opposing reactions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000103"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000071</oboInOwl:id>
+        <rdfs:label>biomacromolecule-catalysed reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000077"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>enzyme-catalysed reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000072</oboInOwl:id>
+        <rdfs:label>enzymatic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000077"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>catalytic antibody reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000073</oboInOwl:id>
+        <rdfs:label>abzymatic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000075"/>
+        <oboInOwl:hasDbXref>PUBMED:12022469</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PUBMED:12041740</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PUBMED:12044032</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>deoxyribozyme-catalysed reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000074</oboInOwl:id>
+        <rdfs:label>deoxyribozymatic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000071"/>
+        <oboInOwl:hasDbXref>PUBMED:12749730</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000075</oboInOwl:id>
+        <rdfs:label>nucleic acid-catalysed reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000075"/>
+        <oboInOwl:hasDbXref>PUBMED:12831882</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PUBMED:12869701</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PUBMED:13678961</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ribozyme-catalysed reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000076</oboInOwl:id>
+        <rdfs:label>ribozymatic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000071"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000077</oboInOwl:id>
+        <rdfs:label>protein-catalysed reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000084</oboInOwl:id>
+        <rdfs:label>noncatalytic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000368"/>
+        <obo:IAO_0000115>A chemical reaction caused by absorption of thermal energy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000085</oboInOwl:id>
+        <rdfs:label>thermal reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000085"/>
+        <obo:IAO_0000115>The uncatalysed cleavage of one or more covalent bonds resulting from exposure of a compound to a raised temperature, or a process in which such cleavage is an essential part.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000086</oboInOwl:id>
+        <rdfs:label>thermolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000433"/>
+        <obo:IAO_0000115>A reaction in which two or more unsaturated molecules (or parts of the same molecule) combine with the formation of a cyclic adduct in which there is a net reduction of the bond multiplicity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000090</oboInOwl:id>
+        <rdfs:label>cycloaddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <obo:IAO_0000115>A chemical reaction resulting in a single reaction product from two or three reacting chemical species, with formation of two new chemical bonds to the same atom in one of the reactant molecular entities.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>1/1/addition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000091</oboInOwl:id>
+        <rdfs:label>alpha-addition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000090"/>
+        <obo:IAO_0000115>A form of cycloaddition across the terminal atoms of a fully conjugated system with formation of two new sigma-bonds to a single atom of the (&apos;monocentric&apos;) reagent. There is formal loss of one pi-bond in the substrate and an increase in coordination number of the relevant atom of the reagent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000101</oboInOwl:id>
+        <rdfs:label>cheletropic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000103</oboInOwl:id>
+        <rdfs:label>biochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000103"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000104</oboInOwl:id>
+        <rdfs:label>biotransformation reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000103"/>
+        <oboInOwl:hasDbXref>GO:0006118</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000106</oboInOwl:id>
+        <rdfs:label>biological electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000405"/>
+        <obo:IAO_0000115>Enzymatic redox reaction.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016491</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>oxidase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reductase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000107</oboInOwl:id>
+        <rdfs:label>oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000104"/>
+        <oboInOwl:hasDbXref>EC:2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016740</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000108</oboInOwl:id>
+        <rdfs:label>transferase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000108"/>
+        <oboInOwl:hasDbXref>EC:3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016787</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000109</oboInOwl:id>
+        <rdfs:label>hydrolase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000104"/>
+        <oboInOwl:hasDbXref>EC:4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016829</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000110</oboInOwl:id>
+        <rdfs:label>lyase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000104"/>
+        <oboInOwl:hasDbXref>EC:5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016853</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000111</oboInOwl:id>
+        <rdfs:label>isomerase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000117"/>
+        <oboInOwl:hasDbXref>EC:6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016874</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000112</oboInOwl:id>
+        <rdfs:label>ligase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000109"/>
+        <oboInOwl:hasDbXref>EC:3.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000113</oboInOwl:id>
+        <rdfs:label>acid anhydride hydrolase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000113"/>
+        <oboInOwl:hasDbXref>EC:3.6.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000114</oboInOwl:id>
+        <rdfs:label>phosphorus-containing anhydride hydrolase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000117"/>
+        <obo:IAO_0000115>NTP + H2O --&gt; NDP + phosphate</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:3.6.1.15</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0017111</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>nucleoside triphosphate phosphohydrolase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000115</oboInOwl:id>
+        <rdfs:label>nucleoside-triphosphatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000117"/>
+        <obo:IAO_0000115>NTP + H2O --&gt; NMP + diphosphate</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:3.6.1.19</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047429</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>nucleoside-triphosphate diphosphohydrolase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000116</oboInOwl:id>
+        <rdfs:label>nucleoside-triphosphate diphosphatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000114"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000117</oboInOwl:id>
+        <rdfs:label>nucleoside triphosphate (di)phosphohydrolase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasDbXref>GO:0015453</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TC:3.D</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000128</oboInOwl:id>
+        <rdfs:label>oxidoreduction-driven transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000137"/>
+        <oboInOwl:hasDbXref>GO:0015454</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TC:3.E</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000129</oboInOwl:id>
+        <rdfs:label>light-driven transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000106"/>
+        <oboInOwl:hasDbXref>TC:5</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>transmembrane electron transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000130</oboInOwl:id>
+        <rdfs:label>transmembrane electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000130"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000140"/>
+        <oboInOwl:hasDbXref>TC:5.A</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000131</oboInOwl:id>
+        <rdfs:label>two-electron transmembrane electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000130"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000139"/>
+        <oboInOwl:hasDbXref>TC:5.B</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000132</oboInOwl:id>
+        <rdfs:label>one-electron transmembrane electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000103"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000137</oboInOwl:id>
+        <rdfs:label>photobiochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000106"/>
+        <oboInOwl:hasDbXref>PUBMED:12867466</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000138</oboInOwl:id>
+        <rdfs:label>intermembrane electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000106"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000139</oboInOwl:id>
+        <rdfs:label>one-electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000106"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000140</oboInOwl:id>
+        <rdfs:label>two-electron transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000055"/>
+        <obo:IAO_0000115>A reaction with a molecularity of one.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000168</oboInOwl:id>
+        <rdfs:label>unimolecular reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000055"/>
+        <obo:IAO_0000115>A reaction with a molecularity of two.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000169</oboInOwl:id>
+        <rdfs:label>bimolecular reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000055"/>
+        <obo:IAO_0000115>A reaction with a molecularity of three.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000170</oboInOwl:id>
+        <rdfs:label>termolecular reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000213"/>
+        <obo:IAO_0000115>The totality of changes occurring at or near a single electrode during the passage of current.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000194</oboInOwl:id>
+        <rdfs:label>electrode process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <obo:IAO_0000115>Adsorption with dissociation into two or more fragments, both or all of which are bound to the surface of the adsorbent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>dissociative chemisorption</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000201</oboInOwl:id>
+        <rdfs:label>dissociative adsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <obo:IAO_0000115>Reactive adsorption (and its reverse, reactive desorption) resembles dissociative adsorption (and its reverse, associative desorption) but one fragment adds to an adsorbate rather than to a surface site.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000203</oboInOwl:id>
+        <rdfs:label>reactive adsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>non-dissociative chemisorption</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000205</oboInOwl:id>
+        <rdfs:label>associative adsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>Adsorption which results from chemical bond formation (strong interaction) between the adsorbent and the adsorbate in a monolayer on the surface.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>chemical adsorption</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000208</oboInOwl:id>
+        <rdfs:label>chemisorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <obo:IAO_0000115>Oxidative or reductive chemisorption where &apos;reductive&apos; and &apos;oxidative&apos; refer to electron gain or loss on species in the solid.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000209</oboInOwl:id>
+        <rdfs:label>charge-transfer adsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Within the Born-Oppenheimer approximation, a reaction beginning on one excited state &apos;potential-energy surface&apos; and ending, as a result of radiationless transition, on another surface, usually that of the ground state.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>non-adiabatic photoreaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000211</oboInOwl:id>
+        <rdfs:label>diabatic photoreaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Within the Born-Oppenheimer approximation, a reaction of an excited state species that occurs on a single &apos;potential-energy surface&apos;.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000212</oboInOwl:id>
+        <rdfs:label>adiabatic photoreaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000213</oboInOwl:id>
+        <rdfs:label>electrochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000194"/>
+        <obo:IAO_0000115>The deposition of dissolved or suspended material by an electric field on an electrode.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000214</oboInOwl:id>
+        <rdfs:label>electrodeposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000214"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>electrocrystallization</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000215</oboInOwl:id>
+        <rdfs:label>electro-crystallization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000235"/>
+        <obo:IAO_0000115>The decrease in rate of reaction brought about by the addition of a substance (inhibitor), by virtue of its effect on the concentration of a reactant, catalyst or reaction intermediate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000218</oboInOwl:id>
+        <rdfs:label>inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000234"/>
+        <obo:IAO_0000115>Irreversible inhibition of an enzyme due to its catalysis of the reaction of an artificial substrate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>suicide inhibition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000219</oboInOwl:id>
+        <rdfs:label>mechanism-based inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000247"/>
+        <obo:IAO_0000115>The reduction in rate due to reduction or loss of activity of a catalyst, caused by adsorption of poison which is not greatly preferred to adsorption of reactant.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000220</oboInOwl:id>
+        <rdfs:label>competitive inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000235"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000221</oboInOwl:id>
+        <rdfs:label>activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000221"/>
+        <obo:IAO_0000115>When some of the energy required for a reaction is provided by a preceding exothermic chemical reaction there is said to be chemical activation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000222</oboInOwl:id>
+        <rdfs:label>chemical activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000221"/>
+        <obo:IAO_0000115>An added substance that increases the rate of a catalysed reaction is known as an activator, and the effect is called activation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000223</oboInOwl:id>
+        <rdfs:label>activation of catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000218"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000236"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000224</oboInOwl:id>
+        <rdfs:label>inhibition of catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000233"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000244"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000247"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000225</oboInOwl:id>
+        <rdfs:label>reversible enzyme inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000225"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>complete inhibition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>simple inhibition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000226</oboInOwl:id>
+        <rdfs:label>linear enzyme inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000226"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000227</oboInOwl:id>
+        <rdfs:label>mixed inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000227"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000228</oboInOwl:id>
+        <rdfs:label>non-competitive inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000226"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000229</oboInOwl:id>
+        <rdfs:label>uncompetitive inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000244"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000230</oboInOwl:id>
+        <rdfs:label>reversible enzyme activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000230"/>
+        <obo:IAO_0000115>In essential activation, the free enzyme without activator bound to it has no activity and does not bind substrate.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>compulsory activation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>specific activation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000231</oboInOwl:id>
+        <rdfs:label>essential activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000230"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>non-essential activation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>partial activation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000232</oboInOwl:id>
+        <rdfs:label>hyperbolic activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000238"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000233</oboInOwl:id>
+        <rdfs:label>enzyme inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000233"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000243"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000248"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000234</oboInOwl:id>
+        <rdfs:label>irreversible enzyme inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000235</oboInOwl:id>
+        <rdfs:label>modification of reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000235"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000236</oboInOwl:id>
+        <rdfs:label>modification of catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000220"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000226"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>competitive inhibition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000237</oboInOwl:id>
+        <rdfs:label>competitive enzyme inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000103"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000236"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000238</oboInOwl:id>
+        <rdfs:label>modification of enzyme catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000223"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000238"/>
+        <obo:IAO_0000115>Any process leading to increase of enzymatic activity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000239</oboInOwl:id>
+        <rdfs:label>enzyme activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000243"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000240</oboInOwl:id>
+        <rdfs:label>irreversible enzyme activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000240"/>
+        <obo:IAO_0000115>Conversion of inactive precursors (zymogens) into active enzymes by limited proteolysis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>proteolytic activation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000241</oboInOwl:id>
+        <rdfs:label>zymogen activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000240"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000242</oboInOwl:id>
+        <rdfs:label>enzyme activation by phosphate group transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000238"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000243</oboInOwl:id>
+        <rdfs:label>irreversible modification of enzyme catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000238"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000244</oboInOwl:id>
+        <rdfs:label>reversible modification of enzyme catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000225"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>partial inhibition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000245</oboInOwl:id>
+        <rdfs:label>hyperbolic inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000228"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000246</oboInOwl:id>
+        <rdfs:label>non-competitive inhibition by protons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000224"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000247</oboInOwl:id>
+        <rdfs:label>reversible inhibition of catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000224"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000248</oboInOwl:id>
+        <rdfs:label>irreversible inhibition of catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000248"/>
+        <obo:IAO_0000115>The action of catalytic poison.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000249</oboInOwl:id>
+        <rdfs:label>catalytic poisoning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000247"/>
+        <obo:IAO_0000115>Weak and reversible adsorption of a poison, such that removal of the poison from the fluid phase results in restoration of the original catalytic activity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000250</oboInOwl:id>
+        <rdfs:label>temporary poisoning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000056"/>
+        <obo:IAO_0000115>The process of converting a monomer or a mixture of monomers into a polymer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000251</oboInOwl:id>
+        <rdfs:label>polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>Polymerization by a repeated condensation process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>polycondensation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000252</oboInOwl:id>
+        <rdfs:label>condensation polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A (usually stepwise) reaction in which two or more reactants (or remote reactive sites within the same molecular entity) yield a single main product with accompanying formation of water or of some other small molecule, e.g. ammonia, ethanol, acetic acid, hydrogen sulfide.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>condensation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000253</oboInOwl:id>
+        <rdfs:label>condensation reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>A polymerization in which a cyclic monomer yields a monomeric unit which is acyclic or contains fewer cycles than the monomer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000254</oboInOwl:id>
+        <rdfs:label>ring-opening polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>Polymerization in which a polymer molecule is formed from a mixture of stereoisomeric monomer molecules by incorporation of only one stereoisomeric species.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000255</oboInOwl:id>
+        <rdfs:label>stereoselective polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>A chain reaction in which the growth of a polymer chain proceeds exclusively by reaction(s) between monomer(s) and reactive site(s) on the polymer chain with regeneration of the reactive site(s) at the end of each growth step.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000256</oboInOwl:id>
+        <rdfs:label>chain polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000253"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000256"/>
+        <obo:IAO_0000115>Chain polymerization occurring with the formation of small molecules.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000257</oboInOwl:id>
+        <rdfs:label>condensative chain polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000063"/>
+        <obo:IAO_0000115>The abstraction, by the radical end of a growing chain-polymer, of an atom from another molecule. The growth of the polymer chain is thereby terminated but a new radical, capable of chain propagation and polymerization, is simultaneously created.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000258</oboInOwl:id>
+        <rdfs:label>chain transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000256"/>
+        <obo:IAO_0000115>A chain polymerization in which the kinetic-chain carriers are ions or ion pairs.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000259</oboInOwl:id>
+        <rdfs:label>ionic polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000256"/>
+        <obo:IAO_0000115>A chain polymerization in which the kinetic-chain carriers are radicals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000260</oboInOwl:id>
+        <rdfs:label>radical polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000256"/>
+        <obo:IAO_0000115>A chain polymerization from which chain transfer and chain termination are absent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000261</oboInOwl:id>
+        <rdfs:label>living polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000259"/>
+        <obo:IAO_0000115>An ionic polymerization in which the kinetic-chain carriers are anions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000262</oboInOwl:id>
+        <rdfs:label>anionic polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000259"/>
+        <obo:IAO_0000115>An ionic polymerization in which the kinetic-chain carriers are cations.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000263</oboInOwl:id>
+        <rdfs:label>cationic polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>The polymerization of a monomer by a free radical or ionic chain reaction initiated by photoexcitation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000264</oboInOwl:id>
+        <rdfs:label>photoinduced polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000060"/>
+        <obo:IAO_0000115>The photoproduction of a free radical or ion capable of initiating a chain reaction such as a polymerization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000265</oboInOwl:id>
+        <rdfs:label>photoinitiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>A polymerization in which the growth of polymer chains proceeds by addition reactions between molecules of all degrees of polymerization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000266</oboInOwl:id>
+        <rdfs:label>polyaddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>Polymerization processes requiring a photon for the propagation step.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000267</oboInOwl:id>
+        <rdfs:label>photopolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>A polymerization in which the number of cyclic structures in the constitutional units of the resulting macromolecules is larger than in the monomer molecules.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000268</oboInOwl:id>
+        <rdfs:label>cyclopolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>Polymerization in which a homopolymer is formed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000269</oboInOwl:id>
+        <rdfs:label>homopolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>Polymerization in which a copolymer is formed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000270</oboInOwl:id>
+        <rdfs:label>copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000270"/>
+        <obo:IAO_0000115>Polymerization in which a graft copolymer is formed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000271</oboInOwl:id>
+        <rdfs:label>graft copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000254"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000270"/>
+        <obo:IAO_0000115>A copolymerization which is a ring-opening polymerization with respect to at least one monomer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000272</oboInOwl:id>
+        <rdfs:label>ring-opening copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000259"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000270"/>
+        <obo:IAO_0000115>A copolymerization which is an ionic polymerization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000273</oboInOwl:id>
+        <rdfs:label>ionic copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000261"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000270"/>
+        <obo:IAO_0000115>A copolymerization which is a living polymerization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000274</oboInOwl:id>
+        <rdfs:label>living copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000270"/>
+        <obo:IAO_0000115>A copolymerization which is a radical polymerization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000275</oboInOwl:id>
+        <rdfs:label>radical copolymerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000251"/>
+        <obo:IAO_0000115>The process of converting a monomer or a mixture of monomers into an oligomer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000276</oboInOwl:id>
+        <rdfs:label>oligomerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000256"/>
+        <obo:IAO_0000115>The formation of an addition oligomer, having uniform end groups X&apos; ... X&apos;&apos;, by a chain reaction in which a chain transfer limits the length of the polymer (&apos;telomer&apos;) produced.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000277</oboInOwl:id>
+        <rdfs:label>telomerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <obo:IAO_0000115>Adsorption initiated by light absorbed either by the adsorbate or by the adsorbent. Often it is considered as a chemical step (primary) in a heterogeneous photocatalytic reaction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000278</oboInOwl:id>
+        <rdfs:label>photoadsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>Desorption of an adsorbate as a result of exposure to light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000279</oboInOwl:id>
+        <rdfs:label>photodesorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000284"/>
+        <obo:IAO_0000115>Catalysis occurring under the action of quanta of ionizing radiation absorbed by the radiocatalytic substance (radiocatalyst).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000280</oboInOwl:id>
+        <rdfs:label>radiocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000284"/>
+        <obo:IAO_0000115>Desorption of a substrate from solid or liquid interfaces induced by absorption of high-energy radiation by the solid or liquid adsorbent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000281</oboInOwl:id>
+        <rdfs:label>radiodesorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000208"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000284"/>
+        <obo:IAO_0000115>Adsorption of a substance at solid or liquid interfaces induced by absorption of high-energy radiation by the solid or liquid adsorbent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000282</oboInOwl:id>
+        <rdfs:label>radioadsorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000280"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000386"/>
+        <obo:IAO_0000115>Radiocatalysis under the action of large radiation fluxes that simultaneously heat the system as a consequence of the absorption of radiation energy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000283</oboInOwl:id>
+        <rdfs:label>radiothermal catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A chemical reaction caused by absorption of high-energy radiation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000284</oboInOwl:id>
+        <rdfs:label>radiochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000284"/>
+        <obo:IAO_0000115>The cleavage of one or several bonds resulting from exposure to high-energy
+radiation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000285</oboInOwl:id>
+        <rdfs:label>radiolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000285"/>
+        <obo:IAO_0000115>Radiolysis of a radioactive material resulting directly or indirectly from its radioactive decay.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000286</oboInOwl:id>
+        <rdfs:label>autoradiolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000194"/>
+        <obo:IAO_0000115>Luminescence produced by electrode reactions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ECL</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>electrochemiluminescence</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>electroluminescence</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000295</oboInOwl:id>
+        <rdfs:label>electrogenerated chemiluminescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000320"/>
+        <obo:IAO_0000115>If the ions are paired as a tight ion pair and recombine without prior separation into a loose ion pair this is called internal ion-pair return.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>internal return</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000317</oboInOwl:id>
+        <rdfs:label>internal ion-pair return</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000321"/>
+        <obo:IAO_0000115>If the ions are paired as a loose ion pair and form the covalent chemical species via a tight ion pair, this is called external ion-pair return.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>external return</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000318</oboInOwl:id>
+        <rdfs:label>external ion-pair return</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000056"/>
+        <obo:IAO_0000115>The reaction of two transient species produced from a common precursor in solution with each other.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000319</oboInOwl:id>
+        <rdfs:label>geminate recombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000319"/>
+        <obo:IAO_0000115>Geminate recombination occurring before any separation of two transient species by diffusion has occurred.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000320</oboInOwl:id>
+        <rdfs:label>primary geminate recombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000319"/>
+        <obo:IAO_0000115>If the mutually reactive entities have been separated, and come together by diffusion, this is termed secondary geminate recombination.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000321</oboInOwl:id>
+        <rdfs:label>secondary geminate recombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000108"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000339</oboInOwl:id>
+        <rdfs:label>chelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000339"/>
+        <oboInOwl:hasDbXref>EC:4.99.1.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0004325</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000340</oboInOwl:id>
+        <rdfs:label>ferrochelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000339"/>
+        <oboInOwl:hasDbXref>EC:4.99.1.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000341</oboInOwl:id>
+        <rdfs:label>sirohydrochlorin cobaltochelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000344"/>
+        <oboInOwl:hasDbXref>EC:6.6.1.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000342</oboInOwl:id>
+        <rdfs:label>magnesium chelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000344"/>
+        <oboInOwl:hasDbXref>EC:6.6.1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000343</oboInOwl:id>
+        <rdfs:label>cobaltochelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000112"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000339"/>
+        <oboInOwl:hasDbXref>EC:6.6.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000344</oboInOwl:id>
+        <rdfs:label>ATP-hydrolysing chelatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000388"/>
+        <obo:IAO_0000115>A reaction for which the overall standard enthalpy change is positive.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000368</oboInOwl:id>
+        <rdfs:label>endothermic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000388"/>
+        <obo:IAO_0000115>A reaction for which the overall standard enthalpy change is negative.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000369</oboInOwl:id>
+        <rdfs:label>exothermic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A reaction for which the overall standard Gibbs energy change is negative.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>exoergic reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000370</oboInOwl:id>
+        <rdfs:label>exergonic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000050"/>
+        <obo:IAO_0000115>The reaction of triplet molecular oxygen with radicals formed photochemically.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000379</oboInOwl:id>
+        <rdfs:label>type I photooxygenation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000050"/>
+        <obo:IAO_0000115>The reaction of photochemically produced singlet molecular oxygen with molecular entities to give rise to oxygen containing molecular entities.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000380</oboInOwl:id>
+        <rdfs:label>type II photooxygenation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000050"/>
+        <obo:IAO_0000115>The photooxygenation reaction proceeding by electron transfer to produce the superoxide radical anion as the reactive species.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000381</oboInOwl:id>
+        <rdfs:label>type III photooxygenation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <obo:IAO_0000115>A reaction initiated by photosensitization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000382</oboInOwl:id>
+        <rdfs:label>photosensitized reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000386"/>
+        <obo:IAO_0000115>Catalysis occurring by the simultaneous or sequential action of light and thermal energy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000384</oboInOwl:id>
+        <rdfs:label>photothermocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000386"/>
+        <obo:IAO_0000115>A (photo)catalytic phenomenon that occurs in circumstances when the system is also heated by light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000385</oboInOwl:id>
+        <rdfs:label>thermophotocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000085"/>
+        <obo:IAO_0000115>Catalysis occurring by the action of thermal energy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000386</oboInOwl:id>
+        <rdfs:label>thermocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000280"/>
+        <obo:IAO_0000115>Radiocatalysis taking place under the e?ect of the simultaneous action of quanta of light and ionizing radiation. There is also the case when the ionizing radiation alone causes the emission of light that is chemically active (e.g., as may occur in the Cherenkov light emission).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000387</oboInOwl:id>
+        <rdfs:label>photoradiocatalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A reaction which involves the enthalpy change.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000388</oboInOwl:id>
+        <rdfs:label>thermochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000401"/>
+        <oboInOwl:hasDbXref>EC:1.13.12.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0050248</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000390</oboInOwl:id>
+        <rdfs:label>Renilla-luciferin 2-monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000401"/>
+        <oboInOwl:hasDbXref>EC:1.13.12.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047712</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000391</oboInOwl:id>
+        <rdfs:label>Cypridina-luciferin 2-monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000401"/>
+        <oboInOwl:hasDbXref>EC:1.13.12.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047077</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000392</oboInOwl:id>
+        <rdfs:label>Photinus-luciferin 4-monooxygenase (ATP-hydrolysing) reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000401"/>
+        <oboInOwl:hasDbXref>EC:1.13.12.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0050397</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000393</oboInOwl:id>
+        <rdfs:label>Watasenia-luciferin 2-monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000394">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000401"/>
+        <oboInOwl:hasDbXref>EC:1.13.12.13</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000394</oboInOwl:id>
+        <rdfs:label>Oplophorus-luciferin 2-monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000402"/>
+        <oboInOwl:hasDbXref>EC:1.14.99.21</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047098</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000395</oboInOwl:id>
+        <rdfs:label>Latia-luciferin monooxygenase (demethylating) reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000402"/>
+        <oboInOwl:hasDbXref>EC:1.14.14.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047646</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>bacterial luciferase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000396</oboInOwl:id>
+        <rdfs:label>alkanal monooxygenase (FMN-linked) reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <obo:IAO_0000115>Any oxidoreductase reaction in which dioxygen is the electron acceptor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000397</oboInOwl:id>
+        <rdfs:label>oxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000397"/>
+        <obo:IAO_0000115>Oxidoreductase reaction involving incorporation of both atoms of dioxygen into the donor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000398</oboInOwl:id>
+        <rdfs:label>dioxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000397"/>
+        <obo:IAO_0000115>Any oxidoreductase reaction that brings about the incorporation of only one atom of oxygen from dioxygen into the donor.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GO:0004497</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000399</oboInOwl:id>
+        <rdfs:label>monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000398"/>
+        <oboInOwl:hasDbXref>EC:1.13.11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016702</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000400</oboInOwl:id>
+        <rdfs:label>single donor dioxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000399"/>
+        <oboInOwl:hasDbXref>EC:1.13.12</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0016703</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>internal monooxygenase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000401</oboInOwl:id>
+        <rdfs:label>single donor monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000399"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000402</oboInOwl:id>
+        <rdfs:label>paired donor monooxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000398"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000403</oboInOwl:id>
+        <rdfs:label>paired donor dioxygenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000086"/>
+        <obo:IAO_0000115>A chemical degradation reaction that is caused by thermal energy. The term pyrolysis generally refers to an inert environment.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000404</oboInOwl:id>
+        <rdfs:label>pyrolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A chemical reaction in which the oxidation of one reactant is coupled to the reduction of a second reactant.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>oxidation-reduction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>oxidoreduction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000405</oboInOwl:id>
+        <rdfs:label>redox reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000116"/>
+        <obo:IAO_0000115>ATP + H2O --&gt; AMP + diphosphate</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:3.6.1.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0047693</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ATP diphosphohydrolase (diphosphate-forming)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000406</oboInOwl:id>
+        <rdfs:label>ATP diphosphatase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000115"/>
+        <obo:IAO_0000115>ATP + H2O --&gt; ADP + phosphate</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GO:0016887</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000407</oboInOwl:id>
+        <rdfs:label>ATPase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>Generally, reaction with a solvent, or with a lyonium ion or lyate ion, involving the rupture of one or more bonds in the reacting solute. More specifically the term is used for substitution, elimination and fragmentation reactions in which a solvent species is the nucleophile.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000413</oboInOwl:id>
+        <rdfs:label>solvolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000414">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000413"/>
+        <obo:IAO_0000115>Solvolysis by water.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000414</oboInOwl:id>
+        <rdfs:label>hydrolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000413"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000415</oboInOwl:id>
+        <rdfs:label>solvolytic elimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000413"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000419"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000416</oboInOwl:id>
+        <rdfs:label>solvolytic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000416"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000418"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000421"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000417</oboInOwl:id>
+        <rdfs:label>nucleophilic solvolytic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000413"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000422"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000418</oboInOwl:id>
+        <rdfs:label>nucleophilic solvolysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A reaction, elementary or stepwise, in which one atom or group in a molecular entity is replaced by another atom or group.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000419</oboInOwl:id>
+        <rdfs:label>substitution reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000424"/>
+        <obo:IAO_0000115>A heterolytic reaction in which the reagent supplying the entering group acts as an electrophile.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000420</oboInOwl:id>
+        <rdfs:label>electrophilic substitution reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000424"/>
+        <obo:IAO_0000115>A heterolytic reaction in which the reagent supplying the entering group acts as a nucleophile.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000421</oboInOwl:id>
+        <rdfs:label>nucleophilic substitution reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A reaction proceeding by the movement of pairs of electrons from areas of high electron density (nucleophiles) to areas of low electron density (electrophiles), or from filled orbitals to empty orbitals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000422</oboInOwl:id>
+        <rdfs:label>polar reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000419"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>free-radical substitution</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000423</oboInOwl:id>
+        <rdfs:label>homolytic substitution reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000419"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000422"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000424</oboInOwl:id>
+        <rdfs:label>heterolytic substitution reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000169"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000421"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>SN2 mechanism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000425</oboInOwl:id>
+        <rdfs:label>bimolecular nucleophilic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000168"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000421"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>SN1 mechanism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000426</oboInOwl:id>
+        <rdfs:label>unimolecular nucleophilic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <obo:IAO_0000115>A chemical reaction of two or more reacting molecular entities, resulting in a single reaction product containing all atoms of all components, with formation of two chemical bonds and a net reduction in bond multiplicity in at least one of the reactants.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000427</oboInOwl:id>
+        <rdfs:label>addition reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000428">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000422"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000428</oboInOwl:id>
+        <rdfs:label>heterolytic addition reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>free-radiacl addition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000429</oboInOwl:id>
+        <rdfs:label>homolytic addition reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000428"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000430</oboInOwl:id>
+        <rdfs:label>electrophilic addition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000428"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000431</oboInOwl:id>
+        <rdfs:label>nucleophilic addition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>simultaneous addition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000432</oboInOwl:id>
+        <rdfs:label>pericyclic addition reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000433</oboInOwl:id>
+        <rdfs:label>pericyclic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000427"/>
+        <obo:IAO_0000115>The insertion of a metal of a metal complex into a covalent bond involving formally an overall two-electron loss on one metal or a one-electron loss on each of two metals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000435</oboInOwl:id>
+        <rdfs:label>oxidative addition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000168"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000420"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>SE1 mechanism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000437</oboInOwl:id>
+        <rdfs:label>unimolecular electrophilic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000438">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000169"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000420"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>SE2 mechanism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000438</oboInOwl:id>
+        <rdfs:label>bimolecular electrophilic substitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000433"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000439</oboInOwl:id>
+        <rdfs:label>electrocyclic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000433"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000440</oboInOwl:id>
+        <rdfs:label>sigmatropic rearrangement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000433"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000441</oboInOwl:id>
+        <rdfs:label>ene reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000439"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000442</oboInOwl:id>
+        <rdfs:label>electrocyclic ring closing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000447</oboInOwl:id>
+        <rdfs:label>dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000045"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>photochemical hydrogenation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000450</oboInOwl:id>
+        <rdfs:label>photohydrogenation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000045"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>photochemical electronation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000451</oboInOwl:id>
+        <rdfs:label>photoelectronation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000460">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000056"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000460</oboInOwl:id>
+        <rdfs:label>pseudo-catalytic reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000460"/>
+        <obo:IAO_0000115>Increase the rate of the reaction by one of the reactant that is present in nearly constant concentration but is consumed during the process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000461</oboInOwl:id>
+        <rdfs:label>pseudo-catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000461"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000462</oboInOwl:id>
+        <rdfs:label>general acid pseudo-catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000461"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000463</oboInOwl:id>
+        <rdfs:label>general base pseudo-catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000108"/>
+        <oboInOwl:hasDbXref>EC:4.99.1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0018836</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000464</oboInOwl:id>
+        <rdfs:label>alkylmercury lyase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000447"/>
+        <oboInOwl:hasDbXref>EC:1.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000465</oboInOwl:id>
+        <rdfs:label>alcohol:acceptor dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000482"/>
+        <obo:IAO_0000115>ethanol + NAD+ --&gt; acetaldehyde + NADH + H+</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.1.1.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ethanol dehydrogenase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000466</oboInOwl:id>
+        <rdfs:label>ethanol:NAD+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000465"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <oboInOwl:hasDbXref>EC:1.1.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000469</oboInOwl:id>
+        <rdfs:label>alcohol:NAD(P)+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000469"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000473"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000470</oboInOwl:id>
+        <rdfs:label>alcohol:NAD+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000469"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000474"/>
+        <oboInOwl:hasDbXref>EC:1.1.1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000471</oboInOwl:id>
+        <rdfs:label>alcohol:NADP+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000472</oboInOwl:id>
+        <rdfs:label>donor:NAD(P)+ oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000473</oboInOwl:id>
+        <rdfs:label>donor:NAD+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000474</oboInOwl:id>
+        <rdfs:label>donor:NADP+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000482"/>
+        <obo:IAO_0000115>methanol + NAD+ --&gt; formaldehyde + NADH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>methanol dehydrogenase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>methanol:NAD+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000477</oboInOwl:id>
+        <rdfs:label>methanol:NAD+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000471"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000489"/>
+        <obo:IAO_0000115>an aromatic alcohol + NADP+ --&gt; an aromatic aldehyde + NADPH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>aryl-alcohol dehydrogenase (NADP+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>aryl-alcohol:NADP+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000479</oboInOwl:id>
+        <rdfs:label>aryl-alcohol:NADP+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000471"/>
+        <obo:IAO_0000115>propan-2-ol + NADP+ --&gt; acetone + NADPH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>isopropanol dehydrogenase (NADP+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>propan-2-ol:NADP+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000480</oboInOwl:id>
+        <rdfs:label>propan-2-ol:NADP+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000481">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000470"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000489"/>
+        <obo:IAO_0000115>an aromatic alcohol + NAD+ --&gt; an aromatic aldehyde + NADH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000481</oboInOwl:id>
+        <rdfs:label>aryl-alcohol:NAD+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000470"/>
+        <obo:IAO_0000115>an alcohol + NAD+ --&gt; an aldehyde or ketone + NADH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000482</oboInOwl:id>
+        <rdfs:label>aliphatic alcohol:NAD+ dehydrogenase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000479"/>
+        <obo:IAO_0000115>3-hydroxybenzyl alcohol + NADP+ --&gt; 3-hydroxybenzaldehyde + NADPH + H+</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>3-hydroxybenzyl-alcohol dehydrogenase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>3-hydroxybenzyl-alcohol:NADP+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000483</oboInOwl:id>
+        <rdfs:label>3-hydroxybenzyl-alcohol:NADP+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000489">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000469"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000489</oboInOwl:id>
+        <rdfs:label>aryl-alcohol:NAD(P)+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000500"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000491</oboInOwl:id>
+        <rdfs:label>donor:hemoprotein oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000465"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000508"/>
+        <oboInOwl:hasDbXref>EC:1.1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000492</oboInOwl:id>
+        <rdfs:label>alcohol:cytochrome dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000465"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000509"/>
+        <oboInOwl:hasDbXref>EC:1.1.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000493</oboInOwl:id>
+        <rdfs:label>alcohol:oxygen dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000465"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000510"/>
+        <oboInOwl:hasDbXref>EC:1.1.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000494</oboInOwl:id>
+        <rdfs:label>alcohol:quinone dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000447"/>
+        <oboInOwl:hasDbXref>EC:1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000495</oboInOwl:id>
+        <rdfs:label>carbonyl:acceptor dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000495"/>
+        <oboInOwl:hasDbXref>EC:1.2.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000496</oboInOwl:id>
+        <rdfs:label>carbonyl:NAD(P)+ dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000495"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000508"/>
+        <oboInOwl:hasDbXref>EC:1.2.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000497</oboInOwl:id>
+        <rdfs:label>carbonyl:cytochrome dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000495"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000509"/>
+        <oboInOwl:hasDbXref>EC:1.2.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000498</oboInOwl:id>
+        <rdfs:label>carbonyl:oxygen dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000495"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000501"/>
+        <oboInOwl:hasDbXref>EC:1.2.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000499</oboInOwl:id>
+        <rdfs:label>carbonyl:ferredoxin dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000500</oboInOwl:id>
+        <rdfs:label>donor:iron protein oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000500"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000501</oboInOwl:id>
+        <rdfs:label>donor:iron-sulfur protein oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000447"/>
+        <oboInOwl:hasDbXref>EC:1.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000502</oboInOwl:id>
+        <rdfs:label>NAD(P)H:acceptor dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000502"/>
+        <oboInOwl:hasDbXref>EC:1.6.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000503</oboInOwl:id>
+        <rdfs:label>NAD(P)H:NAD(P)+ transhydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000502"/>
+        <oboInOwl:hasDbXref>EC:1.6.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000504</oboInOwl:id>
+        <rdfs:label>NAD(P)H:hemoprotein dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000502"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000509"/>
+        <oboInOwl:hasDbXref>EC:1.6.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000505</oboInOwl:id>
+        <rdfs:label>NAD(P)H:oxygen dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000505"/>
+        <obo:IAO_0000115>NAD(P)H + H+ + O2 --&gt; NAD(P)+ + H2O2</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>NAD(P)H oxidase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>NAD(P)H:oxygen oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000506</oboInOwl:id>
+        <rdfs:label>NAD(P)H oxidase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000502"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000510"/>
+        <oboInOwl:hasDbXref>EC:1.6.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000507</oboInOwl:id>
+        <rdfs:label>NAD(P)H:quinone dehydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000491"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000508</oboInOwl:id>
+        <rdfs:label>donor:cytochrome oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000509</oboInOwl:id>
+        <rdfs:label>donor:oxygen oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000510</oboInOwl:id>
+        <rdfs:label>donor:quinone oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasDbXref>EC:1.16</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000511</oboInOwl:id>
+        <rdfs:label>metal oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000511"/>
+        <oboInOwl:hasDbXref>EC:1.16.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000512</oboInOwl:id>
+        <rdfs:label>metal:NAD(P)+ oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000509"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000511"/>
+        <oboInOwl:hasDbXref>EC:1.16.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000513</oboInOwl:id>
+        <rdfs:label>metal:oxygen oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000513"/>
+        <obo:IAO_0000115>4 Fe(2+) + 4 H+ + O2 --&gt; 4 Fe(3+) + 2 H2O</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.16.3.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Fe(II):oxygen oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ferroxidase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000514</oboInOwl:id>
+        <rdfs:label>ferroxidase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000511"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000517"/>
+        <oboInOwl:hasDbXref>EC:1.16.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000515</oboInOwl:id>
+        <rdfs:label>metal:flavin oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000515"/>
+        <obo:IAO_0000115>2 cob(II)yrinic acid a,c-diamide + FMN --&gt; 2 cob(I)yrinic acid a,c-diamide + FMNH2</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.16.8.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cob(II)yrinic acid a,c-diamide reductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cob(II)yrinic acid-a,c-diamide:FMN oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000516</oboInOwl:id>
+        <rdfs:label>cob(II)yrinic acid a,c-diamide reductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000517</oboInOwl:id>
+        <rdfs:label>donor:flavin oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000511"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000527</oboInOwl:id>
+        <rdfs:label>hemoprotein oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000527"/>
+        <oboInOwl:hasDbXref>EC:1.9.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000528</oboInOwl:id>
+        <rdfs:label>hemoprotein:oxygen oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000527"/>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000529</oboInOwl:id>
+        <rdfs:label>hemoprotein:nitrate oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000529"/>
+        <obo:IAO_0000115>ferrocytochrome + nitrate --&gt; ferricytochrome + nitrite</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.9.6.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ferrocytochrome:nitrate oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>nitrate reductase (cytochrome)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000530</oboInOwl:id>
+        <rdfs:label>ferrocytochrome:nitrate reductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000528"/>
+        <obo:IAO_0000115>4 ferrocytochrome c + O2 --&gt; 4 ferricytochrome c + 2 H2O</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.9.3.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cytochrome-c oxidase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ferrocytochrome-c:oxygen oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000531</oboInOwl:id>
+        <rdfs:label>cytochrome-c oxidase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000107"/>
+        <oboInOwl:hasDbXref>EC:1.12</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>dihydrogenase reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000534</oboInOwl:id>
+        <rdfs:label>hydrogenase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000472"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000534"/>
+        <obo:IAO_0000115>H2 + NAD(P)+ --&gt; H+ + NAD(P)H</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.12.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000535</oboInOwl:id>
+        <rdfs:label>hydrogen:NAD(P)+ oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000473"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000535"/>
+        <obo:IAO_0000115>H2 + NAD+ --&gt; H+ + NADH</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.12.1.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>hydrogen dehydrogenase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hydrogen:NAD+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000536</oboInOwl:id>
+        <rdfs:label>hydrogen:NAD+ oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000474"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000535"/>
+        <obo:IAO_0000115>H2 + NADP+ --&gt; H+ + NADPH</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.12.1.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>hydrogen dehydrogenase (NADP+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hydrogen:NADP+ oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000537</oboInOwl:id>
+        <rdfs:label>hydrogen:NADP+ oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000508"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000534"/>
+        <oboInOwl:hasDbXref>EC:1.12.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000538</oboInOwl:id>
+        <rdfs:label>hydrogen:cytochrome oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000538"/>
+        <obo:IAO_0000115>2 H2 + ferricytochrome c3 --&gt; 4 H+ + ferrocytochrome c3</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.12.2.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>H2:ferricytochrome c3 oxidoreductase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cytochrome-c3 hydrogenase</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000539</oboInOwl:id>
+        <rdfs:label>hydrogen:ferricytochrome-c3 oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000510"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000534"/>
+        <oboInOwl:hasDbXref>EC:1.12.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000540</oboInOwl:id>
+        <rdfs:label>hydrogen:quinone oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000402"/>
+        <obo:IAO_0000115>magnesium-protoporphyrin IX 13-monomethyl ester + 3 NADPH + 3 H+ + 3 O2 --&gt; divinylprotochlorophyllide + 3 NADP+ + 5 H2O</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.14.13.81</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0048529</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000541</oboInOwl:id>
+        <rdfs:label>magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000501"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000534"/>
+        <obo:IAO_0000115>H2 + oxidized ferredoxin --&gt; reduced ferredoxin + 2 H+</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EC:1.12.7.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REX:0000542</oboInOwl:id>
+        <rdfs:label>hydrogen:ferredoxin oxidoreductase reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REX_0000055"/>
+        <obo:IAO_0000115>Elementary chemical process undergone by an electronically excited molecular entity and yielding a primary photoproduct.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>primary photochemical process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>primary photochemical reaction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>REX:0000550</oboInOwl:id>
+        <rdfs:label>primary photoreaction</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

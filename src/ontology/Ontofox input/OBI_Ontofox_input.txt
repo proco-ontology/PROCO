@@ -1,0 +1,44 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/proco/imports/OBI_imports.owl
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
+http://purl.obolibrary.org/obo/OBI_0600058 #enzymatic amplification
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+http://purl.obolibrary.org/obo/OBI_0000094 #material processing
+http://purl.obolibrary.org/obo/OBI_0000047 #processed material
+http://purl.obolibrary.org/obo/OBI_0000316 #has_role
+http://purl.obolibrary.org/obo/OBI_0000295 #is_specified_input_of
+http://purl.obolibrary.org/obo/OBI_0000456 #material transformation objective
+http://purl.obolibrary.org/obo/OBI_0000312 #is_specified_output_of
+http://purl.obolibrary.org/obo/OBI_0000417 #achieves_planned_objective 
+http://purl.obolibrary.org/obo/OBI_0000047 #processed material
+http://purl.obolibrary.org/obo/IAO_0000109 #measurement datum
+http://purl.obolibrary.org/obo/IAO_0000310 #document
+http://purl.obolibrary.org/obo/IAO_0000314 #document part
+http://purl.obolibrary.org/obo/OBI_0002488 #pipette
+http://purl.obolibrary.org/obo/OBI_0000070 # assay
+http://purl.obolibrary.org/obo/OBI_0001554 # rate constant
+http://purl.obolibrary.org/obo/IAO_0000590 #written name
+http://purl.obolibrary.org/obo/IAO_0000032 #
+http://purl.obolibrary.org/obo/IAO_0000310 #
+http://purl.obolibrary.org/obo/IAO_0000314 #
+http://purl.obolibrary.org/obo/IAO_0000578 #
+http://purl.obolibrary.org/obo/IAO_0000590 #
+http://purl.obolibrary.org/obo/OBI_0200072 # curve fitting data transformation
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+

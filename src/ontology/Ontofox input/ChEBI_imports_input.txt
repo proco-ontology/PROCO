@@ -1,0 +1,36 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/proco/imports/CHEBI_imports.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_17790 #methanol 
+http://purl.obolibrary.org/obo/CHEBI_47032 #dioxane 
+http://purl.obolibrary.org/obo/CHEBI_15347 #acetone 
+http://purl.obolibrary.org/obo/CHEBI_17578 #toluene 
+http://purl.obolibrary.org/obo/CHEBI_38472 #acetonitrile 
+http://purl.obolibrary.org/obo/CHEBI_17824 #isopropanol
+http://purl.obolibrary.org/obo/CHEBI_28398 #2-butanone
+http://purl.obolibrary.org/obo/CHEBI_17741 #DMF 
+http://purl.obolibrary.org/obo/CHEBI_26911 #THF 
+http://purl.obolibrary.org/obo/CHEBI_24431 #chemical entity 
+
+http://purl.obolibrary.org/obo/CHEBI_51086 # chemical role
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_24431 #chemical entity 
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+http://purl.obolibrary.org/obo/CHEBI_51086 # chemical role
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+

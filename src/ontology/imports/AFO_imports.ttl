@@ -1,0 +1,1279 @@
+@prefix : <http://purl.allotrope.org/voc/afo/merged/REC/2020/12/merged-and-inferred#> .
+@prefix m: <http://www.w3.org/1998/Math/MathML#> .
+@prefix cl: <http://purl.obolibrary.org/obo/CL> .
+@prefix co: <http://purl.org/co/> .
+@prefix ex: <http://www.example.org#> .
+@prefix go: <http://purl.obolibrary.org/obo/GO> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex2: <http://www.example2.org#> .
+@prefix gaz: <http://purl.obolibrary.org/obo/GAZ> .
+@prefix hdf: <http://purl.allotrope.org/ontologies/hdf5/1.8#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO> .
+@prefix ldp: <http://purl.org/ldp/> .
+@prefix map: <http://purl.allotrope.org/ontologies/mapping/instances#> .
+@prefix mop: <http://purl.obolibrary.org/obo/MOP> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI> .
+@prefix ops: <http://www.openphacts.org/units/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/xml/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix af-c: <http://purl.allotrope.org/ontologies/common#> .
+@prefix af-e: <http://purl.allotrope.org/ontologies/equipment#> .
+@prefix af-m: <http://purl.allotrope.org/ontologies/material#> .
+@prefix af-p: <http://purl.allotrope.org/ontologies/process#> .
+@prefix af-q: <http://purl.allotrope.org/ontologies/quality#> .
+@prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
+@prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
+@prefix chmo: <http://purl.obolibrary.org/obo/CHMO> .
+@prefix envo: <http://purl.obolibrary.org/obo/ENVO> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ncbi: <http://purl.obolibrary.org/obo/NCBITaxon> .
+@prefix omcd: <http://www.openmath.org/cd/> .
+@prefix pato: <http://purl.obolibrary.org/obo/PATO> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix af-cq: <http://purl.allotrope.org/ontologies/common/qualifier#> .
+@prefix af-fn: <http://purl.allotrope.org/ontologies/function#> .
+@prefix af-re: <http://purl.allotrope.org/ontologies/realizable#> .
+@prefix af-rl: <http://purl.allotrope.org/ontologies/role#> .
+@prefix afs-c: <http://purl.allotrope.org/shapes/common#> .
+@prefix afs-q: <http://purl.allotrope.org/shapes/qudt#> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adf-dc: <http://purl.allotrope.org/ontologies/datacube#> .
+@prefix adf-dp: <http://purl.allotrope.org/ontologies/datapackage#> .
+@prefix af-cur: <http://purl.allotrope.org/ontologies/curation#> .
+@prefix af-map: <http://purl.allotrope.org/ontologies/mapping#> .
+@prefix afs-dc: <http://purl.allotrope.org/shapes/datacube#> .
+@prefix afs-hr: <http://purl.allotrope.org/shapes/resources#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v1#> .
+@prefix uberon: <http://purl.obolibrary.org/obo/UBERON> .
+@prefix af-math: <http://purl.allotrope.org/ontologies/math#> .
+@prefix qudt-ext: <http://purl.allotrope.org/ontology/qudt-ext/schema#> .
+@prefix unit-ext: <http://purl.allotrope.org/ontology/qudt-ext/unit#> .
+@prefix qudt-unit: <http://qudt.org/vocab/unit#> .
+@prefix adf-dc-hdf: <http://purl.allotrope.org/ontologies/datacube-hdf-map#> .
+@prefix quantity-ext: <http://purl.allotrope.org/ontology/qudt-ext/quantity#> .
+
+<http://purl.obolibrary.org/obo/proco/imports/AFO_imports.owl> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0002798
+
+af-x:AFX_0002798 a owl:AnnotationProperty .
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0002808
+
+af-x:AFX_0002808 a owl:AnnotationProperty .
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0002818
+
+af-x:AFX_0002818 a owl:AnnotationProperty .
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0002865
+
+af-x:AFX_0002865 a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dct:license a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/rights
+
+dct:rights a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/source
+
+dct:source a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+
+skos:altLabel a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#editorialNote
+
+skos:editorialNote a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+
+skos:example a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+
+skos:note a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0001048
+
+af-x:AFX_0001048 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001015> ;
+	owl:inverseOf af-x:AFX_0001049 ;
+	rdfs:domain af-e:AFE_0000407 ;
+	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;
+	skos:definition "The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a. [Allotrope]" ;
+	skos:prefLabel "contains" .
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0001049
+
+af-x:AFX_0001049 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001025> ;
+	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+	rdfs:range af-e:AFE_0000407 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;
+	skos:definition "Inverse of contains. [Allotrope]" ;
+	skos:prefLabel "contained in" .
+# 
+# http://purl.allotrope.org/ontologies/property#AFX_0002722
+
+af-x:AFX_0002722 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002502> ;
+	a owl:TransitiveProperty ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/relation> ;
+	skos:altLabel "influenced by" ;
+	skos:definition "Inverse of quality influences. [Allotrope]" ;
+	skos:prefLabel "quality influenced by" .
+#
+# http://purl.allotrope.org/ontologies/property#AFX_0002793
+af-x:AFX_0002793 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf bfo:_0000051 ;                 
+                 owl:inverseOf af-x:AFX_0002846 ;                
+                 rdf:type owl:TransitiveProperty ;                
+                 af-x:AFX_0002809 <http://semanticscience.org/resource/SIO_000053> ;                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:definition "Has proper part is an antisymmetric, irreflexive (normally transitive) relation between a whole and a distinct part. [SIO]" ;               
+                 skos:example "An atom has subatomic particles as its proper parts." ;               
+                 skos:prefLabel "has proper part" .
+#
+#  http://purl.allotrope.org/ontologies/property#AFX_0002800
+af-x:AFX_0002800 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf af-x:AFX_0002846 ;               
+                 owl:inverseOf af-x:AFX_0002803 ;               
+                 rdf:type owl:TransitiveProperty ;                
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:altLabel "is facet of" ;                
+                 skos:definition "Facet of relates two information content entities where one information content entity is an aspect of the other one. [Allotrope]" ;                
+                 skos:prefLabel "facet of" .
+#
+#  http://purl.allotrope.org/ontologies/property#AFX_0002803
+
+af-x:AFX_0002803 rdf:type owl:ObjectProperty ;               
+                 rdfs:subPropertyOf af-x:AFX_0002793 ;              
+                 rdf:type owl:TransitiveProperty ;              
+                 rdfs:domain iao:_0000030 ;                
+                 rdfs:range af-r:AFR_0000923 ;               
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;               
+                 skos:definition "Relation between an information content entity and some part of it called a facet that is covers some general aspect of information context. [Allotrope]" ;                
+                 skos:example "a timestamp" ,
+                              "a title" ,
+                              "an ordering" ;               
+                 skos:prefLabel "has facet" .	
+#
+
+#  http://purl.allotrope.org/ontologies/property#AFX_0002846
+
+af-x:AFX_0002846 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf bfo:_0000050 ;                
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:altLabel "is proper part of" ;                
+                 skos:definition "Inverse of has proper part. [Allotrope]" ;                
+                 skos:prefLabel "proper part of" .
+#
+# http://purl.obolibrary.org/obo/BFO_0000054
+
+<http://purl.obolibrary.org/obo/BFO_0000054> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0000052
+
+<http://purl.obolibrary.org/obo/RO_0000052> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0000085
+
+<http://purl.obolibrary.org/obo/RO_0000085> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0001015
+
+<http://purl.obolibrary.org/obo/RO_0001015> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0001025
+
+<http://purl.obolibrary.org/obo/RO_0001025> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0002337
+
+<http://purl.obolibrary.org/obo/RO_0002337> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0002344
+
+<http://purl.obolibrary.org/obo/RO_0002344> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0002502
+
+<http://purl.obolibrary.org/obo/RO_0002502> a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.allotrope.org/ontologies/equipment#AFE_0000354
+
+af-e:AFE_0000354 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	af-x:AFX_0002865 <http://purl.allotrope.org/voc/afo/REC/2018/07/aft> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> , <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/system> ;
+	skos:altLabel "engineered artifact" ;
+	skos:definition "A device is an artifact that is designed to perform a function primarily by means of its mechanical or electrical nature. [Allotrope]" ;
+	skos:note "A device has a designed form or physical structure.  This distinguishes a device from a chemical and a biological artifact, that are typical bulk or portions of materials without a designed form. [Allotrope]" ;
+	skos:prefLabel "device" .
+# 
+# http://purl.allotrope.org/ontologies/equipment#AFE_0000407
+
+af-e:AFE_0000407 a owl:Class ;
+	rdfs:subClassOf af-e:AFE_0000354 , _:genid1 .
+
+_:genid1 owl:intersectionOf _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
+	owl:someValuesFrom af-fn:AFFN_0000139 .
+
+_:genid4 rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty af-x:AFX_0001048 ;
+	owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040> .
+
+_:genid2 rdf:rest rdf:nil .
+
+_:genid1 a owl:Class .
+
+af-e:AFE_0000407 af-x:AFX_0002808 <http://purl.obolibrary.org/obo/OBI_0000967> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "vessel" ;
+	skos:definition "A device that has the function to contain material. [Allotrope]" ;
+	skos:example "box, can, plate, rack" , "tray, flask, vial" ;
+	skos:prefLabel "container" .
+# 
+# http://purl.allotrope.org/ontologies/equipment#AFE_0001128
+
+af-e:AFE_0001128 a owl:Class ;
+	rdfs:subClassOf af-e:AFE_0000354 , _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
+	owl:someValuesFrom af-fn:AFFN_0000044 .
+
+af-e:AFE_0001128 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "heater" , "heating equipment" ;
+	skos:definition "A device used for heating something. [Allotrope]" ;
+	skos:prefLabel "heating device" .
+# 
+# http://purl.allotrope.org/ontologies/equipment#AFE_0002168
+
+af-e:AFE_0002168 a owl:Class ;
+	rdfs:subClassOf af-e:AFE_0000354 , _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
+	owl:someValuesFrom af-fn:AFFN_0000187 .
+
+af-e:AFE_0002168 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A transferring device is a device that is designed to transfer material. [Allotrope]" ;
+	skos:prefLabel "transferring device" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000014
+
+af-fn:AFFN_0000014 a owl:Class ;
+	owl:equivalentClass _:genid8 .
+
+_:genid8 owl:intersectionOf _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003359 .
+
+_:genid9 rdf:rest rdf:nil .
+
+_:genid8 a owl:Class .
+
+af-fn:AFFN_0000014 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "controlling function" ;
+	skos:definition "To alter or govern the size or amplitude of a flow (material, energy, signal). [NIST]" ;
+	skos:prefLabel "to control" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000044
+
+af-fn:AFFN_0000044 a owl:Class ;
+	rdfs:subClassOf af-fn:AFFN_0000128 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "heating function" ;
+	skos:definition "A function that gives thermal energy to a recipient. [Allotrope]" ;
+	skos:prefLabel "to heat" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000055
+
+af-fn:AFFN_0000055 a owl:Class ;
+	owl:equivalentClass _:genid12 .
+
+_:genid12 owl:intersectionOf _:genid15 .
+
+_:genid15 a rdf:List ;
+	rdf:first af-fn:AFFN_0000137 ;
+	rdf:rest _:genid13 .
+
+_:genid13 a rdf:List ;
+	rdf:first _:genid14 .
+
+_:genid14 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003551 .
+
+_:genid13 rdf:rest rdf:nil .
+
+_:genid12 a owl:Class .
+
+af-fn:AFFN_0000055 rdfs:subClassOf af-fn:AFFN_0000137 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "storing function" ;
+	skos:definition "To accumulate a flow. [NIST]" ;
+	skos:example "A DC electrical battery stores the energy in a flashlight. [NIST]" ;
+	skos:prefLabel "to store" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000111
+
+af-fn:AFFN_0000111 a owl:Class ;
+	owl:equivalentClass _:genid16 .
+
+_:genid16 owl:intersectionOf _:genid19 .
+
+_:genid19 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	rdf:rest _:genid17 .
+
+_:genid17 a rdf:List ;
+	rdf:first _:genid18 .
+
+_:genid18 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003348 .
+
+_:genid17 rdf:rest rdf:nil .
+
+_:genid16 a owl:Class .
+
+af-fn:AFFN_0000111 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "channeling function" , "localizing function" , "to channel" ;
+	skos:definition "To cause a flow (material, energy, signal) to move from one location to another location. [NIST]" ;
+	skos:prefLabel "to localize" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000127
+
+af-fn:AFFN_0000127 a owl:Class ;
+	owl:equivalentClass _:genid20 .
+
+_:genid20 owl:intersectionOf _:genid23 .
+
+_:genid23 a rdf:List ;
+	rdf:first af-fn:AFFN_0000111 ;
+	rdf:rest _:genid21 .
+
+_:genid21 a rdf:List ;
+	rdf:first _:genid22 .
+
+_:genid22 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003486 .
+
+_:genid21 rdf:rest rdf:nil .
+
+_:genid20 a owl:Class .
+
+af-fn:AFFN_0000127 rdfs:subClassOf af-fn:AFFN_0000014 , af-fn:AFFN_0000111 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "adjusting function" , "changing function" , "to adjust" ;
+	skos:definition "To adjust the flow of energy, signal, or material in a predetermined and fixed manner. [NIST]" ;
+	skos:prefLabel "to change" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000128
+
+af-fn:AFFN_0000128 a owl:Class ;
+	rdfs:subClassOf af-fn:AFFN_0000127 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "enlarging function" , "incrementing function" , "to enlarge" ;
+	skos:definition "To enlarge a  flow in a predetermined and fixed manner. [NIST]" ;
+	skos:prefLabel "to increment" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000137
+
+af-fn:AFFN_0000137 a owl:Class ;
+	owl:equivalentClass _:genid24 .
+
+_:genid24 owl:intersectionOf _:genid27 .
+
+_:genid27 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	rdf:rest _:genid25 .
+
+_:genid25 a rdf:List ;
+	rdf:first _:genid26 .
+
+_:genid26 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003563 .
+
+_:genid25 rdf:rest rdf:nil .
+
+_:genid24 a owl:Class .
+
+af-fn:AFFN_0000137 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "provisioning function" ;
+	skos:definition "To accumulate or provide a material or energy flow. [NIST]" ;
+	skos:prefLabel "to provision" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000139
+
+af-fn:AFFN_0000139 a owl:Class ;
+	owl:equivalentClass _:genid28 .
+
+_:genid28 owl:intersectionOf _:genid31 .
+
+_:genid31 a rdf:List ;
+	rdf:first af-fn:AFFN_0000055 ;
+	rdf:rest _:genid29 .
+
+_:genid29 a rdf:List ;
+	rdf:first _:genid30 .
+
+_:genid30 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003306 .
+
+_:genid29 rdf:rest rdf:nil .
+
+_:genid28 a owl:Class .
+
+af-fn:AFFN_0000139 rdfs:subClassOf af-fn:AFFN_0000055 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "containing function" ;
+	skos:definition "To keep a flow within limits. [NIST]" ;
+	skos:example "A vacuum bag contains debris vacuumed from a house. [NIST]" ;
+	skos:prefLabel "to contain" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000187
+
+af-fn:AFFN_0000187 a owl:Class ;
+	owl:equivalentClass _:genid32 .
+
+_:genid32 owl:intersectionOf _:genid35 .
+
+_:genid35 a rdf:List ;
+	rdf:first af-fn:AFFN_0000111 ;
+	rdf:rest _:genid33 .
+
+_:genid33 a rdf:List ;
+	rdf:first _:genid34 .
+
+_:genid34 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003312 .
+
+_:genid33 rdf:rest rdf:nil .
+
+_:genid32 a owl:Class .
+
+af-fn:AFFN_0000187 rdfs:subClassOf af-fn:AFFN_0000111 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "conveying function" , "shifting function" , "to convey" , "to shift" , "transferring function" ;
+	skos:definition "To shift, or convey, a flow (material, energy, signal) from one place to another. [NIST]" ;
+	skos:prefLabel "to transfer" .
+# 
+# http://purl.allotrope.org/ontologies/material#AFM_0001034
+
+af-m:AFM_0001034 a owl:Class ;
+	rdfs:subClassOf af-m:AFM_0001038 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+	skos:definition "A heterogeneous mixture is a portion of mixed material that is not uniform in composition, but proportions of its components vary throughout the sample. [Wikipedia]" ;
+	skos:example "sea water with sand" ;
+	skos:prefLabel "heterogeneous mixture" .
+# 
+# http://purl.allotrope.org/ontologies/material#AFM_0001035
+
+af-m:AFM_0001035 a owl:Class ;
+	rdfs:subClassOf af-m:AFM_0001038 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+	skos:definition "A homogeneous mixture is a portion of mixed material that has the same proportions of its components throughout a given sample. Homogeneous mixture can have a variable composition. [Wikipedia]" ;
+	skos:example "air" , "sea water" ;
+	skos:prefLabel "homogeneous mixture" .
+# 
+# http://purl.allotrope.org/ontologies/material#AFM_0001038
+
+af-m:AFM_0001038 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000993> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+	skos:altLabel "blend" , "mixture" , "portion of mixture" ;
+	skos:definition "An portion of mixed material is a material entity that consists of different kinds of grains if you inspect it at a higher level of granularity. [Allotrope]" ;
+	skos:example "portion of milk" , "sand" , "sea water" , "sea water with sand" ;
+	skos:prefLabel "portion of mixed material" .
+# 
+# http://purl.allotrope.org/ontologies/material#AFM_0001097
+
+af-m:AFM_0001097 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000993> ;
+	dct:license <http://purl.allotrope.org/voc/iupac-license> ;
+	dct:rights <http://purl.allotrope.org/voc/iupac-copyright> ;
+	dct:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997)." ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:definition "A chemical substance is a portion of material that is matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. [IUPAC]" ;
+	skos:prefLabel "chemical substance" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003306
+
+af-p:AFP_0003306 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003551 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "being contained" ;
+	skos:definition "The state of keeping a flow within spatial limits. [Allotrope]" ;
+	skos:example "A vacuum bag contains debris vacuumed from a house. [NIST]" ;
+	skos:prefLabel "containing state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003312
+
+af-p:AFP_0003312 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003348 , _:genid36 .
+
+_:genid36 owl:intersectionOf _:genid39 .
+
+_:genid39 a rdf:List ;
+	rdf:first af-p:AFP_0003348 ;
+	rdf:rest _:genid37 .
+
+_:genid37 a rdf:List ;
+	rdf:first _:genid38 .
+
+_:genid38 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0002344> ;
+	owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002> .
+
+<http://purl.obolibrary.org/obo/BFO_0000002> a owl:Class .
+
+_:genid37 rdf:rest rdf:nil .
+
+_:genid36 a owl:Class .
+
+af-p:AFP_0003312 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "deliver" , "transmitting" ;
+	skos:definition "Transferring is channeling a flow (material, energy, signal) from one place to another. [NIST]" ;
+	skos:prefLabel "transferring" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003348
+
+af-p:AFP_0003348 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003620 , _:genid40 .
+
+_:genid40 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0002337> ;
+	owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002> .
+
+af-p:AFP_0003348 af-x:AFX_0002798 "true"^^xsd:boolean ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "channeling" , "localization" , "spatial process" ;
+	skos:definition "A processing that affects the spatial location or orientation of some participants. [Allotrope]" ;
+	skos:prefLabel "localizing" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003359
+
+af-p:AFP_0003359 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003620 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "Controlling is changing or regulating a flow in its magnitude. [NIST, Allotrope]" ;
+	skos:prefLabel "controlling" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003374
+
+af-p:AFP_0003374 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+<http://purl.obolibrary.org/obo/BFO_0000015> a owl:Class .
+
+af-p:AFP_0003374 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	dct:source "http://www.loa.istc.cnr.it/old/Papers/D18.pdf" ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A state is a homomeric, cumulative process in which all the temporal parts are described by the same expression used for the whole. [Allotrope]" ;
+	skos:example "corroding" ;
+	skos:prefLabel "state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003486
+
+af-p:AFP_0003486 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003359 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "modifying" ;
+	skos:definition "Changing is a processing by which an entity gains or looses parts, qualities, roles, dispositions, functions etc in a predetermined and fixed manner but maintains its identity. [Allotrope]" ;
+	skos:prefLabel "changing" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003551
+
+af-p:AFP_0003551 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003563 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "storing" ;
+	skos:definition "Storing is containing or collecting flows to accumulate. [NIST]" ;
+	skos:prefLabel "storing state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003563
+
+af-p:AFP_0003563 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003374 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "providing" ;
+	skos:definition "Providing is the state of accumulating or supplying a material or energy flow. [NIST]" ;
+	skos:prefLabel "providing state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003620
+
+af-p:AFP_0003620 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]" ;
+	skos:editorialNote "Same as process in DOLCE. [Allotrope]" ;
+	skos:prefLabel "activity" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000111
+
+af-q:AFQ_0000111 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000051> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "material state" ;
+	skos:definition "A state of matter is a quality of material that is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma. Many other states are known to exist only in extreme situations, such as Bose-Einstein condensates, neutron-degenerate matter, and quark-gluon plasma, which only occur in situations of extreme cold, extreme density, and extremely high-energy color-charged matter respectively. [Wikipedia]" ;
+	skos:prefLabel "state of matter" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000112
+
+af-q:AFQ_0000112 a owl:Class ;
+	rdfs:subClassOf af-q:AFQ_0000111 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "solid state of matter" ;
+	skos:definition "A state of matter, in which particles are closely packed together. The forces between particles are strong so that the particles cannot move freely but can only vibrate. As a result, a solid has a stable, definite shape, and a definite volume. Solids can only change their shape by force, as when broken or cut. [Wikipedia]" ;
+	skos:prefLabel "solid" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000113
+
+af-q:AFQ_0000113 a owl:Class ;
+	rdfs:subClassOf af-q:AFQ_0000111 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "liquid state of matter" ;
+	skos:definition "A state of matter that is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure. [Wikipedia]" ;
+	skos:prefLabel "liquid" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000114
+
+af-q:AFQ_0000114 a owl:Class ;
+	rdfs:subClassOf af-q:AFQ_0000111 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "gaseous" , "gaseous state of matter" ;
+	skos:definition "A state of matter that is a compressible fluid. Not only will a gas conform to the shape of its container but it will also expand to fill the container. In a gas, the molecules have enough kinetic energy so that the effect of intermolecular forces is small (or zero for an ideal gas), and the typical distance between neighboring molecules is much greater than the molecular size. A gas has no definite shape or volume, but occupies the entire container in which it is confined. [Wikipedia]" ;
+	skos:prefLabel "gas" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000115
+
+af-q:AFQ_0000115 a owl:Class ;
+	rdfs:subClassOf af-q:AFQ_0000111 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "plasma state of matter" ;
+	skos:definition "A physical quality that inheres in a bearer by virtue of its plasma is a state of matter, that is, it does not have definite shape or volume. Unlike gases, plasmas are electrically conductive, produce magnetic fields and electric currents, and respond strongly to electromagnetic forces. Positively charged nuclei swim in a \"sea\" of freely-moving disassociated electrons, similar to the way such charges exist in conductive metal. [Wikipedia]" ;
+	skos:prefLabel "plasma" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000168
+
+af-q:AFQ_0000168 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000033> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	dct:source "Green Book, 2nd ed.: IUPAC Quantities, Units and Symbols in Physical Chemistry. Second Edition, Blackwell Scientific Publications, Oxford, 1993." ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "amount concentration" , "amount concentration (quality)" , "amount of substance concentration" , "molar concentration" , "molarity" , "molarity (quality)" , "substance concentration" , "substance concentration (quality)" ;
+	skos:changeNote "2019-08-19 Changed pref label. [Allotrope]" , "2020-05-11 Changed pref label to molar concentration. [Allotrope]" , "2020-06-18 Added alt labels. [Allotrope]" ;
+	skos:definition "Molar concentration is the ratio of molar amount of a substance divided by volume of mixture containing the amount of substance. [Allotrope]" ;
+	skos:prefLabel "molar concentration (quality)" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000250
+
+af-q:AFQ_0000250 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> , _:genid41 .
+
+_:genid41 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
+	owl:someValuesFrom af-m:AFM_0001097 .
+
+af-q:AFQ_0000250 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> , <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A chemical substance quality is a quality that inheres in some portion of chemical substance. [Allotrope]" ;
+	skos:prefLabel "chemical substance quality" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000256
+
+af-q:AFQ_0000256 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000125> , <http://purl.obolibrary.org/obo/PATO_0002182> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2021/03/molecular-scale> ;
+	skos:altLabel "atomic mass" , "molecular mass" ;
+	skos:changeNote "2020-03-16 Changed pref label. [Allotrope]" , "2020-03-16 Subclassed under pato:mass. [Allotrope]" ;
+	skos:definition "Molecular mass is a molecular quality inhered in a molecular entity that expresses its mass relative to 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest. [Allotrope]" ;
+	skos:prefLabel "molecular mass (molecular quality)" .
+# 
+# http://purl.allotrope.org/ontologies/quality#AFQ_0000279
+
+af-q:AFQ_0000279 a owl:Class ;
+	rdfs:subClassOf af-q:AFQ_0000250 ;
+	dct:source <https://en.wikipedia.org/wiki/Hygroscopy> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "Hygroscopicity is a quality inhered in a compound by virtue of its ability to readily take up and retain water, especially from the atmosphere. [Wikipedia]" ;
+	skos:prefLabel "hygroscopicity" .
+# 
+# http://purl.allotrope.org/ontologies/result#AFR_0000916
+
+af-r:AFR_0000916 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A classification is a proposition that categorizes things into classes or collections of things differentiated by some criteria. [Allotrope]" ;
+	skos:prefLabel "classification" .
+# 
+#  http://purl.allotrope.org/ontologies/result#AFR_0000923
+
+af-r:AFR_0000923 rdf:type owl:Class ;               
+                 rdfs:subClassOf iao:_0000030 ;                
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;                      
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ,
+                                  <http://purl.allotrope.org/voc/afo/REC/2021/03/curation> ,
+                                  <http://purl.allotrope.org/voc/afo/perspective/REC/2021/03/organization> ;               
+                 skos:definition "A facet is a partial information that contains an aspect of some information content entity or parts of it when participating in some process. The facet abstracts of the concrete representation of this aspect of information. [Allotrope]" ;                
+                 skos:prefLabel "facet" .
+#
+# http://purl.allotrope.org/ontologies/result#AFR_0000992
+
+af-r:AFR_0000992 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	dct:source <http://www.ei.sanken.osaka-u.ac.jp/pub/miz/Part3V3.pdf> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A representation form is a type of information content entity that represents an entity in a certain way. [Allotrope]" ;
+	skos:example "plot as representation form of a temperature profile" ;
+	skos:prefLabel "representation form" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000020
+
+af-rl:AFRL_0000020 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000167 , af-rl:AFRL_0000289 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "material cleaned" , "part cleaned" , "part cleaned role" ;
+	skos:changeNote "2019-10-02 Changed pref label. [Allotrope]" ;
+	skos:definition "Material that is undergoing a cleaning process. [Allotrope]" ;
+	skos:prefLabel "material cleaned role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000085
+
+af-rl:AFRL_0000085 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:definition "A support role is a type of role whose bearer participates in a process in order to support the process so that it proceeds towards a secondary objective. [Allotrope]" ;
+	skos:editorialNote "2018-12-05 Moved to AFO to maintain single inheritence [Allotrope]" ;
+	skos:prefLabel "support role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000167
+
+af-rl:AFRL_0000167 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	dct:source "Hubka, Eder, Ernst, Design Science, Springer, 1996" ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:altLabel "operand" ;
+	skos:definition "The role of a participant that is being changed in the process (passive participant) from an input state to an output state. [Allotrope]" ;
+	skos:prefLabel "operand role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000216
+
+af-rl:AFRL_0000216 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000085 , af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "additive" ;
+	skos:definition "Additive is a role of material that is added to a mixture in order to achieve a supportive purpose. [Allotrope]" ;
+	skos:prefLabel "additive role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000217
+
+af-rl:AFRL_0000217 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000086> ;
+	dct:license <http://purl.allotrope.org/voc/iupac-license> ;
+	dct:rights <http://purl.allotrope.org/voc/iupac-copyright> ;
+	dct:source "PAC, 1996, 68, 155 (Glossary of terms used in chemical kinetics, including reaction dynamics.)" ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "catalyst" ;
+	skos:definition "A catalyst role is a reagent role of a substance that increases the rate of a reaction without modifying the overall standard Gibbs energy change in the reaction; the process is called catalysis. The catalyst is both a reactant and product of the reaction. [IUPAC]" ;
+	skos:prefLabel "catalyst role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000221
+
+af-rl:AFRL_0000221 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "debris" ;
+	skos:definition "Debris is a role of material to be waste. [Allotrope]" ;
+	skos:prefLabel "debris role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000223
+
+af-rl:AFRL_0000223 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000289 ;
+	dct:license <http://purl.allotrope.org/voc/iupac-license> ;
+	dct:rights <http://purl.allotrope.org/voc/iupac-copyright> ;
+	dct:source "PAC, 1972, 31, 577 (Manual of Symbols and Terminology for Physicochemical Quantities and Units, Appendix II: Definitions, Terminology and Symbols in Colloid and Surface Chemistry) on page 612" ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "detergent" ;
+	skos:definition "A detergent role is a cleaning role of a surface active agent (or a mixture containing one of more surface active agents) having cleaning properties in dilute solution. [IUPAC]" ;
+	skos:prefLabel "detergent role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000229
+
+af-rl:AFRL_0000229 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000086> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "intermedate reagent role" , "intermediate" , "intermediate reagent role" , "intermediate role" , "reaction intermediate" ;
+	skos:definition "Intermediate role is a role of material that is formed from reactants (or preceding intermediates) and reacts further to give the directly observed products of a chemical reaction. [Wikipedia]" ;
+	skos:prefLabel "reaction intermediate role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000231
+
+af-rl:AFRL_0000231 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000086> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "reactant" , "starting material" ;
+	skos:definition "Reactant role is a role of a chemical entity that is present at the start of a reaction. [Allotrope]" ;
+	skos:prefLabel "reactant role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000244
+
+af-rl:AFRL_0000244 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000289 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "detergent" , "detergent role" , "washing agent" , "washing agent role" ;
+	skos:definition "Cleaning agent role is a role of material used for cleaning something. [Allotrope]" ;
+	skos:prefLabel "cleaning agent role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000249
+
+af-rl:AFRL_0000249 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "ingredient" ;
+	skos:definition "Ingredient is a role of material that is used in a material combining process to produce a new material. [Allotrope]" ;
+	skos:prefLabel "ingredient role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000289
+
+af-rl:AFRL_0000289 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "The role of a participant of a cleaning process. [Allotrope]" ;
+	skos:prefLabel "cleaning role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000344
+
+af-rl:AFRL_0000344 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A synthesis role is a role of a material that is participating in a synthesis (material conversion) process. [Allotrope]" ;
+	skos:prefLabel "synthesis role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000345
+
+af-rl:AFRL_0000345 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A formulation role is a role of a material that is participating in a formulation process. [Allotrope]" ;
+	skos:prefLabel "formulation role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000351
+
+af-rl:AFRL_0000351 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000345 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "API" , "active pharmaceutical ingredient" , "drug substance" , "drug substance role" ;
+	skos:changeNote "2020-06-22 Add alt labels. [Allotrope]" ;
+	skos:definition "The role of a material in a drug product that is biologically active when interacting with other components of the drug product, other potential drug products, or the chemistry of the body into which the drug will be applied. [Allotrope]" ;
+	skos:prefLabel "active pharmaceutical ingredient role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000359
+
+af-rl:AFRL_0000359 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "by-product" ;
+	skos:definition "A material role of an expected but not desired product of a synthesis. [Allotrope]" ;
+	skos:example "the leaving group in a de-protection step." ;
+	skos:prefLabel "by-product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000360
+
+af-rl:AFRL_0000360 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "chemical product" , "product" ;
+	skos:definition "A role of a material that is intended and desired to be  produced in a synthesis. [Allotrope]" ;
+	skos:prefLabel "product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000361
+
+af-rl:AFRL_0000361 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000360 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "batch" , "lot" , "lot role" ;
+	skos:definition "Batch role is a product role of a portion of material that is intended to have uniform character and quality, within specified limits, and is produced according to a single manufacturing order during the same cycle of manufacture. [Allotrope, CFR21]" ;
+	skos:prefLabel "batch role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000362
+
+af-rl:AFRL_0000362 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:changeNote "2019-08-27 Fixed OWL definition, bug #694.  [Allotrope]" ;
+	skos:definition "A filtration role is a role of a material in a filtration process. [Allotrope]" ;
+	skos:prefLabel "filtration role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000363
+
+af-rl:AFRL_0000363 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000244 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "flush" , "rinse" , "rinse solution" , "rinsing agent" , "rinsing role" , "rinsing solution" ;
+	skos:changeNote "2019-09-20 Changed definition. [Allotrope]" ;
+	skos:definition "The rinse solution role is a cleaning agent role of a fluid used to flush something in order to remove contaminants. [Allotrope]" ;
+	skos:prefLabel "rinse solution role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000364
+
+af-rl:AFRL_0000364 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000344 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "impurity" ;
+	skos:definition "A material role for any component of material that is not part of the defined product at the particular stage of manufacture or storage. [Allotrope]" ;
+	skos:example "For example a starting material is not an impurity at the start of a reaction but it is an impurity after the final purification step." ;
+	skos:prefLabel "impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000365
+
+af-rl:AFRL_0000365 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "degradation product" ;
+	skos:definition "A degradation product is an impurity resulting from a chemical change in the drug substance brought about during manufacture and/or storage of the new drug product by the effect of, for example, light, temperature, pH, water, or by reaction with an excipient and/or the immediate container closure system. [ICH-Q3B]" ;
+	skos:prefLabel "degradation product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000366
+
+af-rl:AFRL_0000366 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000365 , af-rl:AFRL_0000427 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "unidentified degradation product" ;
+	skos:definition "A degradation product role for which a structural characterization has not been achieved and that is defined solely by qualitative analytical properties (e.g., chromatographic retention time). [ICH-Q3A]" ;
+	skos:prefLabel "unidentified degradation product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000367
+
+af-rl:AFRL_0000367 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000365 , af-rl:AFRL_0000428 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "unspecified degradation product" ;
+	skos:definition "A degradation product role that is limited by a general acceptance criterion, but not individually listed with its own specific acceptance criterion, in the new drug product specification. [ICH-Q3A]" ;
+	skos:prefLabel "unspecified degradation product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000420
+
+af-rl:AFRL_0000420 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000231 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A role for a material used in the synthesis of a new drug substance that is incorporated as an element into the structure of an intermediate and/or of the new drug substance. [ICH-Q3A]" ;
+	skos:note "Starting materials are normally commercially available and of defined chemical and physical properties and structure. [ICH-Q3A]" ;
+	skos:prefLabel "starting material role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000421
+
+af-rl:AFRL_0000421 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000086> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A reagent role of the material with the least mole quantity in a chemical process and as such limits the amount of product that can be formed. [Allotrope]" ;
+	skos:prefLabel "limiting reagent role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000422
+
+af-rl:AFRL_0000422 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "enantiomere" , "enantiomeric impurity" ;
+	skos:definition "An enantiomeric impurity is the impurity role of a compound with the same molecular formula as the drug substance that differs in the spatial arrangement of atoms within the molecule and is a non-superimposable mirror image. [ICH-Q3A]" ;
+	skos:prefLabel "enantiomeric impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000423
+
+af-rl:AFRL_0000423 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "contaminant" , "contaminant role" , "extraneous contaminant" ;
+	skos:definition "An extraneous contaminant role is an impurity role arising from any source extraneous to the manufacturing process. [ICH-Q3A]" ;
+	skos:prefLabel "extraneous contaminant role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000424
+
+af-rl:AFRL_0000424 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "identified impurity" ;
+	skos:definition "An impurity for which a structural characterization has been achieved. [ICH-Q3A]" ;
+	skos:prefLabel "identified impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000425
+
+af-rl:AFRL_0000425 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "potential impurity" ;
+	skos:definition "An impurity role for a material that theoretically can arise during manufacture or storage. It may or may not actually appear in the new drug substance. [ICH-Q3A]" ;
+	skos:prefLabel "potential impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000426
+
+af-rl:AFRL_0000426 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "specified impurity" ;
+	skos:definition "An impurity that is individually listed and limited with aspecific acceptance criterion in the new drug substance specification. A specified impurity can be either identified or unidentified. [ICH-Q3A]" ;
+	skos:prefLabel "specified impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000427
+
+af-rl:AFRL_0000427 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "unidentified impurity" ;
+	skos:definition "An impurity for which a structural characterization has not been achieved and that is defined solely by qualitative analytical properties (e.g., chromatographic retention time). [ICH-Q3A]" ;
+	skos:prefLabel "unidentified impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000428
+
+af-rl:AFRL_0000428 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000364 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "unspecified impurity" ;
+	skos:definition "An impurity role that is limited by a general acceptance criterion, but not individually listed with its own specific acceptance criterion, in the new drug substance specification. [ICH-Q3A]" ;
+	skos:prefLabel "unspecified impurity role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000429
+
+af-rl:AFRL_0000429 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000365 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "identified degradation product" ;
+	skos:definition "A degradation product role for which a structural characterization has been achieved. [ICH-Q3A]" ;
+	skos:prefLabel "identified degradation product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000430
+
+af-rl:AFRL_0000430 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000365 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "specified degradation product" ;
+	skos:definition "A degradation product role that is individually listed and limited with a specific acceptance criterion in the new drug product specification. A specified degradation product can be either identified or unidentified. [ICH-Q3A]" ;
+	skos:prefLabel "specified degradation product role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000508
+
+af-rl:AFRL_0000508 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:altLabel "sample" , "sample (preparation)" , "sample role" ;
+	skos:definition "A sample role (preparation) is a role of a material that is prepared for a bearing the sample role in an experiment. [Allotrope]" ;
+	skos:prefLabel "sample role (preparation)" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000510
+
+af-rl:AFRL_0000510 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000216 , af-rl:AFRL_0000511 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "drying additive" ;
+	skos:definition "A drying additive role is the role of a material in a drying process that supports the drying process. [Allotrope]" ;
+	skos:prefLabel "drying additive role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000511
+
+af-rl:AFRL_0000511 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:definition "A drying role role is a role realized in some drying process. [Allotrope]" ;
+	skos:prefLabel "drying role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000512
+
+af-rl:AFRL_0000512 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000511 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "drying agent" , "drying agent role" , "drying medium" ;
+	skos:definition "A drying medium role is a drying role of a material that takes or transports the solvent from the material being dried. [Allotrope]" ;
+	skos:prefLabel "drying medium role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000513
+
+af-rl:AFRL_0000513 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000511 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "dried material" , "dried material role" , "material dried" ;
+	skos:definition "Material dried role is the drying role of the material being dried. [Allotrope]" ;
+	skos:prefLabel "material dried role" .
+# 
+# http://purl.allotrope.org/ontologies/role#AFRL_0000533
+
+af-rl:AFRL_0000533 a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000231 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:altLabel "reaction mixture" ;
+	skos:definition "A reaction mixture role is a role of a chemical mixture undergoing some chemical reaction. [Allotrope]" ;
+	skos:prefLabel "reaction mixture role" .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000002
+# 
+# http://purl.obolibrary.org/obo/BFO_0000015
+# 
+# http://purl.obolibrary.org/obo/BFO_0000019
+
+<http://purl.obolibrary.org/obo/BFO_0000019> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000023
+
+<http://purl.obolibrary.org/obo/BFO_0000023> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000034
+
+<http://purl.obolibrary.org/obo/BFO_0000034> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000040
+
+<http://purl.obolibrary.org/obo/BFO_0000040> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/CHMO_0000993
+
+<http://purl.obolibrary.org/obo/CHMO_0000993> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+
+<http://purl.obolibrary.org/obo/IAO_0000030> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000086
+
+<http://purl.obolibrary.org/obo/OBI_0000086> a owl:Class ;
+	rdfs:subClassOf af-rl:AFRL_0000249 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+	skos:altLabel "reagent" ;
+	skos:definition "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer. [OBI]" ;
+	skos:prefLabel "reagent role" .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000571
+
+<http://purl.obolibrary.org/obo/OBI_0000571> a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+	skos:altLabel "manufacturer" ;
+	skos:definition "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process. [OBI]" ;
+	skos:example "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role. [OBI]" , "With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role. [OBI]" , "With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role. [OBI]" ;
+	skos:prefLabel "manufacturer role" .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000033
+
+<http://purl.obolibrary.org/obo/PATO_0000033> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000051
+
+<http://purl.obolibrary.org/obo/PATO_0000051> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000125
+
+<http://purl.obolibrary.org/obo/PATO_0000125> a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/PATO_0002182
+
+<http://purl.obolibrary.org/obo/PATO_0002182> a owl:Class .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

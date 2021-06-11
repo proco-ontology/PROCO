@@ -1,0 +1,21 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/proco/imports/FIX_imports.owl
+
+[Source ontology]
+FIX
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/FIX_0000277
+includeAllChildren
+
+[Top level source term URIs and tarweird that the smalget direct superclass URIs]
+http://www.w3.org/2002/07/owl#Thing
+
+[Source term retrieval setting]
+
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+

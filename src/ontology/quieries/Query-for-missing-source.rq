@@ -1,0 +1,27 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+prefix ro: <http://purl.obolibrary.org/obo/RO> 
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ref: <http://purl.org/vocab/relationship/>
+prefix qudt: <http://qudt.org/schema/qudt#> 
+prefix qudt-unit: <http://qudt.org/vocab/unit#>
+prefix af-p: <http://purl.allotrope.org/ontologies/process#> 
+prefix af-r: <http://purl.allotrope.org/ontologies/result#>
+prefix af-rl: <http://purl.allotrope.org/ontologies/role#>
+prefix af-x: <http://purl.allotrope.org/ontologies/property#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix af-c:   <http://purl.allotrope.org/ontologies/common#> 
+prefix iao: <http://purl.obolibrary.org/obo/IAO> 
+
+# Query for missing source annotation
+
+SELECT  ?subject ?prefLabel ?definition ?source
+WHERE { 
+  ?subject rdf:type owl:Class .
+  ?subject rdfs:label ?prefLabel . 
+  ?subject obo:IAO_0000115 ?definition .
+  MINUS { ?subject obo:IAO_0000119 ?source } 
+}
+ORDER BY ?subject

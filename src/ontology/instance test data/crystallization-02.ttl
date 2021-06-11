@@ -1,0 +1,104 @@
+@prefix opc: <http://purl.obolibrary.org/obo/> .
+@prefix af-c: <http://purl.allotrope.org/ontologies/common#> .
+@prefix af-e: <http://purl.allotrope.org/ontologies/equipment#> .
+@prefix af-m: <http://purl.allotrope.org/ontologies/material#> .
+@prefix af-p: <http://purl.allotrope.org/ontologies/process#> .
+@prefix af-q: <http://purl.allotrope.org/ontologies/quality#> .
+@prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
+@prefix af-rl: <http://purl.allotrope.org/ontologies/role#> .
+@prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
+@prefix bfo:   <http://purl.obolibrary.org/obo/bfo/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
+@prefix iao: <http://purl.obolibrary.org/obo/iao/> .
+@prefix merck: <http://purl.merck.com/merck> .
+@prefix obi: <http://purl.obolibrary.org/obo/obi/> .
+@prefix pato: <http://purl.obolibrary.org/obo/pato/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix qudt-unit: <http://qudt.org/vocab/unit#> .
+@prefix ro:    <http://purl.obolibrary.org/obo/ro/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# experiment
+<urn:uuid:e175967d-e5bc-4c50-ac11-83c0a2f6fc87>
+	a	<http://semanticscience.org/resource/SIO_000994> ; # experiment 
+		af-x:AFX_0002802 <urn:uuid:f5aa5d9f-6943-48f3-b910-48524965c25e> ;
+		bfo:BFO_0000054 <urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d>.
+		
+# crystallization
+<urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d>
+	a	opc:OPC_0000052 ; # crystallization  
+		af-x:AFX_00000696 <urn:uuid:3e153662-f169-429d-9a42-1880f94c03cd> , <urn:uuid:529bce3c-75db-41e4-ad9a-fb633f5669d9>  ; # has material input
+		af-x:AFX_00000546 <urn:uuid:93f3daa6-98b8-469f-be97-ad2aabbf056f> , <urn:uuid:67d83de5-a8b0-446b-b5d6-b62ff9758cfe> . # has material output
+
+# notebook
+<urn:uuid:f5aa5d9f-6943-48f3-b910-48524965c25e> a 	opc:OPC_0000116; # laboratory notebook		
+		af-x:AFX_0002716 [ a opc:OPC_0000281;
+							af-x:AFX_0000690 "1001-9999"^^xsd:string ]  .
+		
+		
+# charged portion of compound to be crystallized
+<urn:uuid:3e153662-f169-429d-9a42-1880f94c03cd>
+	a	af-m:AFM_0001060 ;  # portion of compound
+	af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "charged material" ] ;           # af-x:has value
+	ro:RO_0000087	[	a	af-rl:AFRL_0000421 ; # limiting reagent role
+						bfo:BFO_0000054	<urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d> ] ;
+	obi:OBI_0000643 merck:cmpd-0000000 ;  # has grain development compound cmpd-0000001
+	ro:RO_0000086 [ a pato:PATO_0000033 ; # has quality concentration
+							ro:RO_0002503 <urn:uuid:606d7d90-8976-4959-a9b6-3362a773fbfb> ; # ; toward impurity cmpd-0000001
+							af-x:AFX_0002864 [ 	a af-r:AFR_0000989 ;
+												qudt:unit qudt-unit:Percent ;
+												qudt:numericValue "3.3"^^xsd:double ] ] .									
+
+# portion of impurity L-000000001 in starting material					
+<urn:uuid:606d7d90-8976-4959-a9b6-3362a773fbfb>  a	af-m:AFM_0001060 ;
+		af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "impurity in starting material" ] ;           # af-x:has value
+		obi:OBI_0000643 merck:cmpd-0000001 ;  # has grain impurity compound cmpd-0000001
+		ro:RO_0000087 [	a	af-rl:AFRL_0000364 ]  . # has role impurity role
+
+# crystallization solvent
+<urn:uuid:529bce3c-75db-41e4-ad9a-fb633f5669d9>
+	a	af-m:AFM_0001060 ;  # portion of compound
+		af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "charged solvent" ] ;           # af-x:has value
+	ro:RO_0000087	[	a	af-rl:AFRL_0000269 ; # solvent role
+						bfo:BFO_0000054	<urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d> ] ;
+	obi:OBI_0000643 chebi:_17790  .  # has grain methanol
+						
+# filter cake						
+<urn:uuid:93f3daa6-98b8-469f-be97-ad2aabbf056f>
+	a	af-m:AFM_0001060; # , opc:OPC_0000289 ;  # portion of compound, product stream
+		af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "filter cake" ] ;           # af-x:has value
+	ro:RO_0000087	[	a	af-rl:AFRL_0000360 ; # product role
+						bfo:BFO_0000054	<urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d> ] ;
+	obi:OBI_0000643 merck:cmpd-0000000 ;  # has grain development compound cmpd-0000000
+	ro:RO_0000086 [ a pato:PATO_0000033 ; # has quality concentration
+					ro:RO_0002503 <urn:uuid:8eea9ae6-ffb9-47aa-a4f9-70e7b3663d18> ; # ; toward impurity cmpd-0000001
+					af-x:AFX_0002864 [ 	a af-r:AFR_0000989 ;
+					qudt:unit qudt-unit:Percent ;
+					qudt:numericValue "2.5"^^xsd:double ] ] .									
+
+# impurity L-000000001 in filter cake					
+<urn:uuid:8eea9ae6-ffb9-47aa-a4f9-70e7b3663d18>  a	af-m:AFM_0001060 ;
+		af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "impurity in filter cake" ] ;           # af-x:has value
+		obi:OBI_0000643 merck:cmpd-0000001 ;  # has grain impurity compound cmpd-0000001
+		ro:RO_0000087 [	a	af-rl:AFRL_0000364 ]  . # has role impurity role
+	
+# supernatant						
+<urn:uuid:67d83de5-a8b0-446b-b5d6-b62ff9758cfe>
+	a	af-m:AFM_0001060, opc:OPC_0000288 ;  # portion of compound, waste stream
+		af-x:AFX_0002802 [	a	af-r:AFR_0000922 ;                             # af-r:description
+						af-x:AFX_0000690  "mother liquors" ] ;           # af-x:has value
+	ro:RO_0000087	[	a	opc:OPC_0000072 ; # mother liquor role
+						bfo:BFO_0000054	<urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d> ] .
+
+						
+
+			 
