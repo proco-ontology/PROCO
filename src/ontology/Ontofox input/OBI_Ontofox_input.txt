@@ -31,6 +31,9 @@ http://purl.obolibrary.org/obo/IAO_0000578 #
 http://purl.obolibrary.org/obo/IAO_0000590 #
 http://purl.obolibrary.org/obo/OBI_0200072 # curve fitting data transformation
 
+http://purl.obolibrary.org/obo/OBI_0000376
+http://purl.obolibrary.org/obo/OBI_0001933
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 #entity
 
