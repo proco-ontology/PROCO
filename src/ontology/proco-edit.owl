@@ -36,7 +36,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/OBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/PATO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/SBO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/SIO_imports.owl"/>
         <dc:creator xml:lang="en">Anna Dunn</dc:creator>
         <dc:creator xml:lang="en">Wes A. Schafer</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
@@ -45,8 +44,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
-        <oboInOwl:creation_date>07-23-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">PROCO release 20210723</owl:versionInfo>
+        <oboInOwl:creation_date>08-04-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">PROCO release 20210804</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1445,6 +1444,14 @@
     
 
 
+    <!-- http://purl.allotrope.org/ontologies/equipment#AFE_0002168 -->
+
+    <rdf:Description rdf:about="http://purl.allotrope.org/ontologies/equipment#AFE_0002168">
+        <rdfs:label>transferring device</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431"/>
@@ -1702,6 +1709,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PROCO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">equation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PROCO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000008">
@@ -1780,6 +1796,15 @@
         <obo:IAO_0000118>CQA</obo:IAO_0000118>
         <obo:IAO_0000119>[ICH Q8(R2)]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">critical quality attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROCO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <rdfs:label xml:lang="en">experiment</rdfs:label>
     </owl:Class>
     
 
@@ -2308,7 +2333,7 @@ production of an API and that is incorporated as a significant structural fragme
     <!-- http://purl.obolibrary.org/obo/PROCO_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000061">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000075"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A fixed and well-defined number or other non-varying mathematical obect.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>mathematical constant</rdfs:label>
@@ -2681,7 +2706,7 @@ production of an API and that is incorporated as a significant structural fragme
     <!-- http://purl.obolibrary.org/obo/PROCO_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000094">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000747"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <obo:IAO_0000115>an investigation of published material to find prior art related to a synthetic route</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -4243,7 +4268,7 @@ identification, categorization, qualification, and control of these mutagenic im
     <!-- http://purl.obolibrary.org/obo/PROCO_0000225 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000225">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000368"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002803"/>
@@ -5245,7 +5270,7 @@ A set of axial points, experimental runs identical to the centre points except f
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000994"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>is an identiifer of a laboratory notebook experiment</obo:IAO_0000115>
@@ -5522,7 +5547,7 @@ A set of axial points, experimental runs identical to the centre points except f
     <!-- http://purl.obolibrary.org/obo/PROCO_0000301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000301">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000747"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <obo:IAO_0000115>a form of experimentation in which many related experiments (tdifferent conditions on the same compound or the same coniditions on multiple compounds) are done simultaneously, typically in a well-plate platform.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -5534,7 +5559,7 @@ A set of axial points, experimental runs identical to the centre points except f
     <!-- http://purl.obolibrary.org/obo/PROCO_0000302 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000302">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000368"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000006"/>
         <obo:IAO_0000115>an equation for the temperature dependence of reaction rates used in determining rate of chemical reactions and for calculation of energy of activation.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>Arhennius equation</rdfs:label>
@@ -5570,18 +5595,6 @@ A set of axial points, experimental runs identical to the centre points except f
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_000368 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000368"/>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000747 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000747"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5597,6 +5610,9 @@ A set of axial points, experimental runs identical to the centre points except f
         <obo:IAO_0000115>a proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.allotrope.org/ontologies/process#AFP_0003374">
+        <rdfs:label>state</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FIX_0000280">
         <obo:IAO_0000115>The activation energy (Ea) of a reaction is the magnitude of the potential barrier (sometimes called the energy barrier) separating minima of the potential energy surface pertaining to the initial and final thermodynamic state. For a chemical reaction to proceed at a reasonable rate, the temperature of the system should be high enough such that there exists an appreciable number of molecules with translational energy equal to or greater than the activation energy.</obo:IAO_0000115>
