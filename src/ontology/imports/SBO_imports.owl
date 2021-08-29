@@ -2,11 +2,12 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/proco/imports/SBO_imports.owl#"
      xml:base="http://purl.obolibrary.org/obo/proco/imports/SBO_imports.owl"
      xmlns:SBO="http://biomodels.net/SBO/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/proco/imports/SBO_imports.owl"/>
     
 
@@ -19,20 +20,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -50,9 +45,9 @@
     <!-- http://biomodels.net/SBO/SBO_0000002 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000002">
-        <rdfs:label>quantitative systems description parameter</rdfs:label>
-        <rdfs:comment>A numerical value that defines certain characteristics of systems or system functions. It may be part of a calculation, but its value is not determined by the form of the equation itself, and may be arbitrarily assigned.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>A numerical value that defines certain characteristics of systems or system functions. It may be part of a calculation, but its value is not determined by the form of the equation itself, and may be arbitrarily assigned.</rdfs:comment>
+        <rdfs:label>quantitative systems description parameter</rdfs:label>
     </owl:Class>
     
 
@@ -60,499 +55,10 @@
     <!-- http://biomodels.net/SBO/SBO_0000009 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000009">
-        <rdfs:label>kinetic constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
         <rdfs:comment>Synonym: reaction rate constant </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000016 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000016">
-        <rdfs:label>unimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving only one reactant.
-</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000017 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000017">
-        <rdfs:label>bimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving two reactants.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000018 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000018">
-        <rdfs:label>trimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving three reactants.
-</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000022 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000022">
-        <rdfs:label>forward unimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical
-reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000023 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000023">
-        <rdfs:label>forward bimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000024 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000024">
-        <rdfs:label>forward trimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000018"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical
-reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.  </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000025 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000025">
-        <rdfs:label>catalytic rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:comment>Synonym: turnover number </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000032 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000032">
-        <rdfs:label>reverse unimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000033 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000033">
-        <rdfs:label>reverse bimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000034 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000034">
-        <rdfs:label>reverse trimolecular rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000018"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving three products. This parameter encompasses all the contributions to the velocity except the quantity of the products.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000035 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000035">
-        <rdfs:label>forward unimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000036 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000036">
-        <rdfs:label>forward bimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000037 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000037">
-        <rdfs:label>forward trimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000024"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000038 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000038">
-        <rdfs:label>reverse unimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000032"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000039 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000039">
-        <rdfs:label>reverse bimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000033"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000040 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000040">
-        <rdfs:label>reverse trimolecular rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000034"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving three products. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000046 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000046">
-        <rdfs:label>zeroth order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000048 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000048">
-        <rdfs:label>forward zeroth order rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000162"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a continuous framework. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000065 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000065">
-        <rdfs:label>forward zeroth order rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000162"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a discrete framework.  </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000066 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000066">
-        <rdfs:label>forward unimolecular rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant. It is to be used in a reaction modelled using a discrete framework. 
-</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000067 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000067">
-        <rdfs:label>forward bimolecular rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000068 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000068">
-        <rdfs:label>forward trimolecular rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000024"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000153 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000153">
-        <rdfs:label>forward rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000154 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000154">
-        <rdfs:label>forward rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000155 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000155">
-        <rdfs:label>forward rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000156 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000156">
-        <rdfs:label>reverse rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000159 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000159">
-        <rdfs:label>non-integral order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000160 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000160">
-        <rdfs:label>forward non-integral order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000159"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000161 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000161">
-        <rdfs:label>reverse non-integral order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000159"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000162 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000162">
-        <rdfs:label>forward zeroth order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000186 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000186">
-        <rdfs:label>maximal velocity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000025&quot;&gt;kcat&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcat&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <rdfs:comment>Synonym: Vmax </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000301 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000301">
-        <rdfs:label>total catalytic efficiency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000186&quot;&gt;Vmax&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000027&quot;&gt;Km&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-         &lt;n2:ci&gt;Vmax&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;Km&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;
-</rdfs:seeAlso>
-        <rdfs:comment>Constant representing the actual efficiency of an enzyme at a given concentration, taking into account its microscopic catalytic activity and the rates of substrate binding and dissociation.
-
-NB. The symbol Vmax and the names maximum rate and maximum velocity are in widespread use although under normal circumstances there is no finite substrate concentration at which v = V and hence no maximum in the mathematical sense (Eur. J. Biochem. 128:281-291).</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000302 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000302">
-        <rdfs:label>catalytic efficiency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000036"/>
-        <rdfs:comment>Constant representing the actual efficiency of an enzyme, taking into account its microscopic catalytic activity and the rates of substrate binding and dissociation.</rdfs:comment>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000025&quot;&gt;kcat&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000027&quot;&gt;Km&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-         &lt;n2:ci&gt;kcat&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;Km&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000320 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000320">
-        <rdfs:label>product catalytic rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000025"/>
-        <rdfs:comment>Synonym: kcatp </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000321 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000321">
-        <rdfs:label>substrate catalytic rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000025"/>
-        <rdfs:comment>Synonym: kcats </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000324 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000324">
-        <rdfs:label>forward maximal velocity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000186"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000350"/>
-        <rdfs:comment>Synonym: Vmaxf </rdfs:comment>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000320&quot;&gt;kcatp&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcatp&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000325 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000325">
-        <rdfs:label>reverse maximal velocity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000186"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000353"/>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000321&quot;&gt;kcats&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcats&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <rdfs:comment>Synonym: Vmaxr </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:label>kinetic constant</rdfs:label>
     </owl:Class>
     
 
@@ -560,11 +66,11 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000331 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000331">
-        <rdfs:label>half-life</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000346"/>
-        <rdfs:comment>Time interval over which a quantified entity is reduced to half its original value.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Time interval over which a quantified entity is reduced to half its original value.</rdfs:comment>
+        <rdfs:label>half-life</rdfs:label>
     </owl:Class>
     
 
@@ -572,8 +78,10 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000332 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000332">
-        <rdfs:label>half-life of an exponential decay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000331"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Time taken by a quantity decreasing according to a mono-exponential decay to be divided by two. Sometimes called t1/2.</rdfs:comment>
+        <rdfs:label>half-life of an exponential decay</rdfs:label>
         <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
    &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
      &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000356&quot;&gt;l&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
@@ -588,55 +96,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
    &lt;/n2:lambda&gt;
 &lt;/n0:math&gt;
 </rdfs:seeAlso>
-        <rdfs:comment>Time taken by a quantity decreasing according to a mono-exponential decay to be divided by two. Sometimes called t1/2.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000338 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000338">
-        <rdfs:label>dissociation rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000038"/>
-        <rdfs:comment>Synonym: kd </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000339 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000339">
-        <rdfs:label>bimolecular association rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000036"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000341"/>
-        <rdfs:comment>Rate with which two components associate into a complex.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000340 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000340">
-        <rdfs:label>trimolecular association rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000037"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000341"/>
-        <rdfs:comment>Rate with which three components associate into a complex.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000341 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000341">
-        <rdfs:label>association rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:comment>Rate with which components associate into a complex.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
     </owl:Class>
     
 
@@ -644,10 +103,10 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000346 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000346">
-        <rdfs:label>temporal measure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000002"/>
-        <rdfs:comment>Fundamental quantity of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions or the transformation of entities. The SI base unit for time is the SI second. The second is the duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Fundamental quantity of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions or the transformation of entities. The SI base unit for time is the SI second. The second is the duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.</rdfs:comment>
+        <rdfs:label>temporal measure</rdfs:label>
     </owl:Class>
     
 
@@ -655,9 +114,11 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000348 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000348">
-        <rdfs:label>exponential time constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000346"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Synonym: mean lifetime </rdfs:comment>
+        <rdfs:label>exponential time constant</rdfs:label>
         <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
    &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
      &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000356&quot;&gt;l&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
@@ -669,232 +130,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
    &lt;/n2:lambda&gt;
 &lt;/n0:math&gt;
 </rdfs:seeAlso>
-        <rdfs:comment>Synonym: mean lifetime </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000349 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000349">
-        <rdfs:label>inactivation rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:comment>Synonym: kinact </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000350 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000350">
-        <rdfs:label>forward reaction velocity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000048"/>
-        <rdfs:comment>The speed of an enzymatic reaction at a defined concentration of substrate(s) and enzyme.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000352 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000352">
-        <rdfs:label>reverse zeroth order rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000353 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000353">
-        <rdfs:label>reverse reaction velocity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000352"/>
-        <rdfs:comment>The speed of an enzymatic reaction at a defined concentration of substrate(s) and enzyme. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000356 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000356">
-        <rdfs:label>decay constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000348&quot;&gt;t&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-       &lt;n2:cn type=&quot;integer&quot;&gt;1&lt;/n2:cn&gt;
-       &lt;n2:ci&gt;t&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;
-</rdfs:seeAlso>
-        <rdfs:comment>Kinetic constant characterising a mono-exponential decay. It is the inverse of the mean lifetime of the continuant being decayed. Its unit is &quot;per time&quot;. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000365 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000365">
-        <rdfs:label>forward non-integral order rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000160"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000366 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000366">
-        <rdfs:label>forward non-integral order rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000160"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000367 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000367">
-        <rdfs:label>reverse non-integral order rate constant, discrete case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000161"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a discrete framework.
-</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000368 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000368">
-        <rdfs:label>reverse non-integral order rate constant, continuous case</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000161"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a continuous framework. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000482 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000482">
-        <rdfs:label>geometric mean rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in either forward or backward direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000009&quot;&gt;k&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;k&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000483 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000483">
-        <rdfs:label>forward geometric mean rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000482"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in the forward direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000153&quot;&gt;kf&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;kf&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000484 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000484">
-        <rdfs:label>reverse geometric mean rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000482"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in the reverse direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000156&quot;&gt;kr&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;kr&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000485 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000485">
-        <rdfs:label>basal rate constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:comment>The minimal velocity observed under defined conditions, which may or may not include the presence of an effector. For example in an inhibitory system, this would be the residual velocity observed under full inhibition. In non-essential activation, this would be the velocity in the absence of any activator.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
     </owl:Class>
     
 
@@ -902,10 +137,10 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000491 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000491">
-        <rdfs:label>diffusion coefficient</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Synonym: diffusivity </rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Synonym: diffusivity </rdfs:comment>
+        <rdfs:label>diffusion coefficient</rdfs:label>
     </owl:Class>
     
 
@@ -913,14 +148,14 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://biomodels.net/SBO/SBO_0000611 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000611">
-        <rdfs:label>effective catalytic rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <rdfs:comment>Under nutrient limited conditions, it may be assumed that enzymes are operating below their maximal capacity (Kcat). Keff represents the lumped turnover rate of a reaction, expressed in units per time.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+        <rdfs:comment>Under nutrient limited conditions, it may be assumed that enzymes are operating below their maximal capacity (Kcat). Keff represents the lumped turnover rate of a reaction, expressed in units per time.</rdfs:comment>
+        <rdfs:label>effective catalytic rate</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
