@@ -1766,7 +1766,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>is a process profile that tracks some aspect of a reaction.</obo:IAO_0000115>
@@ -1978,7 +1978,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>the product of a chemical reaction but not the last step in a synthesis.</obo:IAO_0000115>
@@ -2568,7 +2568,7 @@
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROCO_0000301"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -5578,14 +5578,6 @@ A set of axial points, experimental runs identical to the centre points except f
     
 
 
-    <!-- http://purl.obolibrary.org/obo/REX_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5595,8 +5587,8 @@ A set of axial points, experimental runs identical to the centre points except f
      -->
 
     <rdf:Description rdf:about="http://biomodels.net/SBO/SBO_0000491">
-        <obo:IAO_0000115>a proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
+        <obo:IAO_0000115>a proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.allotrope.org/ontologies/process#AFP_0003374">
