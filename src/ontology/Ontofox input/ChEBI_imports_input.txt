@@ -26,6 +26,13 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 http://purl.obolibrary.org/obo/CHEBI_51086 # chemical role
 subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 
+http://purl.obolibrary.org/obo/CHEBI_33232 #application
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
+
+http://purl.obolibrary.org/obo/CHEBI_24432 #biological role
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
+
+
 [Source term retrieval setting]
 includeAllIntermediates
 

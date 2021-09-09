@@ -44,8 +44,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
-        <oboInOwl:creation_date>08-04-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">PROCO release 20210804</owl:versionInfo>
+        <oboInOwl:creation_date>09-09-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">PROCO release 20210909</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1462,14 +1462,6 @@
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
     </rdf:Description>
     
 
@@ -5587,8 +5579,8 @@ A set of axial points, experimental runs identical to the centre points except f
      -->
 
     <rdf:Description rdf:about="http://biomodels.net/SBO/SBO_0000491">
-        <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
         <obo:IAO_0000115>a proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
+        <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.allotrope.org/ontologies/process#AFP_0003374">

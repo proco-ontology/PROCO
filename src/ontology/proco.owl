@@ -35,8 +35,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
-        <oboInOwl:creation_date>08-04-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">PROCO release 20210804</owl:versionInfo>
+        <oboInOwl:creation_date>09-09-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">PROCO release 20210909</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1403,7 +1403,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROCO_0000027">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115>a relationship indicating that the process profile quantitates some aspect of the process (e.g. a quaklity of a material participant)</obo:IAO_0000115>
+        <obo:IAO_0000115>a relationship indicating that the process profile quantitates some aspect of the process (e.g. a quality of a material participant)</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">profile of</rdfs:label>
     </owl:ObjectProperty>
@@ -1413,7 +1413,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PROCO_0000037 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROCO_0000037">
-        <obo:IAO_0000115>a realtionship between polymorphs that has a cross-over temperature at which one form becomes more thermodynamically favored than the other.</obo:IAO_0000115>
+        <obo:IAO_0000115>a relationship between polymorphs that has a cross-over temperature at which one form becomes more thermodynamically favored than the other.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">enantiotropically related to</rdfs:label>
     </owl:ObjectProperty>
@@ -1423,7 +1423,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PROCO_0000038 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROCO_0000038">
-        <obo:IAO_0000115>A solvate is a solvate of some chemical as solvant</obo:IAO_0000115>
+        <obo:IAO_0000115>an object property that represents a relation between a chemical moiety and a physical form that incorporates solvent molecules either in the crystal lattice or by adsorption on the surface or in channels within the particles.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvation</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvent</obo:IAO_0000119>
         <rdfs:label xml:lang="en">is solvate of</rdfs:label>
@@ -1436,7 +1436,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROCO_0000075">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000115>an object property that represents a relation between polymorphes that are polymorphism of each other.</obo:IAO_0000115>
+        <obo:IAO_0000115>an object property that represents a relation between polymorphs, i.e. different physical forms of the same chemical moiety.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymorphism_(materials_science)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">is polymorph of</rdfs:label>
@@ -1839,496 +1839,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://biomodels.net/SBO/SBO_0000016 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000016">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving only one reactant.
-</rdfs:comment>
-        <rdfs:label>unimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000017 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000017">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving two reactants.</rdfs:comment>
-        <rdfs:label>bimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000018 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000018">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction involving three reactants.
-</rdfs:comment>
-        <rdfs:label>trimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000022 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000022">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical
-reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant.</rdfs:comment>
-        <rdfs:label>forward unimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000023 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000023">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. </rdfs:comment>
-        <rdfs:label>forward bimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000024 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000024">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000018"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical
-reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.  </rdfs:comment>
-        <rdfs:label>forward trimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000025 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000025">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: turnover number </rdfs:comment>
-        <rdfs:label>catalytic rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000032 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000032">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000016"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product.</rdfs:comment>
-        <rdfs:label>reverse unimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000033 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000033">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product.</rdfs:comment>
-        <rdfs:label>reverse bimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000034 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000034">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000018"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving three products. This parameter encompasses all the contributions to the velocity except the quantity of the products.</rdfs:comment>
-        <rdfs:label>reverse trimolecular rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000035 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000035">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>forward unimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000036 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000036">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>forward bimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000037 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000037">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000024"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>forward trimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000038 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000038">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000032"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>reverse unimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000039 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000039">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000033"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving only one product. This parameter encompasses all the contributions to the velocity except the quantity of the product. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>reverse bimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000040 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000040">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000034"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction involving three products. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>reverse trimolecular rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000046 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000046">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity.</rdfs:comment>
-        <rdfs:label>zeroth order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000048 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000048">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000162"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a continuous framework. </rdfs:comment>
-        <rdfs:label>forward zeroth order rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000065 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000065">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000162"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a discrete framework.  </rdfs:comment>
-        <rdfs:label>forward zeroth order rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000066 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000066">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving only one reactant. This parameter encompasses all the contributions to the velocity except the quantity of the reactant. It is to be used in a reaction modelled using a discrete framework. 
-</rdfs:comment>
-        <rdfs:label>forward unimolecular rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000067 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000067">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving two reactants.  This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <rdfs:label>forward bimolecular rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000068 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000068">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000024"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction involving three reactants. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <rdfs:label>forward trimolecular rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000153 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000153">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <rdfs:label>forward rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000154 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000154">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>forward rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000155 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000155">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework.</rdfs:comment>
-        <rdfs:label>forward rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000156 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000156">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000118>backward rate constant</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. </rdfs:comment>
-        <rdfs:label>reverse rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000159 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000159">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <rdfs:label>non-integral order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000160 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000160">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000159"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.</rdfs:comment>
-        <rdfs:label>forward non-integral order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000161 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000161">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000159"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products.</rdfs:comment>
-        <rdfs:label>reverse non-integral order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000162 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000162">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000153"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity.</rdfs:comment>
-        <rdfs:label>forward zeroth order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000186 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000186">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: Vmax </rdfs:comment>
-        <rdfs:label>maximal velocity</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000025&quot;&gt;kcat&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcat&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000301 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000301">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Constant representing the actual efficiency of an enzyme at a given concentration, taking into account its microscopic catalytic activity and the rates of substrate binding and dissociation.
-
-NB. The symbol Vmax and the names maximum rate and maximum velocity are in widespread use although under normal circumstances there is no finite substrate concentration at which v = V and hence no maximum in the mathematical sense (Eur. J. Biochem. 128:281-291).</rdfs:comment>
-        <rdfs:label>total catalytic efficiency</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000186&quot;&gt;Vmax&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000027&quot;&gt;Km&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-         &lt;n2:ci&gt;Vmax&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;Km&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;
-</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000302 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000302">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000036"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Constant representing the actual efficiency of an enzyme, taking into account its microscopic catalytic activity and the rates of substrate binding and dissociation.</rdfs:comment>
-        <rdfs:label>catalytic efficiency</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000025&quot;&gt;kcat&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000027&quot;&gt;Km&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-         &lt;n2:ci&gt;kcat&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;Km&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000320 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000320">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000025"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: kcatp </rdfs:comment>
-        <rdfs:label>product catalytic rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000321 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000321">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000025"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: kcats </rdfs:comment>
-        <rdfs:label>substrate catalytic rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000324 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000324">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000186"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000350"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: Vmaxf </rdfs:comment>
-        <rdfs:label>forward maximal velocity</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000320&quot;&gt;kcatp&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcatp&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000325 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000325">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000186"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000353"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: Vmaxr </rdfs:comment>
-        <rdfs:label>reverse maximal velocity</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000505&quot;&gt;Et&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000321&quot;&gt;kcats&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:times /&gt;
-         &lt;n2:ci&gt;Et&lt;/n2:ci&gt;
-         &lt;n2:ci&gt;kcats&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://biomodels.net/SBO/SBO_0000331 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000331">
@@ -2366,53 +1876,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     
 
 
-    <!-- http://biomodels.net/SBO/SBO_0000338 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000338">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000038"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: kd </rdfs:comment>
-        <rdfs:label>dissociation rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000339 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000339">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000036"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000341"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Rate with which two components associate into a complex.</rdfs:comment>
-        <rdfs:label>bimolecular association rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000340 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000340">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000037"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000341"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Rate with which three components associate into a complex.</rdfs:comment>
-        <rdfs:label>trimolecular association rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000341 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000341">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Rate with which components associate into a complex.</rdfs:comment>
-        <rdfs:label>association rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://biomodels.net/SBO/SBO_0000346 -->
 
     <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000346">
@@ -2443,230 +1906,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
    &lt;/n2:lambda&gt;
 &lt;/n0:math&gt;
 </rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000349 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000349">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Synonym: kinact </rdfs:comment>
-        <rdfs:label>inactivation rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000350 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000350">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000048"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The speed of an enzymatic reaction at a defined concentration of substrate(s) and enzyme.</rdfs:comment>
-        <rdfs:label>forward reaction velocity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000352 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000352">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000156"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction independant of the reactant quantities. This parameter encompasses all the contributions to the velocity. It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>reverse zeroth order rate constant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000353 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000353">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000352"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The speed of an enzymatic reaction at a defined concentration of substrate(s) and enzyme. </rdfs:comment>
-        <rdfs:label>reverse reaction velocity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000356 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000356">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000035"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Kinetic constant characterising a mono-exponential decay. It is the inverse of the mean lifetime of the continuant being decayed. Its unit is &quot;per time&quot;. </rdfs:comment>
-        <rdfs:label>decay constant</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-   &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-     &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000348&quot;&gt;t&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-     &lt;n2:apply&gt;
-       &lt;n2:divide /&gt;
-       &lt;n2:cn type=&quot;integer&quot;&gt;1&lt;/n2:cn&gt;
-       &lt;n2:ci&gt;t&lt;/n2:ci&gt;
-     &lt;/n2:apply&gt;
-   &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;
-</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000365 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000365">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000154"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000160"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants.It is to be used in a reaction modelled using a continuous framework.</rdfs:comment>
-        <rdfs:label>forward non-integral order rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000366 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000366">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000155"/>
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000160"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the forward velocity of a chemical reaction where reactants have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the reactants. It is to be used in a reaction modelled using a discrete framework. </rdfs:comment>
-        <rdfs:label>forward non-integral order rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000367 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000367">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000161"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a discrete framework.
-</rdfs:comment>
-        <rdfs:label>reverse non-integral order rate constant, discrete case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000368 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000368">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000161"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>Numerical parameter that quantifies the reverse velocity of a chemical reaction where products have non-integral orders. This parameter encompasses all the contributions to the velocity except the quantity of the products. It is to be used in a reaction modelled using a continuous framework. </rdfs:comment>
-        <rdfs:label>reverse non-integral order rate constant, continuous case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000482 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000482">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in either forward or backward direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:label>geometric mean rate constant</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000009&quot;&gt;k&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;k&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000483 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000483">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000482"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in the forward direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:label>forward geometric mean rate constant</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000153&quot;&gt;kf&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;kf&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000484 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000484">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000482"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The geometric mean turnover rate of an enzyme in the reverse direction for a reaction, measured per second.</rdfs:comment>
-        <rdfs:label>reverse geometric mean rate constant</rdfs:label>
-        <rdfs:seeAlso>&lt;n0:math xmlns:n0=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
-  &lt;n2:lambda xmlns:n2=&quot;http://biomodels.net/SBO/&quot;&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000156&quot;&gt;kr&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:bvar&gt;&lt;n2:ci definitionURL=&quot;http://biomodels.net/SBO/#SBO:0000188&quot;&gt;n&lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-    &lt;n2:apply&gt;
-      &lt;n2:root /&gt;
-      &lt;n2:degree&gt; &lt;n2:ci&gt; n &lt;/n2:ci&gt; 
-      &lt;/n2:degree&gt;
-      &lt;n2:apply&gt;
-	&lt;n2:product /&gt;
-	&lt;n2:bvar&gt;&lt;n2:ci&gt; i &lt;/n2:ci&gt;&lt;/n2:bvar&gt;
-	&lt;n2:lowlimit&gt;&lt;n2:cn type=&quot;integer&quot;&gt; 1 &lt;/n2:cn&gt;&lt;/n2:lowlimit&gt;
-	&lt;n2:uplimit&gt;&lt;n2:ci&gt; n &lt;/n2:ci&gt;&lt;/n2:uplimit&gt;
-	&lt;n2:apply&gt;
-	  &lt;n2:selector /&gt;
-	  &lt;n2:ci type=&quot;vector&quot;&gt;kr&lt;/n2:ci&gt;
-	  &lt;n2:ci&gt; i &lt;/n2:ci&gt;
-	&lt;/n2:apply&gt;
-      &lt;/n2:apply&gt;
-    &lt;/n2:apply&gt;
-  &lt;/n2:lambda&gt;
-&lt;/n0:math&gt;</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://biomodels.net/SBO/SBO_0000485 -->
-
-    <owl:Class rdf:about="http://biomodels.net/SBO/SBO_0000485">
-        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000046"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-        <rdfs:comment>The minimal velocity observed under defined conditions, which may or may not include the presence of an effector. For example in an inhibitory system, this would be the residual velocity observed under full inhibition. In non-essential activation, this would be the velocity in the absence of any activator.</rdfs:comment>
-        <rdfs:label>basal rate constant</rdfs:label>
     </owl:Class>
     
 
@@ -6127,7 +5366,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
@@ -7410,7 +6649,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHEBI_33232 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33232">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intended use of the molecular entity or part thereof by humans.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
@@ -10469,20 +9708,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50903</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carcinogenic agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50906</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</rdfs:label>
     </owl:Class>
     
 
@@ -15976,7 +15201,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A direct information entity that describes the multidimensional combination and interaction of input variables (e.g., material attributes) and process parameters that have been demonstrated to provide assurance of quality. Working within the design space is not considered as a change. Movement out of the design space is considered to be a change and would normally initiate a regulatory postapproval change process. Design space is proposed by the applicant and is subject to regulatory assessment and approval.</obo:IAO_0000115>
+        <obo:IAO_0000115>A direct information entity that describes the multidimensional combination and interaction of input variables (e.g., material attributes) and process parameters that have been demonstrated to provide assurance of quality. Working within the design space is not considered as a change. Movement out of the design space is considered to be a change and would normally initiate a regulatory post-approval change process. Design space is proposed by the applicant and is subject to regulatory assessment and approval.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH Q8(R2)]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">design space</rdfs:label>
     </owl:Class>
@@ -15987,7 +15212,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>a member of a minimal set of independent variables that can be used to model the dependent reposnses in a set of related experiments.</obo:IAO_0000115>
+        <obo:IAO_0000115>a member of a minimal set of independent variables that can be used to model the dependent reponses in a set of related experiments.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
@@ -16008,7 +15233,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>a design consisting of two or more factors, each with discrete possible values or &quot;levels&quot;, and whose experimental units take on all or a subset  of the possible combinations of these levels across all such factors.</obo:IAO_0000115>
+        <obo:IAO_0000115>a design consisting of two or more factors, each with discrete possible values or &quot;levels&quot;, and whose experimental units take on all or a subset of the possible combinations of these levels across all such factors.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factorial design</rdfs:label>
     </owl:Class>
@@ -16025,7 +15250,7 @@ The following are NOT conclusions based on data: data themselves; results from p
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a process of systematically selecting possible syntetic routes to make a particular product or intermediate.</obo:IAO_0000115>
+        <obo:IAO_0000115>a process of systematically selecting possible synthetic routes to make a particular product or intermediate.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
@@ -16037,7 +15262,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-        <obo:IAO_0000115>A process boundary that represents a milestoe of a made decison on route selection at a specific time point.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process boundary that represents a milestone decision on route selection.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route selection milestone</rdfs:label>
@@ -16052,7 +15277,7 @@ The following are NOT conclusions based on data: data themselves; results from p
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>is a process profile that tracks some aspect of a reaction.</obo:IAO_0000115>
@@ -16208,7 +15433,7 @@ The following are NOT conclusions based on data: data themselves; results from p
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A chemical entity that is the end point product generated from a synthetic chemcial process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chemical entity that is the end point product generated from a synthetic chemical process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Wes Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Product_(chemistry)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical product</rdfs:label>
@@ -16232,7 +15457,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000047"/>
-        <obo:IAO_0000115>critical process profile in synthesis process that is about temperature</obo:IAO_0000115>
+        <obo:IAO_0000115>critical process profile in a synthesis process that is about temperature.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
@@ -16250,7 +15475,7 @@ The following are NOT conclusions based on data: data themselves; results from p
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115>a chemcial entity eith the role starting material in a synthesis.</obo:IAO_0000115>
+        <obo:IAO_0000115>a chemcial entity with the role starting material in a synthesis.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">starting material for synthesis</rdfs:label>
     </owl:Class>
@@ -16264,10 +15489,10 @@ The following are NOT conclusions based on data: data themselves; results from p
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>the product of a chemiical reaction  but not the last step in a synthesis.</obo:IAO_0000115>
+        <obo:IAO_0000115>the product of a chemical reaction but not the last step in a synthesis.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">intermediate material for synthesis</rdfs:label>
     </owl:Class>
@@ -16297,8 +15522,7 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000029"/>
-        <obo:IAO_0000115>a raw material, intermediate, or an AP chemical entityI that is used in the
-production of an API and that is incorporated as a significant structural fragment into the structure of the API.</obo:IAO_0000115>
+        <obo:IAO_0000115>a raw material, intermediate, or an AP chemical entity that is used in the production of an API and that is incorporated as a significant structural fragment into the structure of the API.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH Q7]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">GMP starting material</rdfs:label>
     </owl:Class>
@@ -16453,7 +15677,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115>a process profile that tracks the quality of some process partcipant</obo:IAO_0000115>
+        <obo:IAO_0000115>a process profile that tracks the quality of some process participant.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">quality process profile</rdfs:label>
     </owl:Class>
@@ -16491,7 +15715,7 @@ production of an API and that is incorporated as a significant structural fragme
         <obo:IAO_0000115>A basic and unit step in a process</obo:IAO_0000115>
         <obo:IAO_0000118>unit operation</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
-        <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
+        <rdfs:comment>Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
         <rdfs:label xml:lang="en">unit operation in chemical processing</rdfs:label>
     </owl:Class>
     
@@ -16512,7 +15736,7 @@ production of an API and that is incorporated as a significant structural fragme
         <obo:IAO_0000118>crystallization</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
         <rdfs:comment>The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent. [CHMO]</rdfs:comment>
-        <rdfs:comment>Wes and Oliver: This term is currently defined as a planned process term although crystallization may occur in nature. Here we use to term to repesent those synthetic chemical process processes that are man made and planned. In process chemistry, we are not dealing with natural crystallization process.</rdfs:comment>
+        <rdfs:comment>Wes and Oliver: This term is currently defined as a planned process term although crystallization may occur in nature. Here we use to term to represent those synthetic chemical process processes that are man made and planned.</rdfs:comment>
         <rdfs:label xml:lang="en">crystallization</rdfs:label>
     </owl:Class>
     
@@ -16560,7 +15784,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115>a sequenced plan of synthetic steps and defined intermediates to make a specific product from commericially available starting materials</obo:IAO_0000115>
+        <obo:IAO_0000115>a sequenced plan of synthetic steps and defined intermediates to make a specific product from commercially available starting materials</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route specification</rdfs:label>
@@ -16585,7 +15809,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regulatory approval to sell a new product.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">product filing milestone</rdfs:label>
@@ -16620,7 +15844,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>A fixed and well-defined number or other non-varying mathematical obect.</obo:IAO_0000115>
+        <obo:IAO_0000115>A fixed and well-defined number or other non-varying mathematical object.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>mathematical constant</rdfs:label>
     </owl:Class>
@@ -16655,7 +15879,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
-        <obo:IAO_0000115>The role of a crystalline solid material input in a crystallization to promote nuleation or crystal growth.</obo:IAO_0000115>
+        <obo:IAO_0000115>The role of a crystalline solid material input in a crystallization to promote nucleation or crystal growth.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:comment>A seed crystal is a small piece of single crystal or polycrystal material from which a large crystal of typically the same material is to be grown in a laboratory. Used to replicate material, the use of seed crystal to promote growth avoids the otherwise slow randomness of natural crystal growth and allows manufacture on a scale suitable for industry [wikipedia].</rdfs:comment>
@@ -16716,7 +15940,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>the ratio of the mass of desired compound recoved as crystalline material from a crystallization to mass of compound input</obo:IAO_0000115>
+        <obo:IAO_0000115>the ratio of the mass of desired compound recovered as crystalline material from a crystallization to mass of compound input</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystallization yield</rdfs:label>
@@ -16801,7 +16025,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000058"/>
-        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regulatory approval to sell a new drug product.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">drug product filing milestone</rdfs:label>
@@ -16855,7 +16079,7 @@ production of an API and that is incorporated as a significant structural fragme
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROCO_0000301"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REX_0000002"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -16927,7 +16151,7 @@ production of an API and that is incorporated as a significant structural fragme
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a process of demonstrating that a process produces product of adequate qulaity and yield through the definition of the design space or risk assessments.</obo:IAO_0000115>
+        <obo:IAO_0000115>is a process of demonstrating that a process produces product of adequate quality and yield through the definition of the design space or risk assessments.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process validation</rdfs:label>
@@ -17005,7 +16229,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document to secure permission or coninuing permission to marked a product from a regulatory body.</obo:IAO_0000115>
+        <obo:IAO_0000115>a document to secure permission or continuing permission to market a product from a regulatory body.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">product filing documentation</rdfs:label>
     </owl:Class>
@@ -17070,7 +16294,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regulatory approval to sell a new product.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">product approval milestone</rdfs:label>
@@ -17082,7 +16306,7 @@ production of an API and that is incorporated as a significant structural fragme
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000103"/>
-        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regulatory approval to sell a new drug product.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">drug product approval milestone</rdfs:label>
@@ -17499,7 +16723,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
-        <obo:IAO_0000115>A solid in solid solution is a solution where the continuous phase is a solid and the dispersed phase is a solild. [Allotrope]</obo:IAO_0000115>
+        <obo:IAO_0000115>A solid in solid solution is a solution where the continuous phase is a solid and the dispersed phase is a solid. [Allotrope]</obo:IAO_0000115>
         <obo:IAO_0000119>[Allotrope]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">solid solution</rdfs:label>
     </owl:Class>
@@ -17510,7 +16734,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <obo:IAO_0000115>is an object aggreggate of two or more molecular entities that does not include covalent or ionic interactions</obo:IAO_0000115>
+        <obo:IAO_0000115>is an object aggregate of two or more molecular entities that does not include covalent or ionic interactions</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">molecular complex</rdfs:label>
     </owl:Class>
@@ -17567,7 +16791,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000139"/>
-        <obo:IAO_0000115>a crystalline phase whitout solvent in the unit cell</obo:IAO_0000115>
+        <obo:IAO_0000115>a crystalline phase without solvent in the unit cell</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">anhydrous phase</rdfs:label>
     </owl:Class>
@@ -17654,7 +16878,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an open,one faced tricilinc form with enantiomorphic and polar point symmetries</obo:IAO_0000115>
+        <obo:IAO_0000115>an open,one faced triclinic form with enantiomorphic and polar point symmetries</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pedial</rdfs:label>
     </owl:Class>
@@ -17707,9 +16931,9 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000127"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a monoclinic crystal class with two nonparallel faces symmetrical to a 2- or 4-fold axis of symmetry that has enatiomorphic and polar point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>a monoclinic crystal class with two nonparallel faces symmetrical to a 2- or 4-fold axis of symmetry that has enantiomorphic and polar point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">spenoidal</rdfs:label>
+        <rdfs:label xml:lang="en">sphenoidal</rdfs:label>
     </owl:Class>
     
 
@@ -17863,7 +17087,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000070"/>
         <obo:IAO_0000115>the assessed ratio of maximum possible concentration before purging to its concentration after purging (the final product).  It is simply the product of all the assessed purge factors of each reaction step to which the impurity is subjected.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
-        <rdfs:label>overal assessed purge factor</rdfs:label>
+        <rdfs:label>overall assessed purge factor</rdfs:label>
     </owl:Class>
     
 
@@ -17912,9 +17136,9 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0001128"/>
-        <obo:IAO_0000115>is a heating device (environmental control device) that utilizes a open flame for heating.</obo:IAO_0000115>
+        <obo:IAO_0000115>is a heating device (environmental control device) that utilizes an open flame for heating.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">bunsen burner</rdfs:label>
+        <rdfs:label xml:lang="en">Bunsen burner</rdfs:label>
     </owl:Class>
     
 
@@ -17978,7 +17202,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device used to condense vapors into liquid by colling.</obo:IAO_0000115>
+        <obo:IAO_0000115>a device used to condense vapors into liquid by cooling.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">condensor</rdfs:label>
     </owl:Class>
@@ -18049,7 +17273,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>is a condensor with a internal double spiral through which coolant flows such that the coolant inlet and outlet are both at the top</obo:IAO_0000115>
+        <obo:IAO_0000115>is a condensor with an internal double spiral through which coolant flows such that the coolant inlet and outlet are both at the top</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Dimroth condenser</rdfs:label>
     </owl:Class>
@@ -18099,7 +17323,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device for controlling the envioronment of a particual space</obo:IAO_0000115>
+        <obo:IAO_0000115>a device for controlling the environment of a particular space</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">environmental control device</rdfs:label>
     </owl:Class>
@@ -18379,7 +17603,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000212">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>a desciption of a material entity based on a visual inspection.</obo:IAO_0000115>
+        <obo:IAO_0000115>a description of a material entity based on a visual inspection.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">appearance datum</rdfs:label>
     </owl:Class>
@@ -18568,7 +17792,7 @@ identification, categorization, qualification, and control of these mutagenic im
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an equation that links the initial or forward reaction rate with the molar concetrations or pressures of the reactants and constant parameters (normally rate coefficients and partial reaction orders).</obo:IAO_0000115>
+        <obo:IAO_0000115>an equation that links the initial or forward reaction rate with the molar concentrations or pressures of the reactants and constant parameters (normally rate coefficients and partial reaction orders).</obo:IAO_0000115>
         <obo:IAO_0000116>close match to http://purl.obolibrary.org/obo/STATO_0000071 but derived class is being developed wrt to rate constant and rate orders.</obo:IAO_0000116>
         <obo:IAO_0000118>rate law</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -18672,7 +17896,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>a kinetic determination method that measures the concention of reaction species which is proportional to the integral of the reaction rate.</obo:IAO_0000115>
+        <obo:IAO_0000115>a kinetic determination method that measures the concentration of reaction species which is proportional to the integral of the reaction rate.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label>integral kinetic measurement</rdfs:label>
     </owl:Class>
@@ -18683,7 +17907,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>a kinetic determination methos that measures reaction rate directly.  (d[]/dt)</obo:IAO_0000115>
+        <obo:IAO_0000115>a kinetic determination method that measures reaction rate directly.  (d[]/dt)</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label>differential kinetic measurement</rdfs:label>
     </owl:Class>
@@ -18941,7 +18165,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a four-faced closed orthorhombic form with non-cnetrosymmetric point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>a four-faced closed orthorhombic form with non-centrosymmetric point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>tetragonal-disphenoidal</rdfs:label>
     </owl:Class>
@@ -19532,7 +18756,7 @@ The maximum acceptable intake per day of residual solvent in pharmaceutical prod
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000280">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>a experimental design consisting of three distinct sets of experimental runs: 
+        <obo:IAO_0000115>an experimental design consisting of three distinct sets of experimental runs: 
 A factorial (perhaps fractional) design in the factors studied, each having two levels;
 A set of center points, experimental runs whose values of each factor are the medians of the values used in the factorial portion. This point is often replicated in order to improve the precision of the experiment;
 A set of axial points, experimental runs identical to the centre points except for one factor, which will take on values both below and above the median of the two factorial levels, and typically both outside their range. All factors are varied in this way.</obo:IAO_0000115>
@@ -19559,7 +18783,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is an identiifer of a laboratory notebook experiment</obo:IAO_0000115>
+        <obo:IAO_0000115>is an identifier of a laboratory notebook experiment</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>laboratory notebook experiment identifier</rdfs:label>
@@ -19584,9 +18808,9 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000093"/>
-        <obo:IAO_0000115>is a plan specification of manufacturing instructions for a specific (unique) batch and includes:  specific instructions for each step, the equipment used in each step, sampling and testing procedures for each step, the ampount of each component needed to manufacture the batch (Bill of Materials) and the theoretical yield and expected yield of each intermediate as well as the product.
+        <obo:IAO_0000115>is a plan specification of manufacturing instructions for a specific (unique) batch and includes:  specific instructions for each step, the equipment used in each step, sampling and testing procedures for each step, the amount of each component needed to manufacture the batch (Bill of Materials) and the theoretical yield and expected yield of each intermediate as well as the product.
 .</obo:IAO_0000115>
-        <obo:IAO_0000118>master manufacuring formula</obo:IAO_0000118>
+        <obo:IAO_0000118>master manufacturing formula</obo:IAO_0000118>
         <obo:IAO_0000118>master production record</obo:IAO_0000118>
         <obo:IAO_0000119>FDA 21CFR226</obo:IAO_0000119>
         <rdfs:label>master formula record</rdfs:label>
@@ -19650,7 +18874,7 @@ A set of axial points, experimental runs identical to the centre points except f
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
-        <obo:IAO_0000115>is an objective specification for an ontolgy in the form of a user-focused question / query that identifies key concepts and their relationships that are normally formalized in first order logic of the ontology.  They are also used to test the ontology by querying known instance data or by entailment on its axioms.</obo:IAO_0000115>
+        <obo:IAO_0000115>is an objective specification for an ontology in the form of a user-focused question / query that identifies key concepts and their relationships that are normally formalized in first order logic of the ontology.  They are also used to test the ontology by querying known instance data or by entailment on its axioms.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>competency question</rdfs:label>
@@ -19701,7 +18925,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a portion of material to be futher processed that has an ingredient a material with the role of product.</obo:IAO_0000115>
+        <obo:IAO_0000115>is a portion of material to be further processed that has an ingredient a material with the role of product.</obo:IAO_0000115>
         <obo:IAO_0000116>waste stream can also have the product as an ingredient. Need to convey that it is portion of material that will be further processed.</obo:IAO_0000116>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -19789,7 +19013,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000296">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000159"/>
-        <obo:IAO_0000115>a planned process of of extracting information from chemical systems by data-driven means.</obo:IAO_0000115>
+        <obo:IAO_0000115>a planned process of extracting information from chemical systems by data-driven means.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>chemometrics</rdfs:label>
     </owl:Class>
@@ -19834,7 +19058,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:IAO_0000115>a form of experimentation in which many related experiments (tdifferent conditions on the same compound or the same coniditions on multiple compounds) are done simultaneously, typically in a well-plate platform.</obo:IAO_0000115>
+        <obo:IAO_0000115>a form of experimentation in which many related experiments (different conditions on the same compound or the same conditions on multiple compounds) are done simultaneously, typically in a well-plate platform.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>multi-parallel experimentation</rdfs:label>
@@ -19875,22 +19099,6 @@ A set of axial points, experimental runs identical to the centre points except f
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/REX_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002532 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
 
@@ -20325,50 +19533,50 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Leonard Jacuzzo</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <dc:contributor>Melanie Courtot</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
+        <dc:contributor>Bjoern Peters</dc:contributor>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
-        <dc:contributor>Randall Dipert</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
-        <dc:contributor>Larry Hunter</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <dc:contributor>Randall Dipert</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
+        <dc:contributor>Larry Hunter</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
-        <dc:contributor>Ron Rudnicki</dc:contributor>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation.</obo:IAO_0000116>
+        <dc:contributor>Ron Rudnicki</dc:contributor>
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:contributor>Bill Duncan</dc:contributor>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:contributor>Ludger Jansen</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
@@ -20376,10 +19584,10 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:05:2021 18:56</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:02:2021 18:46</oboInOwl:date>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 197</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 200</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chmo.owl">
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
