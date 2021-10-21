@@ -16,12 +16,11 @@ prefix af-c:   <http://purl.allotrope.org/ontologies/common#>
 prefix iao: <http://purl.obolibrary.org/obo/IAO> 
 
 # Find all Classes that only have taxonomy information - no distinction between sibling classes
-SELECT  ?class ?prefLabel (COUNT (?class) AS ?subClasses )
+SELECT  ?class ?label 
 WHERE { 
-   #?class rdf:type owl:Class .
-   ?class rdfs:label ?prefLabel .
-   ?subClass rdfs:subClassOf ?class .
+   ?class rdfs:subClassOf ?superClass .
+   ?class rdfs:label ?label .
 }
- GROUP BY  ?class ?prefLabel
+GROUP BY  ?class ?label
 HAVING (COUNT (?class) <2)
-
+order by ?class
