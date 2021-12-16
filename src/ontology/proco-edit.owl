@@ -44,6 +44,9 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
+        <terms:license>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.
+
+THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</terms:license>
         <oboInOwl:creation_date>09-09-2021</oboInOwl:creation_date>
         <owl:versionInfo xml:lang="en">PROCO release 20210909</owl:versionInfo>
     </owl:Ontology>
@@ -1660,7 +1663,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>an experimental design to limit the number of experiments covering the space by assuming the Interactions between the factors are negligible</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental design to limit the number of experiments covering the space by assuming the Interactions between the factors are negligible</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Plackett–Burman design</rdfs:label>
     </owl:Class>
@@ -1671,7 +1674,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>all information that has been made available to the public in any form before a given date that might be relevant to a patent&apos;s claims of originality.</obo:IAO_0000115>
+        <obo:IAO_0000115>All information that has been made available to the public in any form before a given date that might be relevant to a patent&apos;s claims of originality.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label>prior art</rdfs:label>
     </owl:Class>
@@ -1693,7 +1696,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>a member of a minimal set of independent variables that can be used to model the dependent reponses in a set of related experiments.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is a member of a minimal set of independent variables that can be used to model the dependent reponses in a set of related experiments.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
@@ -1705,6 +1708,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that asserts the equality of two expressions.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">equation</rdfs:label>
     </owl:Class>
     
@@ -1714,7 +1719,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>a design consisting of two or more factors, each with discrete possible values or &quot;levels&quot;, and whose experimental units take on all or a subset of the possible combinations of these levels across all such factors.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental design consisting of two or more factors, each with discrete possible values or &quot;levels&quot;, and whose experimental units take on all or a subset of the possible combinations of these levels across all such factors.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factorial design</rdfs:label>
     </owl:Class>
@@ -1731,7 +1736,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a process of systematically selecting possible synthetic routes to make a particular product or intermediate.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process of systematically selecting possible synthetic routes to make a particular product or intermediate.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
@@ -1761,7 +1766,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a process profile that tracks some aspect of a reaction.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process profile that tracks some aspect of a reaction.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>reaction process profile</rdfs:label>
     </owl:Class>
@@ -1772,7 +1777,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-        <obo:IAO_0000115>a temporal region that describes the length of time that a synthesis occurs.</obo:IAO_0000115>
+        <obo:IAO_0000115>A temporal region that describes the length of time that a synthesis occurs.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">synthesis reaction time</rdfs:label>
@@ -1796,6 +1801,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <obo:IAO_0000115>An investigation carried out to support or refute a hypothesis. Experiments provide insight into cause-and-effect by demonstrating what outcome occurs when a particular factor is manipulated.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">experiment</rdfs:label>
     </owl:Class>
     
@@ -1811,7 +1818,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a directive information entity that specifies allowed ranges recorded for a process profile.</obo:IAO_0000115>
+        <obo:IAO_0000115>A directive information entity that specifies allowed ranges recorded for a process profile.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process profile specification</rdfs:label>
     </owl:Class>
@@ -1869,7 +1876,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a directive information entity that species the acceptable range of values associated with a material quality</obo:IAO_0000115>
+        <obo:IAO_0000115>A directive information entity that species the acceptable range of values associated with a material quality</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">quality specification</rdfs:label>
@@ -1887,7 +1894,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a quality specification set against a critical quality attribute of a material</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality specification set against a critical quality attribute of a material</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CQA specification</rdfs:label>
     </owl:Class>
@@ -1938,7 +1945,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000047"/>
-        <obo:IAO_0000115>critical process profile in a synthesis process that is about temperature.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process profile that is about temperature.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
@@ -1956,7 +1963,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115>a chemcial entity with the role starting material in a synthesis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chemcial entity with the role starting material in a synthesis.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">starting material for synthesis</rdfs:label>
     </owl:Class>
@@ -1973,7 +1980,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>the product of a chemical reaction but not the last step in a synthesis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chemical entity that is the product of a chemical reaction but not the last step in a synthesis.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">intermediate material for synthesis</rdfs:label>
     </owl:Class>
@@ -2003,7 +2010,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000029"/>
-        <obo:IAO_0000115>a raw material, intermediate, or an AP chemical entity that is used in the production of an API and that is incorporated as a significant structural fragment into the structure of the API.</obo:IAO_0000115>
+        <obo:IAO_0000115>A raw material, intermediate, or an AP chemical entity that is used in the production of an API and that is incorporated as a significant structural fragment into the structure of the API.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH Q7]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">GMP starting material</rdfs:label>
     </owl:Class>
@@ -2031,7 +2038,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a synthetic process governed by the cGMP regulations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A synthetic process governed by the cGMP regulations.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>commercial synthetic process</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -2044,7 +2051,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000100"/>
-        <obo:IAO_0000115>a process measurement of the temperature in a process</obo:IAO_0000115>
+        <obo:IAO_0000115>A process measurement of the temperature in a process</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">temperature measurement</rdfs:label>
@@ -2056,7 +2063,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000051"/>
-        <obo:IAO_0000115>a unit operation of adding a reagent or starting material to a chemical reaction</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit operation of adding a reagent or starting material to a chemical reaction</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>inserting material</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -2069,7 +2076,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000001"/>
-        <obo:IAO_0000115>a synthetic process governed by the GLP regulations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A synthetic process governed by the GLP regulations.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">GLP synthetic process</rdfs:label>
@@ -2099,7 +2106,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002774"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a process profile that represents the number of revolution of stirs given a specific time period</obo:IAO_0000115>
+        <obo:IAO_0000115>A process profile that represents the number of revolution of stirs given a specific time period</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">stirring profile in synthesis process</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -2128,7 +2135,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a process profile in synthesis process that is about material flow</obo:IAO_0000115>
+        <obo:IAO_0000115>A process profile in synthesis process that is about material flow</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">material flow profile in synthesis process</rdfs:label>
@@ -2146,7 +2153,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An application as requested to do something.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process chemistry filing</rdfs:label>
@@ -2158,7 +2165,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115>a process profile that tracks the quality of some process participant.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process profile that tracks the quality of some process participant.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">quality process profile</rdfs:label>
     </owl:Class>
@@ -2181,7 +2188,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000051"/>
-        <obo:IAO_0000115>is a unit operation to remove portions of material from a synthesis stream by trapping it on a filter.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit operation to remove portions of material from a synthesis stream by trapping it on a filter.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">filtering</rdfs:label>
@@ -2212,7 +2219,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000074"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingredient a crystalline solid.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process that has as a material output a crystalline solid or a mixture that has as an ingredient a crystalline solid.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>crystallization</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
@@ -2240,7 +2247,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115>a substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits.</obo:IAO_0000115>
+        <obo:IAO_0000115>A substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymer</obo:IAO_0000119>
         <rdfs:label xml:lang="en">polymer</rdfs:label>
     </owl:Class>
@@ -2251,7 +2258,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000086"/>
-        <obo:IAO_0000115>a process that determines the fate of impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality, and the ability of the synthetic route to  purge them.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process that determines the fate of impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality, and the ability of the synthetic route to  purge them.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
         <obo:IAO_0000118>fate and purge of impurity</obo:IAO_0000118>
@@ -2265,7 +2272,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115>a sequenced plan of synthetic steps and defined intermediates to make a specific product from commercially available starting materials</obo:IAO_0000115>
+        <obo:IAO_0000115>A sequenced plan of synthetic steps and defined intermediates to make a specific product from commercially available starting materials</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route specification</rdfs:label>
@@ -2277,7 +2284,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
-        <obo:IAO_0000115>a sequenced set of unit operations for a single synthetic reaction or simultaneous reactions that are executed in a single equipment train.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sequenced set of unit operations for a single synthetic reaction or simultaneous reactions that are executed in a single equipment train.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:comment>https://www.chemistryworld.com/opinion/what-counts-as-a-step-during-chemical-synthesis/2500261.article#/</rdfs:comment>
@@ -2303,7 +2310,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>the ultimate final state and location of an impurity in a synthetic process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry datum describing the ultimate final state and location of an impurity in a synthetic process.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">fate of impurity</rdfs:label>
     </owl:Class>
@@ -2336,7 +2343,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000062">
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000115>a constant representing the concentration driving force</obo:IAO_0000115>
+        <obo:IAO_0000115>A constant representing the concentration driving force</obo:IAO_0000115>
         <obo:IAO_0000117>Anna Dunn</obo:IAO_0000117>
         <obo:IAO_0000118>order</obo:IAO_0000118>
         <rdfs:label>kinetic order</rdfs:label>
@@ -2348,7 +2355,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
-        <obo:IAO_0000115>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
+        <obo:IAO_0000115>The role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">antisolvent role</rdfs:label>
@@ -2373,7 +2380,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
-        <obo:IAO_0000115>the role of solids in a slurry</obo:IAO_0000115>
+        <obo:IAO_0000115>The role of solids in a slurry</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">precipitate role</rdfs:label>
@@ -2385,7 +2392,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>is a suspension (AFM_0000442) that is a mix of solids in a liquid</obo:IAO_0000115>
+        <obo:IAO_0000115>A suspension (AFM_0000442) that is a mix of solids in a liquid</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">slurry</rdfs:label>
@@ -2397,7 +2404,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000250"/>
-        <obo:IAO_0000115>a physical quality indicating  the structural order of a solid in which its atoms or molecules are arranged in a regular, periodic manner.[wikipedia]</obo:IAO_0000115>
+        <obo:IAO_0000115>A physical quality indicating  the structural order of a solid in which its atoms or molecules are arranged in a regular, periodic manner.[wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystalline state</rdfs:label>
@@ -2409,7 +2416,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>a result that quantifies the ratio of the amount of an impurity in the waste stream of a process to that retained in the product stream.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry datum that quantifies the ratio of the amount of an impurity in the waste stream of a process to that retained in the product stream.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">purge factor</rdfs:label>
@@ -2421,7 +2428,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>the ratio of the mass of desired compound recovered as crystalline material from a crystallization to mass of compound input</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry datum quantifying the ratio of the mass of desired compound recovered as crystalline material from a crystallization to mass of compound input into the crystallization.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystallization yield</rdfs:label>
@@ -2433,7 +2440,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
-        <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
+        <obo:IAO_0000115>A debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
@@ -2445,7 +2452,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <obo:IAO_0000115>is a slid with at least one crystalline phase</obo:IAO_0000115>
+        <obo:IAO_0000115>A solid with at least one crystalline phase</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystalline solid</rdfs:label>
     </owl:Class>
@@ -2456,7 +2463,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>E-factor measures the environmental impact of a synthetic reaction, and is computed by the ratio of the total mass of waste generated in the synthetic scheme to the mass of product isolated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry datum quantifying the environmental impact of a synthetic reaction, and is computed by the ratio of the total mass of waste generated in the synthetic scheme to the mass of product isolated.</obo:IAO_0000115>
         <obo:IAO_0000118>E-factor</obo:IAO_0000118>
         <obo:IAO_0000118>environmental factor</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
@@ -2524,7 +2531,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a route related process that is about optimizing a synthetic route.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that is about optimizing a synthetic route.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>development optimization</obo:IAO_0000118>
         <obo:IAO_0000118>process optimization</obo:IAO_0000118>
@@ -2539,7 +2546,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000086"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000099"/>
-        <obo:IAO_0000115>is a route related process producing data to demonstrate that a commercial route meets regulatory requirements.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process producing data to demonstrate that a commercial route meets regulatory requirements.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route validation</rdfs:label>
@@ -2567,7 +2574,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a screening design to evaluate possible chemical reactions</obo:IAO_0000115>
+        <obo:IAO_0000115>A screening design to evaluate possible chemical reactions</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">reaction screening design</rdfs:label>
@@ -2632,7 +2639,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a process of demonstrating that a process produces product of adequate quality and yield through the definition of the design space or risk assessments.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process of demonstrating that a process produces product of adequate quality and yield through the definition of the design space or risk assessments.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process validation</rdfs:label>
@@ -2644,7 +2651,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000091"/>
-        <obo:IAO_0000115>a screening design to discover polymorphs and solvates of a compound</obo:IAO_0000115>
+        <obo:IAO_0000115>A screening design to discover polymorphs and solvates of a compound</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">polymorph and solvate screening design</rdfs:label>
@@ -2662,7 +2669,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000301"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a process chemistry workflow plan that specifies how a multi-parallel screening study should be conducted.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry workflow plan that specifies how a multi-parallel screening study should be conducted.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">screening design</rdfs:label>
@@ -2674,7 +2681,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000092">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>a process of manufacturing one or more batches of a product in unbroken succession. It includes equipment turnover and cleaning can include dry-runs before committing the starting materials.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process of manufacturing one or more batches of a product in unbroken succession. It includes equipment turnover and cleaning can include dry-runs before committing the starting materials.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">batch campaign</rdfs:label>
@@ -2686,7 +2693,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
+        <obo:IAO_0000115>A plan specification that specifies a process chemistry workflow consisting of a series of unit operations.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process chemistry workflow plan</rdfs:label>
@@ -2698,7 +2705,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:IAO_0000115>an investigation of published material to find prior art related to a synthetic route</obo:IAO_0000115>
+        <obo:IAO_0000115>An investigation of published material to find prior art related to a synthetic route</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">review of prior art</rdfs:label>
@@ -2710,7 +2717,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document to secure permission or continuing permission to market a product from a regulatory body.</obo:IAO_0000115>
+        <obo:IAO_0000115>A document to secure permission or continuing permission to market a product from a regulatory body.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">product filing documentation</rdfs:label>
     </owl:Class>
@@ -2727,7 +2734,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a planned process about a synthetic route</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process about a synthetic route</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">route related process</rdfs:label>
@@ -2739,7 +2746,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>is a process of measuring a quality of a material  associated with a process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process of measuring a quality of a material  associated with a process.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">process monitoring</rdfs:label>
@@ -2751,7 +2758,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000100"/>
-        <obo:IAO_0000115>a process measurement of the pressure in a process</obo:IAO_0000115>
+        <obo:IAO_0000115>A process measurement of the pressure in a process</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pressure measurement</rdfs:label>
@@ -2763,7 +2770,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000100"/>
-        <obo:IAO_0000115>a process monitoring to determine when a chemical reaction has ended.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process monitoring to determine when a chemical reaction has ended.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
@@ -2799,7 +2806,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000233"/>
-        <obo:IAO_0000115>kinetic determination method to determine the partial order of a reactant by measuring the concentration of that reactant with all other reactants in large excess</obo:IAO_0000115>
+        <obo:IAO_0000115>A kinetic determination method to determine the partial order of a reactant by measuring the concentration of that reactant with all other reactants in large excess</obo:IAO_0000115>
         <obo:IAO_0000118>Ostwald kinetic method</obo:IAO_0000118>
         <obo:IAO_0000118>isolation kinetic method</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -2812,7 +2819,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-        <obo:IAO_0000115>is an initial slow stage of a chemical reaction after which the reaction accelerates.</obo:IAO_0000115>
+        <obo:IAO_0000115>A temporal region of initial kinetics of a chemical reaction after which the reaction accelerates.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>induction period</rdfs:label>
         <skos:note>In some catalytic reactions, a pre-catalyst needs to undergo a transformation to form the active catalyst, before the catalyst can take effect. Time is required for this transformation, hence the induction period.
@@ -2830,7 +2837,7 @@ The reactions to form Grignard reagents are notorious for having induction perio
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000070"/>
-        <obo:IAO_0000115>the assessed reactivity of the mutagenic impurity in the processing conditions</obo:IAO_0000115>
+        <obo:IAO_0000115>The assessed reactivity of the mutagenic impurity in the processing conditions</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>assessed reactivity purge factor</rdfs:label>
     </owl:Class>
@@ -2847,7 +2854,7 @@ The reactions to form Grignard reagents are notorious for having induction perio
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001536"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an assessed purge factor based on the solubility of the impurity in the reaction solvent and therefore its propensity to be purged in the mother liquors of steps that involve an isolation of the solid intermediate/product in that step.</obo:IAO_0000115>
+        <obo:IAO_0000115>An assessed purge factor based on the solubility of the impurity in the reaction solvent and therefore its propensity to be purged in the mother liquors of steps that involve an isolation of the solid intermediate/product in that step.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>assessed solubility purge factor</rdfs:label>
     </owl:Class>
@@ -2858,7 +2865,7 @@ The reactions to form Grignard reagents are notorious for having induction perio
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>is a molecular quality that describes the unit cell of the crystal lattice</obo:IAO_0000115>
+        <obo:IAO_0000115>A molecular quality that describes the unit cell of the crystal lattice</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell quality</rdfs:label>
@@ -2991,8 +2998,8 @@ The reactions to form Grignard reagents are notorious for having induction perio
     <!-- http://purl.obolibrary.org/obo/PROCO_0000120 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000120">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">The smallest, regularly repeating material portion contained in a parallelepiped from which a crystal is formed by parallel displacements in three dimensions. [IUPAC]</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <obo:IAO_0000115 xml:lang="en">The smallest, regularly repeating material portion of a crystalline lattice</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell</rdfs:label>
@@ -3004,7 +3011,7 @@ The reactions to form Grignard reagents are notorious for having induction perio
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell that has three perpendicular axes of equal lengths.
+        <obo:IAO_0000115>A unit cell that has three perpendicular axes of equal lengths.
 equivalent to ENM:9000035</obo:IAO_0000115>
         <obo:IAO_0000118>isometric unit cell</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -3017,7 +3024,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell that has three perpendicular axes, two of equal length</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell that has three perpendicular axes, two of equal length</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">tetragonal unit cell</rdfs:label>
     </owl:Class>
@@ -3028,7 +3035,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell that has three perpendicular axes, all of different lengths</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell that has three perpendicular axes, all of different lengths</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">orthorhombic unit cell</rdfs:label>
     </owl:Class>
@@ -3039,7 +3046,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell of three equal lateral axes intersecting at angles of 60 degrees and a vertical axis of variable length at right angles</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell of three equal lateral axes intersecting at angles of 60 degrees and a vertical axis of variable length at right angles</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hexagonal unit cell</rdfs:label>
     </owl:Class>
@@ -3050,7 +3057,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell of three equal lateral axes intersecting at the same angle but not perpendicularly</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell of three equal lateral axes intersecting at the same angle but not perpendicularly</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">trigonal unit cell</rdfs:label>
     </owl:Class>
@@ -3061,7 +3068,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell that has three axes of unequal length, two of which are perpendicular</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell that has three axes of unequal length, two of which are perpendicular</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">monoclinic unit cell</rdfs:label>
     </owl:Class>
@@ -3072,7 +3079,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
-        <obo:IAO_0000115>a unit cell in which all axes are of different length and no angle is perpendicular nor equal to any other angles.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell in which all axes are of different length and no angle is perpendicular nor equal to any other angles.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">triclinic unit cell</rdfs:label>
     </owl:Class>
@@ -3083,7 +3090,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality describing the angle between the b and c axes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality describing the angle between the b and c axes.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell alpha internal angle</rdfs:label>
     </owl:Class>
@@ -3094,7 +3101,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality describing the angle between the a and c axes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality describing the angle between the a and c axes.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell beta internal angle</rdfs:label>
     </owl:Class>
@@ -3105,7 +3112,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality describing the angle between the a and b axes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality describing the angle between the a and b axes.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell gamma internal angle</rdfs:label>
     </owl:Class>
@@ -3116,7 +3123,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>the volume of the unit cell</obo:IAO_0000115>
+        <obo:IAO_0000115>The volume of the unit cell</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell volume</rdfs:label>
     </owl:Class>
@@ -3127,7 +3134,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality indicating the number of formula units (molecules) in the unit cell</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality indicating the number of formula units (molecules) in the unit cell</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell Z value</rdfs:label>
     </owl:Class>
@@ -3138,7 +3145,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality indicating the number of asymmetric units in the unit cell.  It is equal to the Z value divided by the lowest Wycoff position multiplicity</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality indicating the number of asymmetric units in the unit cell.  It is equal to the Z value divided by the lowest Wycoff position multiplicity</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell Z&apos; value</rdfs:label>
     </owl:Class>
@@ -3149,7 +3156,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000109"/>
-        <obo:IAO_0000115>a unit cell quality indicating the density of the compound in the unit cell</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit cell quality indicating the density of the compound in the unit cell</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unit cell crystal density</rdfs:label>
     </owl:Class>
@@ -3160,7 +3167,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>guidelines issued by the  International Conference on Harmonization of Technical Requirements for the Registration of Pharmaceuticals for Human Use with the objective of achieving greater harmonisation worldwide to ensure that safe, effective and high quality medicines are developed, and registered and maintained across the world in the most resource efficient manner whilst meeting high standards. [ICH]</obo:IAO_0000115>
+        <obo:IAO_0000115>A directive information entity issued by the  International Conference on Harmonization of Technical Requirements for the Registration of Pharmaceuticals for Human Use with the objective of achieving greater harmonisation worldwide to ensure that safe, effective and high quality medicines are developed, and registered and maintained across the world in the most resource efficient manner whilst meeting high standards. [ICH]</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ICH Guideline</rdfs:label>
     </owl:Class>
@@ -3171,7 +3178,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115>a description of one of the characteristic external shapes (crystal class / point group) of an individual crystal family / system.  Factors that impact growth rates on the various crystal faces produce different shapes but possess the same set of symmetry elements as parent crystal class.</obo:IAO_0000115>
+        <obo:IAO_0000115>A description of one of the characteristic external shapes (crystal class / point group) of an individual crystal family / system.  Factors that impact growth rates on the various crystal faces produce different shapes but possess the same set of symmetry elements as parent crystal class.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">habit</rdfs:label>
     </owl:Class>
@@ -3182,8 +3189,8 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
-        <obo:IAO_0000115>An entity of a material system which is uniform in chemical composition and physical state. [IUPAC]</obo:IAO_0000115>
-        <obo:IAO_0000119>[IUPAC]</obo:IAO_0000119>
+        <obo:IAO_0000115>A portion of material within a a region of space in a system throughout which all physical properties of the material are essentially uniform.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">thermodynamic phase</rdfs:label>
     </owl:Class>
     
@@ -3193,7 +3200,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000139">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000138"/>
-        <obo:IAO_0000115>a crystalline phase is a single solid crystalline thermodynamic phase</obo:IAO_0000115>
+        <obo:IAO_0000115>A crystalline phase is a single solid crystalline thermodynamic phase</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystalline solid thermodynamic phase</rdfs:label>
     </owl:Class>
@@ -3215,7 +3222,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <obo:IAO_0000115>is an object aggregate of two or more molecular entities that does not include covalent or ionic interactions</obo:IAO_0000115>
+        <obo:IAO_0000115>An object aggregate of two or more molecular entities that does not include covalent or ionic interactions</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">molecular complex</rdfs:label>
     </owl:Class>
@@ -3237,9 +3244,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000142"/>
-        <obo:IAO_0000115>stoichiometric solvate
-(AFM_0001094)
-A solvate is a crystalline material that has solvent molecules incorporated into the crystal lattice in a stoichiometric amount. [Allotrope]</obo:IAO_0000115>
+        <obo:IAO_0000115>A solvate is a crystalline material that has solvent molecules incorporated into the crystal lattice in a stoichiometric amount. [Allotrope]</obo:IAO_0000115>
         <obo:IAO_0000119>[Allotrope]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">solvate</rdfs:label>
     </owl:Class>
@@ -3250,7 +3255,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000144"/>
-        <obo:IAO_0000115>a hydrate is a solvate that has water as the solvent adduct.</obo:IAO_0000115>
+        <obo:IAO_0000115>A hydrate is a solvate that has water as the solvent adduct.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hydrate</rdfs:label>
     </owl:Class>
@@ -3261,7 +3266,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000141"/>
-        <obo:IAO_0000115>compound is composed of ions held together by electrostatic forces termed ionic bonding.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chemical substance composed of ions held together by electrostatic forces termed ionic bonding.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ionic salt</rdfs:label>
     </owl:Class>
@@ -3272,7 +3277,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000139"/>
-        <obo:IAO_0000115>a crystalline phase without solvent in the unit cell</obo:IAO_0000115>
+        <obo:IAO_0000115>A crystalline phase without solvent in the unit cell</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">anhydrous phase</rdfs:label>
     </owl:Class>
@@ -3283,7 +3288,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000147"/>
-        <obo:IAO_0000115>an anhydrous crystalline phase formed experimentally by removing the solvent from a solvate</obo:IAO_0000115>
+        <obo:IAO_0000115>An anhydrous crystalline phase formed experimentally by removing the solvent from a solvate</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">isomorphic desolvate</rdfs:label>
     </owl:Class>
@@ -3295,7 +3300,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000149">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/material#AFM_0001034"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000074"/>
-        <obo:IAO_0000115>a eutectic is a heterogeneous ensemble of individual components whose crystal structures are like discontinuous solid solutions (phase separated).</obo:IAO_0000115>
+        <obo:IAO_0000115>A heterogeneous ensemble of individual components whose crystal structures are like discontinuous solid solutions (phase separated).</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO] Chem. Commun., 2014, 50, 906</obo:IAO_0000119>
         <rdfs:label xml:lang="en">eutectic</rdfs:label>
     </owl:Class>
@@ -3307,7 +3312,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/material#AFM_0001034"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000074"/>
-        <obo:IAO_0000115>a heterogeneous solid solution consisting of two or more polymorphs of the same chemical entity</obo:IAO_0000115>
+        <obo:IAO_0000115>A heterogeneous solid solution consisting of two or more polymorphs of the same chemical entity</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">concomitant polymorphs</rdfs:label>
     </owl:Class>
@@ -3318,7 +3323,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000151">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/material#AFM_0001034"/>
-        <obo:IAO_0000115>dispersion of one or more components in a solid matrix</obo:IAO_0000115>
+        <obo:IAO_0000115>A heterogenous mixture in which one or more components is dispersed in a solid matrix</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">solid dispersion</rdfs:label>
     </owl:Class>
@@ -3329,7 +3334,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000965"/>
-        <obo:IAO_0000115>a group of geometric symmetries (isometries) that keep at least one point fixed.</obo:IAO_0000115>
+        <obo:IAO_0000115>A group of geometric symmetries (isometries) that keep at least one point fixed.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">point group symmetry</rdfs:label>
     </owl:Class>
@@ -3359,7 +3364,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an open,one faced triclinic form with enantiomorphic and polar point symmetries</obo:IAO_0000115>
+        <obo:IAO_0000115>An open,one faced triclinic form with enantiomorphic and polar point symmetries</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pedial</rdfs:label>
     </owl:Class>
@@ -3412,7 +3417,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000127"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a monoclinic crystal class with two nonparallel faces symmetrical to a 2- or 4-fold axis of symmetry that has enantiomorphic and polar point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>A monoclinic crystal class with two nonparallel faces symmetrical to a 2- or 4-fold axis of symmetry that has enantiomorphic and polar point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sphenoidal</rdfs:label>
     </owl:Class>
@@ -3435,7 +3440,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a cubic system crystal class with  48 equal triangular faces
+        <obo:IAO_0000115>A cubic system crystal class with  48 equal triangular faces
  and three identical crystallographic axes with four fold rotational axes and centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
@@ -3459,7 +3464,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a cubic system crystal class with 24-faces and  four fold rotoinversion axes and non-centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>A cubic system crystal class with 24-faces and  four fold rotoinversion axes and non-centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
     </owl:Class>
@@ -3482,7 +3487,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a cubic form with no mirror planes and enantiomorphic point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>A cubic form with no mirror planes and enantiomorphic point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">gyroidal</rdfs:label>
     </owl:Class>
@@ -3493,7 +3498,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>an experiment  performed on computer or via computer simulation</obo:IAO_0000115>
+        <obo:IAO_0000115>An experiment  performed on computer or via computer simulation</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">in-silico modeling</rdfs:label>
     </owl:Class>
@@ -3504,7 +3509,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000159"/>
-        <obo:IAO_0000115>an in-silico modeling to predict the unit cell of the crystal lattice based on the powder x-ray diffractogram</obo:IAO_0000115>
+        <obo:IAO_0000115>An in-silico modeling to predict the unit cell of the crystal lattice based on the powder x-ray diffractogram</obo:IAO_0000115>
         <obo:IAO_0000117>W. Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Powder Indexing</rdfs:label>
@@ -3522,7 +3527,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is in-silico modeling to calculate calculation of the crystal structures by simulated annealing, evolutionary algorithms, distributed multipole analysis, random sampling, basin-hopping, data mining, density functional theory and molecular mechanics.</obo:IAO_0000115>
+        <obo:IAO_0000115>An in-silico modeling to calculate calculation of the crystal structures by simulated annealing, evolutionary algorithms, distributed multipole analysis, random sampling, basin-hopping, data mining, density functional theory and molecular mechanics.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystal structure predictions</rdfs:label>
     </owl:Class>
@@ -3544,7 +3549,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000166">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000070"/>
-        <obo:IAO_0000115>an assessed purge factor based on the relative boiling point of the impurity to the reaction solvent and therefore its propensity to be purged in the headspace of steps to which the impurity is subjected..</obo:IAO_0000115>
+        <obo:IAO_0000115>An assessed purge factor based on the relative boiling point of the impurity to the reaction solvent and therefore its propensity to be purged in the headspace of steps to which the impurity is subjected..</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>assessed volatility purge factor</rdfs:label>
     </owl:Class>
@@ -3555,7 +3560,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000070"/>
-        <obo:IAO_0000115>an assessed purge factor based on the ionisability of the impurity relative to desired compound and therefore its propensity to be purged in the waste layer of a biphasic system in steps that involve such an extraction.</obo:IAO_0000115>
+        <obo:IAO_0000115>An assessed purge factor based on the ionisability of the impurity relative to desired compound and therefore its propensity to be purged in the waste layer of a biphasic system in steps that involve such an extraction.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>assessed ionisability purge factor</rdfs:label>
     </owl:Class>
@@ -3566,7 +3571,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000168">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000070"/>
-        <obo:IAO_0000115>the assessed ratio of maximum possible concentration before purging to its concentration after purging (the final product).  It is simply the product of all the assessed purge factors of each reaction step to which the impurity is subjected.</obo:IAO_0000115>
+        <obo:IAO_0000115>The assessed ratio of maximum possible concentration before purging to its concentration after purging (the final product).  It is simply the product of all the assessed purge factors of each reaction step to which the impurity is subjected.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>overall assessed purge factor</rdfs:label>
     </owl:Class>
@@ -3578,7 +3583,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>is a set of specifications maintained by the International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). for an application dossier for the registration of Medicines and designed to be used across Europe, Japan and the United States.</obo:IAO_0000115>
+        <obo:IAO_0000115>A set of specifications maintained by the International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). for an application dossier for the registration of Medicines and designed to be used across Europe, Japan and the United States.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">common technical document</rdfs:label>
     </owl:Class>
@@ -3595,7 +3600,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a chemical substance quality of a crystalline phase that manifests itself as a set of allowed and unallowed peaks corresponding to the diffraction of incident x-ray radiation as a function of the substance&apos;s unit cell and its space group.</obo:IAO_0000115>
+        <obo:IAO_0000115>A chemical substance quality of a crystalline phase that manifests itself as a set of allowed and unallowed peaks corresponding to the diffraction of incident x-ray radiation as a function of the substance&apos;s unit cell and its space group.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">X-Ray diffractivity</rdfs:label>
     </owl:Class>
@@ -3617,7 +3622,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0001128"/>
-        <obo:IAO_0000115>is a heating device (environmental control device) that utilizes an open flame for heating.</obo:IAO_0000115>
+        <obo:IAO_0000115>A heating device (environmental control device) that utilizes an open flame for heating.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Bunsen burner</rdfs:label>
     </owl:Class>
@@ -3639,7 +3644,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000174">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device to separate vaporized mixtures of liquid compounds with close volatility.</obo:IAO_0000115>
+        <obo:IAO_0000115>A device to separate vaporized mixtures of liquid compounds with close volatility.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">fractionating column</rdfs:label>
     </owl:Class>
@@ -3650,7 +3655,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000174"/>
-        <obo:IAO_0000115>a fractionating column made of a wide glass tube with multiple internal glass &quot;fingers&quot; that point downwards so that the vapor that enters from the lower opening condenses on the fingers and drips down from them.</obo:IAO_0000115>
+        <obo:IAO_0000115>A fractionating column made of a wide glass tube with multiple internal glass &quot;fingers&quot; that point downwards so that the vapor that enters from the lower opening condenses on the fingers and drips down from them.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Vigreux column</rdfs:label>
     </owl:Class>
@@ -3661,7 +3666,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000174"/>
-        <obo:IAO_0000115>is a fractionating column divided into sections (usually 3 to 6) by horizontal glass partitions or constrictions each of which seats a hollow glass bead with an inverted &quot;teardrop&quot; shape acting as check valves, closing and opening with vapor flow, and enhancing vapor-condensate mixing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A fractionating column divided into sections (usually 3 to 6) by horizontal glass partitions or constrictions each of which seats a hollow glass bead with an inverted &quot;teardrop&quot; shape acting as check valves, closing and opening with vapor flow, and enhancing vapor-condensate mixing.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Snyder column</rdfs:label>
     </owl:Class>
@@ -3672,7 +3677,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000174"/>
-        <obo:IAO_0000115>a fractionating column consisting of four concentric glass tubes and a central glass rod, with a thinner glass rod coiled around it to increase the surface area.</obo:IAO_0000115>
+        <obo:IAO_0000115>A fractionating column consisting of four concentric glass tubes and a central glass rod, with a thinner glass rod coiled around it to increase the surface area.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Widmer column</rdfs:label>
     </owl:Class>
@@ -3683,7 +3688,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device used to condense vapors into liquid by cooling.</obo:IAO_0000115>
+        <obo:IAO_0000115>A device used to condense vapors into liquid by cooling.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">condensor</rdfs:label>
     </owl:Class>
@@ -3694,7 +3699,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor consisting of a simple tube surrounded by a jacket of cooling water</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor consisting of a simple tube surrounded by a jacket of cooling water</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Liebig condenser</rdfs:label>
     </owl:Class>
@@ -3705,7 +3710,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor consisting of a jacketed long glass tube with a series of bulbs on the tube to increase the surface area upon which the vapor constituents may condense.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor consisting of a jacketed long glass tube with a series of bulbs on the tube to increase the surface area upon which the vapor constituents may condense.</obo:IAO_0000115>
         <obo:IAO_0000118>bulb condensor</obo:IAO_0000118>
         <obo:IAO_0000118>reflux condensor</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -3719,7 +3724,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000183"/>
-        <obo:IAO_0000115>is a condensor with a coolant-jacketed spiral coil running the length of the condenser serving as the vapor–condensate path, providing more surface area for cooling.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor with a coolant-jacketed spiral coil running the length of the condenser serving as the vapor–condensate path, providing more surface area for cooling.</obo:IAO_0000115>
         <obo:IAO_0000118>Inland Revenue condenser</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Graham condensor</rdfs:label>
@@ -3731,7 +3736,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor with three concentric glass tubes where coolant circulates in both the outer jacket and the central tube to increase the cooling surface,</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor with three concentric glass tubes where coolant circulates in both the outer jacket and the central tube to increase the cooling surface,</obo:IAO_0000115>
         <obo:IAO_0000118>double surface condenser</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Davies condenser</rdfs:label>
@@ -3743,7 +3748,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000183">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor consisting of a straight tube containing an internal spiral coil through which coolant flows.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor consisting of a straight tube containing an internal spiral coil through which coolant flows.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">coil condenser</rdfs:label>
     </owl:Class>
@@ -3754,7 +3759,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>is a condensor with an internal double spiral through which coolant flows such that the coolant inlet and outlet are both at the top</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor with an internal double spiral through which coolant flows such that the coolant inlet and outlet are both at the top</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Dimroth condenser</rdfs:label>
     </owl:Class>
@@ -3765,7 +3770,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000185">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor consisting of a vertical rod that is flow-cooled from the inside that is to be immersed in the vapor to provide a condensing surface.  This condensor is also used for sublimation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor consisting of a vertical rod that is flow-cooled from the inside that is to be immersed in the vapor to provide a condensing surface.  This condensor is also used for sublimation.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">cold finger</rdfs:label>
     </owl:Class>
@@ -3776,7 +3781,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000178"/>
-        <obo:IAO_0000115>a condensor consisting of a large water-cooled finger tightly fitted inside a wide cylindrical housing. The finger has a helical ridge along its length, so as to leave a narrow helical path for the vapor.</obo:IAO_0000115>
+        <obo:IAO_0000115>A condensor consisting of a large water-cooled finger tightly fitted inside a wide cylindrical housing. The finger has a helical ridge along its length, so as to leave a narrow helical path for the vapor.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Frederichs condensor</rdfs:label>
     </owl:Class>
@@ -3793,7 +3798,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a quality associated with a portion of material</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality associated with a portion of material</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">bulk substance quality</rdfs:label>
     </owl:Class>
@@ -3804,7 +3809,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device for controlling the environment of a particular space</obo:IAO_0000115>
+        <obo:IAO_0000115>A device for controlling the environment of a particular space</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">environmental control device</rdfs:label>
     </owl:Class>
@@ -3815,7 +3820,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000188"/>
-        <obo:IAO_0000115>is an environmental control device used to apply heat directly to containers.</obo:IAO_0000115>
+        <obo:IAO_0000115>An environmental control device used to apply heat directly to containers.</obo:IAO_0000115>
         <obo:IAO_0000118>isomantel</obo:IAO_0000118>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">heating mantle</rdfs:label>
@@ -3883,7 +3888,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>is a document that is a  primary record of research used to document their hypotheses, experiments and initial analysis or interpretation of these experiments serving as an organizational tool, a memory aid, and can also have a role in protecting any intellectual property that comes from the research.</obo:IAO_0000115>
+        <obo:IAO_0000115>A document that is a  primary record of research used to document their hypotheses, experiments and initial analysis or interpretation of these experiments serving as an organizational tool, a memory aid, and can also have a role in protecting any intellectual property that comes from the research.</obo:IAO_0000115>
         <obo:IAO_0000118>lab notebook</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">laboratory notebook</rdfs:label>
@@ -3895,7 +3900,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000197">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
-        <obo:IAO_0000115>a device that evaporates</obo:IAO_0000115>
+        <obo:IAO_0000115>A device that evaporates</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">evaporation device</rdfs:label>
     </owl:Class>
@@ -3907,7 +3912,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000198">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
-        <obo:IAO_0000115>An international nonproprietary name (INN) is a unique generic and non-proprietary name given to a pharmaceutical drug or an active ingredient  coordinated by the World Health Organization (WHO).</obo:IAO_0000115>
+        <obo:IAO_0000115>A centrally registered identifier given to a pharmaceutical drug or an active ingredient coordinated by the World Health Organization (WHO) that is unique generic and non-proprietary.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">international nonproprietary name</rdfs:label>
     </owl:Class>
@@ -3918,7 +3923,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
-        <obo:IAO_0000115>chemical structure is the structure of a chemical entity in terms of its molecular geometry and electronic structure.</obo:IAO_0000115>
+        <obo:IAO_0000115>The structure of a chemical entity in terms of its molecular geometry and electronic structure.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical structure</rdfs:label>
     </owl:Class>
@@ -3929,7 +3934,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
-        <obo:IAO_0000115>a synthesis role used to remove suspended solids from liquids by inducing flocculation (the solids begin to aggregate forming flakes, which either precipitate to the bottom or float to the surface of the liquid, and then they can be removed or collected).  Flocculants, or flocculating agents (also known as flocking agents), are chemicals that promote flocculation by causing colloids and other suspended particles in liquids to aggregate, forming a floc.</obo:IAO_0000115>
+        <obo:IAO_0000115>A synthesis role used to remove suspended solids from liquids by inducing flocculation (the solids begin to aggregate forming flakes, which either precipitate to the bottom or float to the surface of the liquid, and then they can be removed or collected).  Flocculants, or flocculating agents (also known as flocking agents), are chemicals that promote flocculation by causing colloids and other suspended particles in liquids to aggregate, forming a floc.</obo:IAO_0000115>
         <obo:IAO_0000118>clarifying agent</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">flocculant</rdfs:label>
@@ -3963,7 +3968,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>the drug substance nomenclature section of the CTA</obo:IAO_0000115>
+        <obo:IAO_0000115>The drug substance nomenclature section of the CTA</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.1.1 Nomenclature</rdfs:label>
     </owl:Class>
@@ -3974,7 +3979,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
-        <obo:IAO_0000115>a unique name, assigned to a chemical substance and preferred among the possible names generated by IUPAC nomenclature. The &quot;preferred IUPAC nomenclature&quot; provides a set of rules for choosing between multiple possibilities in situations where it is important to decide on a unique name. It is intended for use in legal and regulatory situations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unique name, assigned to a chemical substance and preferred among the possible names generated by IUPAC nomenclature. The &quot;preferred IUPAC nomenclature&quot; provides a set of rules for choosing between multiple possibilities in situations where it is important to decide on a unique name. It is intended for use in legal and regulatory situations.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">preferred IUPAC name</rdfs:label>
     </owl:Class>
@@ -3985,7 +3990,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
-        <obo:IAO_0000115>the name assigned to a chemical substance by the Chemical Abstracts Service of the American Chemical Society</obo:IAO_0000115>
+        <obo:IAO_0000115>The name assigned to a chemical substance by the Chemical Abstracts Service of the American Chemical Society</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical abstracts name</rdfs:label>
     </owl:Class>
@@ -3996,7 +4001,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000204">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
-        <obo:IAO_0000115>a unique numerical identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature.</obo:IAO_0000115>
+        <obo:IAO_0000115>A centrally registered identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical abstracts number</rdfs:label>
     </owl:Class>
@@ -4007,7 +4012,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>the drug substance structure section of the CTA</obo:IAO_0000115>
+        <obo:IAO_0000115>The drug substance structure section of the CTA</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.1.2 Structure</rdfs:label>
     </owl:Class>
@@ -4018,7 +4023,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000206">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
-        <obo:IAO_0000115>a two or three dimensional representation of a chemical structure.</obo:IAO_0000115>
+        <obo:IAO_0000115>A two or three dimensional representation of a chemical structure.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical drawing</rdfs:label>
     </owl:Class>
@@ -4029,7 +4034,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000208">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
-        <obo:IAO_0000115>a molecular entity quality which identifies each constituent element by its chemical symbol and indicates the number of atoms of each element found in each discrete molecular entity of that compound.</obo:IAO_0000115>
+        <obo:IAO_0000115>A molecular entity quality which identifies each constituent element by its chemical symbol and indicates the number of atoms of each element found in each discrete molecular entity of that compound.</obo:IAO_0000115>
         <obo:IAO_0000119>[CHEMINF]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">molecular formula</rdfs:label>
     </owl:Class>
@@ -4073,7 +4078,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000211">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document certified by a vendor summarizing test results and specifications for a particular batch of its product.</obo:IAO_0000115>
+        <obo:IAO_0000115>A document certified by a vendor summarizing test results and specifications for a particular batch of its product.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">certificate of analysis</rdfs:label>
     </owl:Class>
@@ -4084,7 +4089,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000212">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>a description of a material entity based on a visual inspection.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is about a material entity based on a visual inspection.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">appearance datum</rdfs:label>
     </owl:Class>
@@ -4095,7 +4100,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000213">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>the drug substance CTA section regarding manufacturers</obo:IAO_0000115>
+        <obo:IAO_0000115>The document part of the common technical document regarding manufacturers</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.2.1 Manufacturers</rdfs:label>
     </owl:Class>
@@ -4106,7 +4111,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000214">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
-        <obo:IAO_0000115>a 2-D representation of a step-by-step progression through a synthesis or part of a synthesis showing reagents, intermediates and reaction conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A 2-D representation of a step-by-step progression through a synthesis or part of a synthesis showing reagents, intermediates and reaction conditions.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">synthesis flow chart</rdfs:label>
     </owl:Class>
@@ -4128,7 +4133,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000115>the measured pH of a saturated solution of a material at a specified temperature.</obo:IAO_0000115>
+        <obo:IAO_0000115>A scalar measurement datum that quantifies the measured pH of a saturated solution of a material at a specified temperature.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">solution pH datum</rdfs:label>
     </owl:Class>
@@ -4139,7 +4144,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000217">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000115>the measured change in orientation of monochromatic plane-polarized light, per unit distance–concentration product, as the light passes through a sample of a compound in solution.</obo:IAO_0000115>
+        <obo:IAO_0000115>A scalar measurement datum that quantifies the measured change in orientation of monochromatic plane-polarized light, per unit distance–concentration product, as the light passes through a sample of a compound in solution.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">specific rotation datum</rdfs:label>
     </owl:Class>
@@ -4161,9 +4166,7 @@ A solvate is a crystalline material that has solvent molecules incorporated into
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000219">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>Critical Steps: Tests and acceptance criteria (with justification including experimental data) performed at critical steps identified in 3.2.S.2.2 of the manufacturing process to ensure that the process is controlled should be provided.
-Intermediates: Information on the quality and control of intermediates isolated during the
-process should be provided.
+        <obo:IAO_0000115>The document part of the common technical document that specifies tests and acceptance criteria (with justification including experimental data) performed at critical steps identified in 3.2.S.2.2 of the manufacturing process to ensure that the process is controlled.  Information on the quality and control of intermediates isolated during the process is also provided.
 Reference ICH guidances Q6A and Q6B.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>CTA Section 3.2.S.2.4 Controls of Critical Steps and Intermediates</rdfs:label>
@@ -4175,7 +4178,7 @@ Reference ICH guidances Q6A and Q6B.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000220">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>Confirmation of structure based on, for example, synthetic route and spectral analyses should be provided. Information such as the potential for isomerism, the identification of stereochemistry, or the potential for forming polymorphs should also be included.
+        <obo:IAO_0000115>The document part of the common technical document that provides confirmation of structure based on, for example, synthetic route and spectral analyses should be provided. Information such as the potential for isomerism, the identification of stereochemistry, or the potential for forming polymorphs.
 Reference ICH guidance Q6A.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>CTA Section 3.2.S.3.1 Elucidation of Structure and other Characteristics</rdfs:label>
@@ -4187,7 +4190,7 @@ Reference ICH guidance Q6A.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000221">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <obo:IAO_0000115>Information on impurities should be provided. Reference ICH guidances Q3A, Q3C, Q5C, Q6A, and Q6B.</obo:IAO_0000115>
+        <obo:IAO_0000115>The document part of the common technical document that provides Information on impurities. Reference ICH guidances Q3A, Q3C, Q5C, Q6A, and Q6B.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>CTA Section 3.2.S.3.2 Impurities</rdfs:label>
     </owl:Class>
@@ -4198,7 +4201,7 @@ Reference ICH guidance Q6A.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000222">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000136"/>
-        <obo:IAO_0000115>is an ICH guideline and objective specification for the
+        <obo:IAO_0000115>An ICH guideline and objective specification for the
 identification, categorization, qualification, and control of these mutagenic impurities in pahrmaceutical products to limit potential carcinogenic risk.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH M7 Assessment and Control of DNA Reactive (Mutagenic) Impurities in Pharmaceuticals To Limit Potential Carcinogenic Risk</rdfs:label>
@@ -4224,7 +4227,7 @@ identification, categorization, qualification, and control of these mutagenic im
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is an is-silico modeling based on DEREK that determines the risk of a chemical being a mutagenic impurity</obo:IAO_0000115>
+        <obo:IAO_0000115>An is-silico modeling based on DEREK that determines the risk of a chemical being a mutagenic impurity</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>DEREK Mutagen Prediction</rdfs:label>
     </owl:Class>
@@ -4249,7 +4252,7 @@ identification, categorization, qualification, and control of these mutagenic im
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is an is-silico modeling based on MCASE that determines the risk of a chemical being a mutagenic impurity</obo:IAO_0000115>
+        <obo:IAO_0000115>An is-silico modeling based on MCASE that determines the risk of a chemical being a mutagenic impurity</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>MCASE Mutagen Prediction</rdfs:label>
     </owl:Class>
@@ -4273,7 +4276,7 @@ identification, categorization, qualification, and control of these mutagenic im
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an equation that links the initial or forward reaction rate with the molar concentrations or pressures of the reactants and constant parameters (normally rate coefficients and partial reaction orders).</obo:IAO_0000115>
+        <obo:IAO_0000115>An equation that links the initial or forward reaction rate with the molar concentrations or pressures of the reactants and constant parameters (normally rate coefficients and partial reaction orders).</obo:IAO_0000115>
         <obo:IAO_0000116>close match to http://purl.obolibrary.org/obo/STATO_0000071 but derived class is being developed wrt to rate constant and rate orders.</obo:IAO_0000116>
         <obo:IAO_0000118>rate law</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -4286,7 +4289,8 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000226">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>is a subset of a broad range of kinetic techniques utilized to determine the rate laws of chemical reactions and to aid in elucidation of reaction mechanisms. While the concepts guiding reaction progress kinetic analysis are not new, the process was formalized by Professor Donna Blackmond (currently at Scripps Research Institute) in the late 1990s and has since seen increasingly widespread use. Unlike more common pseudo-first-order analysis, in which an overwhelming excess of one or more reagents is used relative to a species of interest, RPKA probes reactions at synthetically relevant conditions (i.e. with concentrations and reagent ratios resembling those used in the reaction when not exploring the rate law.) Generally, this analysis involves a system in which the concentrations of multiple reactants are changing measurably over the course of the reaction. As the mechanism can vary depending on the relative and absolute concentrations of the species involved, this approach obtains results that are much more representative of reaction behavior under commonly utilized conditions than do traditional tactics. Furthermore, information obtained by observation of the reaction over time may provide insight regarding unexpected behavior such as induction periods, catalyst deactivation, or changes in mechanism.</obo:IAO_0000115>
+        <obo:IAO_0000115>Kinetic techniques utilized to determine the rate laws of chemical reactions and to aid in elucidation of reaction mechanisms. While the concepts guiding reaction progress kinetic analysis are not new, the process was formalized by Professor Donna Blackmond (currently at Scripps Research Institute) in the late 1990s and has since seen increasingly widespread use. Unlike more common pseudo-first-order analysis, in which an overwhelming excess of one or more reagents is used relative to a species of interest, RPKA probes reactions at synthetically relevant conditions (i.e. with concentrations and reagent ratios resembling those used in the reaction when not exploring the rate law.) Generally, this analysis involves a system in which the concentrations of multiple reactants are changing measurably over the course of the reaction. As the mechanism can vary depending on the relative and absolute concentrations of the species involved, this approach obtains results that are much more representative of reaction behavior under commonly utilized conditions than do traditional tactics. Furthermore, information obtained by observation of the reaction over time may provide insight regarding unexpected behavior such as induction periods, catalyst deactivation, or changes in mechanism.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mechanistic and kinetic determinations utilized to determine the rate laws of chemical reactions and to aid in elucidation of reaction mechanisms. While the concepts guiding reaction progress kinetic analysis are not new, the process was formalized by Professor Donna Blackmond (currently at Scripps Research Institute) in the late 1990s and has since seen increasingly widespread use. Unlike more common pseudo-first-order analysis, in which an overwhelming excess of one or more reagents is used relative to a species of interest, RPKA probes reactions at synthetically relevant conditions (i.e. with concentrations and reagent ratios resembling those used in the reaction when not exploring the rate law.) Generally, this analysis involves a system in which the concentrations of multiple reactants are changing measurably over the course of the reaction. As the mechanism can vary depending on the relative and absolute concentrations of the species involved, this approach obtains results that are much more representative of reaction behavior under commonly utilized conditions than do traditional tactics. Furthermore, information obtained by observation of the reaction over time may provide insight regarding unexpected behavior such as induction periods, catalyst deactivation, or changes in mechanism.</obo:IAO_0000115>
         <obo:IAO_0000118>RPKA</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>Reaction Progress Kinetic Analysis</rdfs:label>
@@ -4298,7 +4302,7 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000227">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000093"/>
-        <obo:IAO_0000115>a workflow that utilizes online and at-line measurements to understand chemical processes by defining and monitoring ...</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry workflow plan  that utilizes online and at-line measurements to understand chemical processes by defining and monitoring ...</obo:IAO_0000115>
         <obo:IAO_0000118>PAT</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>process analytical technology</rdfs:label>
@@ -4310,7 +4314,7 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000228">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>involves setting the rate of change of a reaction intermediate in a reaction mechanism equal to zero so that the kinetic equations can be simplified by setting the rate of formation of the intermediate equal to the rate of its destruction.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mechanistic and kinetic determination that involves setting the rate of change of a reaction intermediate in a reaction mechanism equal to zero so that the kinetic equations can be simplified by setting the rate of formation of the intermediate equal to the rate of its destruction.</obo:IAO_0000115>
         <obo:IAO_0000116>shouldn&apos;t this be a data transformation process?</obo:IAO_0000116>
         <obo:IAO_0000118>Bodenstein&apos;s quasi-steady state approximation</obo:IAO_0000118>
         <obo:IAO_0000118>stationary-state approximation</obo:IAO_0000118>
@@ -4339,7 +4343,7 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000230">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000062"/>
-        <obo:IAO_0000115>the sum of stoichiometric coefficients of reactants, is always equal to the molecularity of the elementary reaction. However, complex (multi-step) reactions may or may not have reaction orders equal to their stoichiometric coefficients.</obo:IAO_0000115>
+        <obo:IAO_0000115>The sum of stoichiometric coefficients of reactants, is always equal to the molecularity of the elementary reaction. However, complex (multi-step) reactions may or may not have reaction orders equal to their stoichiometric coefficients.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>overall reaction order</rdfs:label>
     </owl:Class>
@@ -4350,7 +4354,7 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000047"/>
-        <obo:IAO_0000115>a quality process profile that tracks the concentration changes of a species</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality process profile that tracks the concentration changes of a species</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>concentration profile</rdfs:label>
     </owl:Class>
@@ -4361,7 +4365,7 @@ identification, categorization, qualification, and control of these mutagenic im
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000115>the speed at which a chemical reaction takes place, defined as proportional to the increase in the concentration of a product per unit time and to the decrease in the concentration of a reactant per unit time.</obo:IAO_0000115>
+        <obo:IAO_0000115>A measurement datum about the speed at which a chemical reaction takes place, defined as proportional to the increase in the concentration of a product per unit time and to the decrease in the concentration of a reactant per unit time.</obo:IAO_0000115>
         <obo:IAO_0000116>http://purl.obolibrary.org/obo/STATO_0000071
 reaction rate is a measurement datum which represents the speed of a chemical reaction turning reactive species into product species of event (i.e the number of such conversions)s occuring over a time interval
 
@@ -4377,7 +4381,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>a kinetic determination method that measures the concentration of reaction species which is proportional to the integral of the reaction rate.</obo:IAO_0000115>
+        <obo:IAO_0000115>A kinetic determination method that measures the concentration of reaction species which is proportional to the integral of the reaction rate.</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label>integral kinetic measurement</rdfs:label>
     </owl:Class>
@@ -4388,7 +4392,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>a kinetic determination method that measures reaction rate directly.  (d[]/dt)</obo:IAO_0000115>
+        <obo:IAO_0000115>A kinetic determination method that measures reaction rate directly.  (d[]/dt)</obo:IAO_0000115>
         <obo:IAO_0000119>[wikipedia]</obo:IAO_0000119>
         <rdfs:label>differential kinetic measurement</rdfs:label>
     </owl:Class>
@@ -4399,7 +4403,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000234"/>
-        <obo:IAO_0000115>a series of experiments whereby the initial concentration of each reactant is varied while the other reactant concentrations are kept constant, allowing the determination of the rate order of the reactant.</obo:IAO_0000115>
+        <obo:IAO_0000115>A series of experiments whereby the initial concentration of each reactant is varied while the other reactant concentrations are kept constant, allowing the determination of the rate order of the reactant.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>method of initial rates</rdfs:label>
     </owl:Class>
@@ -4410,7 +4414,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000236">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
-        <obo:IAO_0000115>a plot of the differential kinetic measurement as the y-axis vs. the integral measurement as the x-axis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A plot of the differential kinetic measurement as the y-axis vs. the integral measurement as the x-axis.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>graphical rate equation</rdfs:label>
     </owl:Class>
@@ -4421,7 +4425,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000237">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000085"/>
-        <obo:IAO_0000115>a series of kinetic experiments that compare concentration vs. time profiles to identify product inhibition, catalyst deactivation and the order of components including catalysts.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mechanistic and kinetic determination that compares concentration vs. time profiles in a series of experiments to identify product inhibition, catalyst deactivation and the order of components including catalysts.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>Variable Time Normalisation Analysis</rdfs:label>
     </owl:Class>
@@ -4432,7 +4436,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000238">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/role#AFRL_0000364"/>
-        <obo:IAO_0000115>is an impurity role of DNA reactive material that have significant carcinogenic risk</obo:IAO_0000115>
+        <obo:IAO_0000115>An impurity role of DNA reactive material that have significant carcinogenic risk</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>mutagenic impurity</rdfs:label>
     </owl:Class>
@@ -4455,7 +4459,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000127"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 2- faced open form monoclinic crystal with polar point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>A 2- faced open form monoclinic crystal with polar point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>domatic</rdfs:label>
     </owl:Class>
@@ -4501,7 +4505,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>four-faced closed orthorhombic form with enantiomorphic point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>Four-faced closed orthorhombic form with enantiomorphic point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>rhombic-disphenoidal</rdfs:label>
     </owl:Class>
@@ -4570,7 +4574,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>isometric form with no 4 fold axes and centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>Isometric form with no 4 fold axes and centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>diploidal</rdfs:label>
     </owl:Class>
@@ -4593,7 +4597,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>general cubic forms which only has 3-fold axes and 2-fold axes with no mirror plane with enantiomorphic point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>General cubic forms which only has 3-fold axes and 2-fold axes with no mirror plane with enantiomorphic point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>tetartoidal</rdfs:label>
     </owl:Class>
@@ -4646,7 +4650,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a four-faced closed orthorhombic form with non-centrosymmetric point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>4-faced closed orthorhombic form with non-centrosymmetric point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>tetragonal-disphenoidal</rdfs:label>
     </owl:Class>
@@ -4669,7 +4673,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a  8-faced form with centrosymmetric point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>8-faced form with centrosymmetric point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>tetragonal-dipyramidal</rdfs:label>
     </owl:Class>
@@ -4761,7 +4765,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 16-faced form tetragonal crystal form with centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>16-faced form tetragonal crystal form with centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>ditetragonal-dipyramidal</rdfs:label>
     </owl:Class>
@@ -4860,7 +4864,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 6-faced trigonal form where all faces are related by a 3-fold rotational axis with polar point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>6-faced trigonal form where all faces are related by a 3-fold rotational axis with polar point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>ditrigonal-pyramidal</rdfs:label>
     </owl:Class>
@@ -4883,7 +4887,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an 8-faced (tetragonal) or 12-faced (hexagonal) closed form in which the faces are grouped in symmetrical pairs with centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>8-faced (tetragonal) or 12-faced (hexagonal) closed form in which the faces are grouped in symmetrical pairs with centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>ditrigonal-scalenohedral</rdfs:label>
     </owl:Class>
@@ -4913,7 +4917,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 6-faced form where all faces are related by a 6 axis having polar point and enantiomorphic point symmetry.</obo:IAO_0000115>
+        <obo:IAO_0000115>6-faced form where all faces are related by a 6 axis having polar point and enantiomorphic point symmetry.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>hexagonal-pyrimidal</rdfs:label>
     </owl:Class>
@@ -5005,7 +5009,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 12-faced hexagonal crystal where all faces are related by a 6-fold axis. It has  polar point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>12-faced hexagonal crystal where all faces are related by a 6-fold axis. It has  polar point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>dihexagonal-pyramidal</rdfs:label>
     </owl:Class>
@@ -5028,7 +5032,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 12-faced form tetragonal crystal class with non-centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>12-faced form tetragonal crystal class with non-centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>ditrigonal-dipyramidal</rdfs:label>
     </owl:Class>
@@ -5051,7 +5055,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a 24-faced form with faces related by a 6-fold axis with a perpendicular mirror plane and centrosymmetric point symmetry</obo:IAO_0000115>
+        <obo:IAO_0000115>24-faced form with faces related by a 6-fold axis with a perpendicular mirror plane and centrosymmetric point symmetry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>dihexagonal-dipyramidal</rdfs:label>
     </owl:Class>
@@ -5073,7 +5077,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000266">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000136"/>
-        <obo:IAO_0000115>an ICH guideline for the use residual solvents (organic volatile impurities) 
+        <obo:IAO_0000115>An ICH guideline for the use residual solvents (organic volatile impurities) 
 in the manufacture of drug substances and dosage forms, and sets pharmaceutical limits for  in drug products.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH Q3C Residual Solvents</rdfs:label>
@@ -5085,7 +5089,7 @@ in the manufacture of drug substances and dosage forms, and sets pharmaceutical 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000267">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000136"/>
-        <obo:IAO_0000115>a quality guideline for the control of elemental impurities in new drug products (medicinal products), establishing Permitted Daily Exposures (PDEs) for 24 Elemental Impurities (EIs) for drug products administered by the oral, parenteral and inhalation routes of administration.</obo:IAO_0000115>
+        <obo:IAO_0000115>An ICH guideline for the control of elemental impurities in new drug products (medicinal products), establishing Permitted Daily Exposures (PDEs) for 24 Elemental Impurities (EIs) for drug products administered by the oral, parenteral and inhalation routes of administration.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH Q3D Guidance for Elemental Impurities</rdfs:label>
     </owl:Class>
@@ -5129,9 +5133,7 @@ in the manufacture of drug substances and dosage forms, and sets pharmaceutical 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000271">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000270"/>
-        <obo:IAO_0000115>Class 1 solvents: Solvents to be avoided
-Known human carcinogens, strongly suspected human carcinogens, and environmental
-hazards.</obo:IAO_0000115>
+        <obo:IAO_0000115>Solvents to be avoided and with strict low limits as they are human carcinogens, strongly suspected human carcinogens, and environmental hazards.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH Q6A Class 1 Solvent</rdfs:label>
     </owl:Class>
@@ -5142,10 +5144,7 @@ hazards.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000272">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000270"/>
-        <obo:IAO_0000115>Class 2 solvents: Solvents to be limited
-Non-genotoxic animal carcinogens or possible causative agents of other irreversible
-toxicity such as neurotoxicity or teratogenicity.
-Solvents suspected of other significant but reversible toxicities</obo:IAO_0000115>
+        <obo:IAO_0000115>Solvents to be limited non-genotoxic animal carcinogens or possible causative agents of other irreversible toxicity such as neurotoxicity or teratogenicity. Solvents suspected of other significant but reversible toxicities</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH Q6A Class 2 Solvent</rdfs:label>
     </owl:Class>
@@ -5156,9 +5155,7 @@ Solvents suspected of other significant but reversible toxicities</obo:IAO_00001
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000273">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000270"/>
-        <obo:IAO_0000115>Class 3 solvents: Solvents with low toxic potential
-Solvents with low toxic potential to man; no health-based exposure limit is needed. Class
-3 solvents have PDEs of 50 mg or more per day.</obo:IAO_0000115>
+        <obo:IAO_0000115>Class 3 solvents: Solvents with low toxic potential Solvents with low toxic potential to man; no health-based exposure limit is needed. Class 3 solvents have PDEs of 50 mg or more per day.</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>ICH Q6A Class 3 Solvent</rdfs:label>
     </owl:Class>
@@ -5169,8 +5166,7 @@ Solvents with low toxic potential to man; no health-based exposure limit is need
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000274">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000115>Permitted Daily Exposure:
-The maximum acceptable intake per day of residual solvent in pharmaceutical products</obo:IAO_0000115>
+        <obo:IAO_0000115>The maximum acceptable intake per day of residual solvent in pharmaceutical products</obo:IAO_0000115>
         <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
         <rdfs:label>Permitted Daily Exposure</rdfs:label>
     </owl:Class>
@@ -5181,7 +5177,7 @@ The maximum acceptable intake per day of residual solvent in pharmaceutical prod
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000275">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>an experimental design involving the testing of factors, or causes, one at a time instead of multiple factors simultaneously.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental design involving the testing of factors, or causes, one at a time instead of multiple factors simultaneously.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>one-factor-at-a-time experimental design</rdfs:label>
     </owl:Class>
@@ -5214,7 +5210,7 @@ The maximum acceptable intake per day of residual solvent in pharmaceutical prod
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>developing an understanding of the hazards of a chemical process and developing methods to safely manage and minimize the risks of the process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process of understanding of the hazards of a chemical process and developing methods to safely manage and minimize the risks of the process.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>process safety</rdfs:label>
     </owl:Class>
@@ -5225,7 +5221,7 @@ The maximum acceptable intake per day of residual solvent in pharmaceutical prod
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000279">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>an experimental design to produce a response curve sufficient to fit quadratic models of the individual factors</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental design to produce a response curve sufficient to fit quadratic models of the individual factors</obo:IAO_0000115>
         <obo:IAO_0000119>George Box, Donald Behnken, &quot;Some new three level designs for the study of quantitative variables&quot;, Technometrics, Volume 2, pages 455–475, 1960</obo:IAO_0000119>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>Box–Behnken design</rdfs:label>
@@ -5237,7 +5233,7 @@ The maximum acceptable intake per day of residual solvent in pharmaceutical prod
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000280">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000276"/>
-        <obo:IAO_0000115>an experimental design consisting of three distinct sets of experimental runs: 
+        <obo:IAO_0000115>An experimental design consisting of three distinct sets of experimental runs: 
 A factorial (perhaps fractional) design in the factors studied, each having two levels;
 A set of center points, experimental runs whose values of each factor are the medians of the values used in the factorial portion. This point is often replicated in order to improve the precision of the experiment;
 A set of axial points, experimental runs identical to the centre points except for one factor, which will take on values both below and above the median of the two factorial levels, and typically both outside their range. All factors are varied in this way.</obo:IAO_0000115>
@@ -5264,7 +5260,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is an identifier of a laboratory notebook experiment</obo:IAO_0000115>
+        <obo:IAO_0000115>A centrally registered identifier assigned to a laboratory notebook experiment</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>laboratory notebook experiment identifier</rdfs:label>
@@ -5276,7 +5272,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000282">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document that contemporaneously records when, how, by whom each step to produce a specific batch is executed as well as the specific equipment and the specific materials including exact weights and lot numbers.</obo:IAO_0000115>
+        <obo:IAO_0000115>A document that contemporaneously records when, how, by whom each step to produce a specific batch is executed as well as the specific equipment and the specific materials including exact weights and lot numbers.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
         <obo:IAO_0000118>batch sheet</obo:IAO_0000118>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -5289,7 +5285,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000093"/>
-        <obo:IAO_0000115>is a plan specification of manufacturing instructions for a specific (unique) batch and includes:  specific instructions for each step, the equipment used in each step, sampling and testing procedures for each step, the amount of each component needed to manufacture the batch (Bill of Materials) and the theoretical yield and expected yield of each intermediate as well as the product.
+        <obo:IAO_0000115>A plan specification of manufacturing instructions for a specific (unique) batch and includes:  specific instructions for each step, the equipment used in each step, sampling and testing procedures for each step, the amount of each component needed to manufacture the batch (Bill of Materials) and the theoretical yield and expected yield of each intermediate as well as the product.
 .</obo:IAO_0000115>
         <obo:IAO_0000118>master manufacturing formula</obo:IAO_0000118>
         <obo:IAO_0000118>master production record</obo:IAO_0000118>
@@ -5303,7 +5299,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000284">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document that lists the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts, and the quantities of each needed to manufacture an end product.</obo:IAO_0000115>
+        <obo:IAO_0000115>A document that lists the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts, and the quantities of each needed to manufacture an end product.</obo:IAO_0000115>
         <obo:IAO_0000118>BOM</obo:IAO_0000118>
         <obo:IAO_0000118>associated list</obo:IAO_0000118>
         <obo:IAO_0000118>bill of material</obo:IAO_0000118>
@@ -5343,7 +5339,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a screening design to determine to solubility of a compound</obo:IAO_0000115>
+        <obo:IAO_0000115>A screening design to determine to solubility of a compound</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>solubility screening design</rdfs:label>
     </owl:Class>
@@ -5355,7 +5351,7 @@ A set of axial points, experimental runs identical to the centre points except f
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
-        <obo:IAO_0000115>is an objective specification for an ontology in the form of a user-focused question / query that identifies key concepts and their relationships that are normally formalized in first order logic of the ontology.  They are also used to test the ontology by querying known instance data or by entailment on its axioms.</obo:IAO_0000115>
+        <obo:IAO_0000115>An objective specification for an ontology in the form of a user-focused question / query that identifies key concepts and their relationships that are normally formalized in first order logic of the ontology.  They are also used to test the ontology by querying known instance data or by entailment on its axioms.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>competency question</rdfs:label>
@@ -5367,7 +5363,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000287">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000295"/>
-        <obo:IAO_0000115>material cost of a chemical process is a measurement datum that calculates the sum of the costs of all raw materials, intermediates, reagents, solvents and catalysts procured from external vendor</obo:IAO_0000115>
+        <obo:IAO_0000115>A process chemistry datum quantifying  the sum of the costs of all raw materials, intermediates, reagents, solvents and catalysts procured from external vendor.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>material costs</rdfs:label>
     </owl:Class>
@@ -5378,7 +5374,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000288">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
-        <obo:IAO_0000115>is a portion of material  with a debris role that is a material output of a process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A portion of material  with a debris role that is a material output of a process.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>waste stream</rdfs:label>
@@ -5406,7 +5402,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is a portion of material to be further processed that has an ingredient a material with the role of product.</obo:IAO_0000115>
+        <obo:IAO_0000115>A portion of material to be further processed that has an ingredient a material with the role of product.</obo:IAO_0000115>
         <obo:IAO_0000116>waste stream can also have the product as an ingredient. Need to convey that it is portion of material that will be further processed.</obo:IAO_0000116>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -5430,7 +5426,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000291">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>a document identifying and analyzing potential (future) events that may negatively impact individuals, assets, and/or the environment (i.e. hazard analysis); and making judgments &quot;on the tolerability of the risk on the basis of a risk analysis&quot; while considering influencing factors (i.e. risk evaluation).</obo:IAO_0000115>
+        <obo:IAO_0000115>A document identifying and analyzing potential (future) events that may negatively impact individuals, assets, and/or the environment (i.e. hazard analysis); and making judgments &quot;on the tolerability of the risk on the basis of a risk analysis&quot; while considering influencing factors (i.e. risk evaluation).</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>risk assessment</rdfs:label>
     </owl:Class>
@@ -5447,7 +5443,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a planned process that converts input data into output data based on some equation or set of equations</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that converts input data into output data based on some equation or set of equations</obo:IAO_0000115>
         <obo:IAO_0000116>close to AFP_0003282</obo:IAO_0000116>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
@@ -5466,7 +5462,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000293"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>is an information content entity that is a recording of the output of a calculation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is a recording of the output of a calculation.</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>calculated datum</rdfs:label>
     </owl:Class>
@@ -5483,7 +5479,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item about process chemistry</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item about process chemistry</obo:IAO_0000115>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>process chemistry datum</rdfs:label>
     </owl:Class>
@@ -5494,7 +5490,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000296">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000159"/>
-        <obo:IAO_0000115>a planned process of extracting information from chemical systems by data-driven means.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process of extracting information from chemical systems by data-driven means.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>chemometrics</rdfs:label>
     </owl:Class>
@@ -5511,7 +5507,7 @@ A set of axial points, experimental runs identical to the centre points except f
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>statistical method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors. . The observed variables are modelled as linear combinations of the potential factors, plus &quot;error&quot; terms.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chemometric method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors. . The observed variables are modelled as linear combinations of the potential factors, plus &quot;error&quot; terms.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>factorial analysis</rdfs:label>
     </owl:Class>
@@ -5539,7 +5535,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:IAO_0000115>a form of experimentation in which many related experiments (different conditions on the same compound or the same conditions on multiple compounds) are done simultaneously, typically in a well-plate platform.</obo:IAO_0000115>
+        <obo:IAO_0000115>A form of experimentation in which many related experiments (different conditions on the same compound or the same conditions on multiple compounds) are done simultaneously, typically in a well-plate platform.</obo:IAO_0000115>
         <obo:IAO_0000117>W Schafer</obo:IAO_0000117>
         <obo:IAO_0000119>[PROCO]</obo:IAO_0000119>
         <rdfs:label>multi-parallel experimentation</rdfs:label>
@@ -5551,7 +5547,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000302">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROCO_0000006"/>
-        <obo:IAO_0000115>an equation for the temperature dependence of reaction rates used in determining rate of chemical reactions and for calculation of energy of activation.</obo:IAO_0000115>
+        <obo:IAO_0000115>An equation for the temperature dependence of reaction rates used in determining rate of chemical reactions and for calculation of energy of activation.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>Arhennius equation</rdfs:label>
     </owl:Class>
@@ -5562,7 +5558,7 @@ A set of axial points, experimental runs identical to the centre points except f
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROCO_0000303">
         <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
-        <obo:IAO_0000115>the pre-exponential factor or A factor is the pre-exponential constant in the Arrhenius equation, an empirical relationship between temperature and rate coefficient. It is usually designated by A when determined from experiment, while Z is usually left for collision frequency.</obo:IAO_0000115>
+        <obo:IAO_0000115>The pre-exponential factor or A factor is the pre-exponential constant in the Arrhenius equation, an empirical relationship between temperature and rate coefficient. It is usually designated by A when determined from experiment, while Z is usually left for collision frequency.</obo:IAO_0000115>
         <obo:IAO_0000118>A factor</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label>pre-exponential factor</rdfs:label>
@@ -5579,7 +5575,7 @@ A set of axial points, experimental runs identical to the centre points except f
      -->
 
     <rdf:Description rdf:about="http://biomodels.net/SBO/SBO_0000491">
-        <obo:IAO_0000115>a proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
+        <obo:IAO_0000115>A proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
     </rdf:Description>
@@ -5594,8 +5590,8 @@ A set of axial points, experimental runs identical to the centre points except f
         <obo:IAO_0000115>A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
         <rdfs:label>has value specification</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000111>has value specification</obo:IAO_0000111>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
