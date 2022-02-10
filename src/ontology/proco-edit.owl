@@ -44,11 +44,12 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
-        <terms:license>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <oboInOwl:creation_date>02-10-2022</oboInOwl:creation_date>
+        <rdfs:comment>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.
 
-THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</terms:license>
-        <oboInOwl:creation_date>09-09-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">PROCO release 20210909</owl:versionInfo>
+THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">PROCO release 20220210</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3794,7 +3795,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5575,8 +5576,8 @@ A set of axial points, experimental runs identical to the centre points except f
      -->
 
     <rdf:Description rdf:about="http://biomodels.net/SBO/SBO_0000491">
-        <obo:IAO_0000115>A proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000118>mass diffusivity</obo:IAO_0000118>
+        <obo:IAO_0000115>A proportionality constant between the molar flux due to molecular diffusion and the gradient in the concentration of the species (or the driving force for diffusion). Diffusivity is encountered in Fick&apos;s law and numerous other equations of physical chemistry.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.allotrope.org/ontologies/process#AFP_0003374">
@@ -5590,8 +5591,8 @@ A set of axial points, experimental runs identical to the centre points except f
         <obo:IAO_0000115>A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
         <rdfs:label>has value specification</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000111>has value specification</obo:IAO_0000111>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000111>has value specification</obo:IAO_0000111>
         <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>

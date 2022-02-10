@@ -17314,7 +17314,7 @@ equivalent to ENM:9000035</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19524,32 +19524,32 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000115>A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
         <rdfs:label>has value specification</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000111>has value specification</obo:IAO_0000111>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000111>has value specification</obo:IAO_0000111>
         <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
+        <dc:contributor>Bjoern Peters</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
@@ -19557,13 +19557,13 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor>Stefan Schulz</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Larry Hunter</dc:contributor>
+        <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
@@ -19572,17 +19572,17 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
-        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chebi.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:05:2021 18:56</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:05:2021 18:56</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 200</rdfs:comment>
     </rdf:Description>
