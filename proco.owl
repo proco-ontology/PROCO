@@ -26,7 +26,7 @@
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#"
      xmlns:PATO_imports1="http://purl.obolibrary.org/obo/proco/PATO_imports.owl.#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/proco.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/proco/proco.owl"/>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/proco-ontology/PROCO/v2022-02-09/proco.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/AFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/BFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/CHEBI_imports.owl"/>
@@ -44,11 +44,10 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
-        <terms:license>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.
-
-THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</terms:license>
-        <oboInOwl:creation_date>09-09-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">PROCO release 20210909</owl:versionInfo>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <rdfs:comment>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/. THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</rdfs:comment>
+        <oboInOwl:creation_date>02-09-2022</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">PROCO release 20220209</owl:versionInfo>
     </owl:Ontology>
     
 
