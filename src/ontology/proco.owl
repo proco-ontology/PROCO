@@ -3176,8 +3176,8 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000602>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </obo:IAO_0000602>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000002</oboInOwl:id>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:label>continuant</rdfs:label>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
     
 
@@ -3280,8 +3280,8 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000015</oboInOwl:id>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">process</rdfs:label>
         <rdfs:label>process</rdfs:label>
+        <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     
 
@@ -19447,7 +19447,52 @@ This interpretation is *not* the same as an at-all-times relation
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-06</owl:versionInfo>
     </owl:NamedIndividual>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -19462,52 +19507,7 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
     </rdf:Description>
     
 
@@ -19536,8 +19536,8 @@ This interpretation is *not* the same as an at-all-times relation
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>Pierre Grenon</dc:contributor>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
         <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:contributor>Selja Seppälä</dc:contributor>
@@ -19547,20 +19547,20 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <dc:contributor>Bjoern Peters</dc:contributor>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
         <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
-        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
+        <dc:contributor>Bjoern Peters</dc:contributor>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Randall Dipert</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Larry Hunter</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
@@ -19572,14 +19572,14 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Ludger Jansen</dc:contributor>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chebi.owl">
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner &amp; Pankaj Jaiswal.</rdfs:comment>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:05:2021 18:56</oboInOwl:date>
@@ -19587,16 +19587,16 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 200</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chmo.owl">
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/fix.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saved-by:             kirill</rdfs:comment>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autogenerated-by:     DAG-Edit version 1.419 rev 3</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version: $Revision: 1.2 $</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25:05:2005 12:37</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date:                 Mon Apr 04 14:05:41 BST 2005</rdfs:comment>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25:05:2005 12:37</oboInOwl:date>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/resource/CHEMINF_000193">
         <obo:IAO_0000115>The equilibrium state is characterized by a constant, designated K, which provides quantitative information of the extent of a reaction and is related to the ratio of the concentrations of reactants and products</obo:IAO_0000115>
