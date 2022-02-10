@@ -26,7 +26,7 @@
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#"
      xmlns:PATO_imports1="http://purl.obolibrary.org/obo/proco/PATO_imports.owl.#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/proco.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/proco/proco.owl"/>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/proco-ontology/PROCO/v2022-02-10/proco.owl"/>
         <dc:creator xml:lang="en">Anna Dunn</dc:creator>
         <dc:creator xml:lang="en">Wes A. Schafer</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
