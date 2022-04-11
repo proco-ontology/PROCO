@@ -15,7 +15,7 @@ Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Repre
 
 ## PROCO Sources
 
-PROCO OWL source:
+Current release version of the PROCO OWL source:
 http://purl.obolibrary.org/obo/proco/v2022-04-11/proco.owl 
 
 which is directed to: https://raw.githubusercontent.com/proco-ontology/PROCO/main/proco.owl
