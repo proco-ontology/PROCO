@@ -26,7 +26,7 @@
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#"
      xmlns:PATO_imports1="http://purl.obolibrary.org/obo/proco/PATO_imports.owl.#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/proco.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/proco/proco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/proco/v2022-04-11/proco.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/AFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/BFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/proco/imports/CHEBI_imports.owl"/>
@@ -45,7 +45,7 @@
         <dc:subject xml:lang="en">PROCO: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">PROCO: PROcess Chemistry Ontology</dc:title>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:creation_date>02-10-2022</oboInOwl:creation_date>
+        <oboInOwl:creation_date>04-11-2022</oboInOwl:creation_date>
         <rdfs:comment>This work is licensed under a Creative Commons Attribution 4.0 International License http://creativecommons.org/licenses/by/4.0/.
 
 THESE MATERIALS ARE PROVIDED &quot;AS IS&quot; AND WITHOUT ANY WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF NON-INFRINGEMENT, TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</rdfs:comment>
