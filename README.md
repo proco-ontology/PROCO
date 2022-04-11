@@ -14,8 +14,11 @@ Wes Schafer, Oliver He, Anna Dunn, Zachary E. X. Dance. Ontology for Process Che
 Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Representation and Analysis of Process Chemistry](https://a931b97a-f419-4166-9ec6-4bd98cdfcfa7.filesusr.com/ugd/b6aabf_e139357058f84b5b9b80dedf6111f50b.pdf) (Oral presentation). [2020 Fall Allotrope Connect](https://www.allotrope.org/2020-fall-allotrope-connect) Virtual Conference, Sept. 30th, 2020. 
 
 ## PROCO Sources
+
 PROCO OWL source:
+
 https://raw.githubusercontent.com/proco-ontology/PROCO/main/proco.owl
+
 (Note: an OBO PURL version will be available later.)
 
 ## License of PROCO Sources
