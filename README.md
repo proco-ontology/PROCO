@@ -29,7 +29,6 @@ CC BY-4: https://creativecommons.org/licenses/by/4.0/
 - Wes Schafer, Merck Process Research & Development, Rahway, NJ, USA.  
 - Oliver He, University of Michigan Medical School, Ann Arbor, MI, USA.
 - Anna L. Dunn, Merck Analytical Research & Development, Rahway, NJ, USA. 
-- Zachary E. X. Dance, Merck Process Research & Development, Rahway, NJ, USA.  
+- Zachary E. X. Dance, Merck & Co. Inc., Rahway, NJ, USA.  
 - Benjamin Woolford-Lim, Senior Developer, Allotrope Foundation
-
 
