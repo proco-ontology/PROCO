@@ -25,7 +25,7 @@
 
 # crystallization experiment
 <urn:uuid:74142d9d-cdfa-4b9e-9309-c4ccba173c1d>
-	a	<http://semanticscience.org/resource/SIO_000994> opc:OPC_0000052 ; # experiment, crystallization  
+	a	<http://semanticscience.org/resource/SIO_000994>, opc:OPC_0000052 ; # experiment, crystallization  
 		af-x:AFX_0002802 <urn:uuid:f5aa5d9f-6943-48f3-b910-48524965c25e> ;
 		af-x:AFX_00000696 <urn:uuid:3e153662-f169-429d-9a42-1880f94c03cd> , <urn:uuid:529bce3c-75db-41e4-ad9a-fb633f5669d9>  ; # has material input
 		af-x:AFX_00000546 <urn:uuid:93f3daa6-98b8-469f-be97-ad2aabbf056f> , <urn:uuid:67d83de5-a8b0-446b-b5d6-b62ff9758cfe> . # has material output
