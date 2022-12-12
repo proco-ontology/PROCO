@@ -3,7 +3,7 @@ PROCO: A formal ontology in the domain of process chemistry
 
 Previously named the [Ontology of Process Chemistry (OPC)](https://github.com/OPC-ontology/OPC), the PROcess Chemistry Ontology (PROCO) is aimed to be a community-based ontology in the domain of process chemistry, which is a branch of chemistry (including pharmaceutical chemistry) that studies the development and optimization of the production processes for chemical compounds, and the scaling up of laboratory chemical reactions into commercially viable routes. Key considerations are product quality, process robustness, economics, environmental sustainability, regulatory compliance and safety.   
 
-PROCO was initiated as a collaborative project between Merck and Unversity of Michigan. Oliver He from University of Michigan received Merck funding and has been actively working with Wes Schafer at Merck on the PROCO development. Later our PROCO development team has been expanded to include more developers, including Anna L. Dunn and Zachary E. X. Dance. 
+PROCO was initiated as a collaborative project between Merck and University of Michigan. Oliver He from University of Michigan received Merck funding and has been actively working with Wes Schafer at Merck on the PROCO development. Later our PROCO development team has been expanded to include more developers, including Anna L. Dunn and Zachary E. X. Dance. 
 
 PROCO also gratefully acknowledges the assistance and cooperation of the [Allotrope Foundation](https://www.allotrope.org/).  
 
